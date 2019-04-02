@@ -1,0 +1,85 @@
+#landing {
+	background-image: url('static/images/backgrounds/calibw.jpg');
+	background-position: 50% 50%;
+	background-size: cover;
+	height: 100vh;
+	text-align: center;
+	vertical-align: middle;
+	width: 100%;
+}
+	#l-mtext {
+		padding-top: calc(50vh - 47.6px);
+	}
+		#l-mtext div {
+			color: white;
+			display: block;
+		}
+			#l-mtext div::selection {
+				background-color: black;
+			}
+				#l-mtext div br::selection {
+					background-color: black;
+				}
+		#l-mt-name {
+			font-size: 30px;
+			font-weight: bold;
+		}
+		#l-mt-slogan {
+			font-size: 24px;
+		}
+		#l-mt-translate {
+			padding-top: 5px;
+		}
+			#l-mt-t-button {
+				background-color: transparent;
+				border: 2px solid white;
+				border-radius: 5px;
+				color: white;
+				font-size: 24px;
+				padding: 5px 15px;
+				outline: none;
+			}
+				#l-mt-t-button:hover {
+					background-color: rgba(230, 230, 230, .2);
+				}
+.section {
+	padding-top: 3%;
+	padding-bottom: 5%;
+	text-align: center;
+	width: 100%;
+}
+	.section-title {
+		display: block;
+		font-size: 30px;
+		letter-spacing: 5px;
+		padding: 15px;
+		text-transform: uppercase;
+	}
+#about {
+	background-color: #343434;
+	color: #e4e4e4;
+}
+	#about a {
+		border: 1px solid white;
+		border-radius: 5px;
+		color: white;
+		display: inline-block;
+		padding: 5px 15px;
+	}
+		#about a:hover {
+			background-color: rgba(255, 255, 255, 0.1);
+		}
+#contact {
+	background-color: #e4e4e4;
+	color: black;
+}
+	#contact a {
+		border: 1px solid black;
+		border-radius: 5px;
+		color: black;
+		display: inline-block;
+		padding: 5px 15px;
+	}
+		#contact a:hover {
+			background-color: rgba(0, 0, 0, 0.1);
+		}

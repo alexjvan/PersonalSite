@@ -1,0 +1,108 @@
+#header {
+	background-image: url('/images/backgrounds/code-bw.png');
+	background-position: 60% 30%;
+	background-size: cover;
+	height: 499px;
+	padding-top: 101px;
+	text-align: center;
+	vertical-align: middle;
+	width: 100%;
+}
+	#title {
+		background-color: rgba(255, 255, 255, 0.6);
+		font-size: 30px;
+		letter-spacing: 5px;
+		margin-top: 176.5px;
+		padding: 5px 15px;
+		text-align: center;
+		vertical-align: middle;
+	}
+.seperator {
+	border-left: calc(50vw) solid transparent;
+	border-bottom: 150px solid #343434;
+	height: 0;
+	position: absolute;
+	right: 0;
+	top: 450px;
+	width: 0;
+}
+#projectscontainer {
+	display: flex;
+}
+	#pleft {
+		background-color: #e4e4e4;
+		border-bottom: 15px solid #343434;
+		float: left;
+		padding: 10px;
+		text-align: center;
+		width: calc(50% - 20px);
+	}
+		.projectstitle {
+			font-size: 24px;
+			font-weight: bold;
+		}
+			.projectsheader {
+				width: 100%;
+			}
+	#pright {
+		background-color: #343434;
+		border-bottom: 15px solid #343434;
+		float: right;
+		padding: 10px;
+		text-align: center;
+		width: calc(50% - 20px);
+	}
+#repo {
+	background: #e4e4e4;
+	padding: 30px 0px;
+	text-align: center;
+	width: 100%;
+}
+	#rtitle {
+		font-size: 26px;
+		font-weight: bold;
+	}
+	#repos {
+		padding-bottom: 10px;
+		text-align: center;
+		width: 100%;
+	}
+		.repoitem {
+			border-left: 5px solid;
+			display: inline-block!important;
+			margin-top: 15px;
+			margin-right: 2px;
+			padding: 5px;
+			text-align: left;
+			vertical-align: top;
+			width: 483px!important;
+		}
+			@media screen and (max-device-width: 1000px) {
+				.repoitem {
+					margin-left: 3px;
+					width: calc(100% - 20px)!important;
+				}
+			}
+			.repoitem:hover {
+				background-color: rgba(0, 0, 0, .1);
+			}
+			.ri-clickable {
+				border: 0px!important;
+				color: black;
+				width: calc(100% - 30px)!important;
+			}
+				.ri-c-title {
+					display: block;
+					font-weight: bold;
+					padding-top: 1px;
+				}
+				.ri-c-desc {
+					display: block;
+					padding-top: 1px;
+				}
+				.ri-c-lang {
+					color: #529EFB;
+					display: block;
+					font-style: italic;
+					padding-top: 3px;
+				}
