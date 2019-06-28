@@ -49,7 +49,7 @@
 	</head>
 	<body>
 		<div id="header">
-			<a id="h-logo" src="<?php echo $prefix ?>">
+			<a id="h-logo" href="<?php echo $prefix ?>">
 				<img id="h-l-img" src="../../static/images/logos/logo.gif" />
 				<div id="h-l-text">
 					Alex Van Matre
@@ -358,8 +358,10 @@
 			function haveContactDisplay() {
 				if($(window).width() < 700 || isMobile) {
 					$('#contact-display').css({'display':'none'});
+					$('.contact-img').css({'height':'60px'});
 				} else {
 					$('#contact-display').css({'display':'flex'});
+					$('.contact-img').css({'height':'70px'});
 				}
 			}
 
