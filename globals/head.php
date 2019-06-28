@@ -54,7 +54,10 @@
         }
     </style>
 	<script>
-		$(document).ready(function() {mobileHeader(); mobileFooter(); headerHover(); footerHover(); mobileClicker();});
+		$(document).ready(function() {
+			mobileHeader(); mobileFooter(); headerHover(); footerHover(); mobileClicker();
+			$('.gr_-editor.gr-iframe-first-load').parent().css({'display':'none'});
+		});
 		$(window).resize(function() {mobileHeader(); mobileFooter()});
 		$(window).on("scroll", function() {dropHeader()});
 
@@ -118,9 +121,9 @@
 		var originalcolor = '';
 
 		function dropHeader() {
-			if(isMobile || $(window).width() < 750) {
-
-			} else if(($(window).scrollTop() > topCheck && prevHeight < topCheck)){
+			if(isMobile || $(window).width() < 750)
+				return;
+			if(($(window).scrollTop() > topCheck && prevHeight < topCheck)){
 				originalcolor = $('.h-r-d-i-l-text').css('color');
 				$("header").stop().animate({'background-color':'rgba(0,0,0,.6)', 'height':'49px'});
 				$('header').css({'position':'fixed'});
@@ -131,7 +134,7 @@
 			} else if($(window).scrollTop() <= topCheck && prevHeight >= topCheck) {
 				$("header").stop().animate({'background-color':'transparent', 'height':'101px', 'position':'absolute'});
 				$('.h-r-d-i-l-text').stop().animate({'color':originalcolor});
-				$('#h-l-ln-name').stop().animate({'color':'black', 'padding-top':'41px'});
+				$('#h-l-ln-name').stop().animate({'color':originalcolor, 'padding-top':'41px'});
 				$('.h-r-d-i-link').stop().animate({'padding-top':'41px'});
 				$('#h-l-ln-l-img').attr('src','<?php echo strval($prefix.'static/images/logos/logo.gif') ?>');
 			}

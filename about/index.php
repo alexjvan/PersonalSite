@@ -9,6 +9,9 @@
 			.h-r-d-i-l-text {
 				color: white;
 			}
+			#h-l-ln-name {
+				color: white!important;
+			}
 		</style>
 		<div id="body">
 			<div id="header">

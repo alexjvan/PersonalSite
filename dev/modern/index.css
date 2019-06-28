@@ -1,0 +1,298 @@
+/* Color Palette */
+/*
+*/
+:root {
+	--accent: #529EFB;
+	--primary: #e4e4e4;
+	--secondary: #343434;
+}
+
+/* Overall Styles */
+button:hover {
+    cursor: pointer;
+}
+
+* {
+	margin: 0px;
+	padding: 0px;
+}
+
+a {
+	display: block;
+	text-decoration: none;
+}
+
+body {
+	border: 0px;
+	font-family: 'Montserrat', verdana, arial, sans-serif;
+	font-size: 16px;
+	margin: 0px;
+    overflow-x: hidden;
+	padding: 0px;
+}
+
+div {
+	display: inline-block;
+}
+
+li {
+	display: inline-block;
+	list-style-type: none;
+	margin: 0px;
+	padding: 0px;
+}
+
+p {
+	text-align: left;
+}
+
+ul {
+	display: block;
+	list-style-type: none;
+}
+
+.disabled {
+	display: none!important;
+}
+/* Specific Styles */
+body {
+	height: 100vh;
+	overflow: hidden;
+	width: 100vw;
+}
+#header {
+	height: 80px;
+	left: 0;
+	padding: 0px 5%;
+	position: absolute;
+	top: 0;
+	width: 100vw;
+	z-index: 5;
+}
+	#h-logo {
+		padding: 5px 20px;
+	}
+		#h-l-img {
+			height: 70px;
+			vertical-align: middle;
+		}
+		#h-l-text {
+			font-size: 20px;
+			vertical-align: middle;
+		}
+#main {
+	background-color: var(--primary);
+	height: 100vh;
+	left: 0;
+	padding: 1vh 1vw;
+	position: absolute;
+	top: 0;
+	width: 100vw;
+	z-index: 1;
+}
+#me {
+	background-color: var(--secondary);
+	color: #e4e4e4;
+	height: calc(100vh - 70px);
+	left: -60%;
+	padding-top: 70px;
+	position: absolute;
+	top: 0;
+	width: 60%;
+	z-index: 4;
+}
+	.me-row {
+		padding: 5px 10px;
+		text-align: center;
+		width: calc(100% - 20px);
+	}
+	#me-pic {
+
+	}
+		#me-img {
+			border-radius: 100px;
+			height: 100px;
+		}
+	#me-name {
+		font-size: 20px;
+	}
+		#me-name sup {
+			font-size: xx-small;
+		}
+	#me-title {
+		color: white;
+		font-size: 16px;
+	}
+		#me-title i {
+			color: #d4d4d4;
+		}
+	#me-about {
+		display: flex;
+	}
+		#me-school {
+			color: var(--accent);
+			font-size: 18px;
+			font-weight: bold;
+			width: 50%;
+		}
+			#me-uw {
+				background-color: #4b2e83;
+				border-radius: 15px;
+				color: #85754d;
+				font-size: 14px;
+				margin: 10px;
+				padding: 15px;
+				width: calc(100% - 50px);
+			}
+				#me-uw-title {
+					font-size: 16px;
+					font-weight: bold;
+				}
+		#me-job {
+			color: var(--accent);
+			font-size: 18px;
+			font-weight: bold;
+			width: 50%;
+		}
+			#me-tgt {
+				background-color: #CC0000;
+				border-radius: 15px;
+				color: white;
+				font-size: 14px;
+				margin: 10px;
+				padding: 15px;
+				width: calc(100% - 50px);
+			}
+				#me-tgt-title {
+					font-size: 16px;
+					font-weight: bold;
+				}
+	#me-langs {
+
+	}
+		.me-lang {
+			margin: 5px;
+			padding: 5px 15px;
+		}
+			.me-lang-title {
+				display: block;
+			}
+			.me-lang-desc {
+				display: block;
+				font-size: 14px;
+			}
+	#me-resume {
+		bottom: 0;
+		position: relative;
+	}
+		#me-resdown {
+			color: #e4e4e4;
+			text-decoration: underline;
+		}
+			#me-resdown:hover {
+				color: #b4b4b4;
+			}
+#larrow {
+	height: 50px;
+	padding-top: calc(50vh - 25px);
+	padding-bottom: calc(50vh - 75px);
+	position: absolute;
+	top: 0;
+	text-align: center;
+	vertical-align: middle;
+	width: 40px;
+	z-index: 3;
+}
+	.a-int {
+		height: unset;
+	}
+		.a-int:hover {
+			cursor: pointer;
+		}
+		.a-arrow {
+
+		}
+			.a-arrow i {
+				border: solid black;
+				border-width: 0px 1px 1px 0px;
+				display: inline-block;
+				padding: 5px;
+				transform: rotate(-135deg);
+			}
+		.a-text {
+			display: block;
+		}
+	#la-int {
+		transform: rotate(90deg);
+	}
+#rarrow {
+	float: right;
+	height: 50px;
+	padding-top: calc(50vh - 25px);
+	padding-bottom: calc(50vh - 75px);
+	position: absolute;
+	right: 0;
+	top: 0;
+	text-align: center;
+	vertical-align: middle;
+	width: 40px;
+	z-index: 3;
+}
+	#ra-int {
+		transform: rotate(-90deg);
+	}
+#code {
+	background-color: var(--secondary);
+	float: right;
+	height: calc(100vh - 50px);
+	padding-top: 50px;
+	position: absolute;
+	right: -60%;
+	top: 0;
+	width: 60%;
+	z-index: 3;
+}
+#barrow {
+	bottom: 0;
+	height: 40px;
+	left: 0;
+	position: absolute;
+	text-align: center;
+	width: 100vw;
+	z-index: 3;
+}
+	#ba-int {
+
+	}
+#contact {
+	background-color: var(--secondary);
+	bottom: -80px;
+	display: flex;
+	height: 80px;
+	justify-content: center;
+	left: 0px;
+	position: absolute;
+	text-align: center;
+	width: 100vw;
+	z-index: 3;
+}
+	#contact-items {
+		width: 417px;
+	}
+		.contact-item {
+			display: inline-block;
+		}
+			.contact-img {
+				height: 70px;
+				padding: 5px;
+			}
+	#contact-display {
+		align-items: center;
+		color: #e4e4e4;
+		display: flex;
+		font-size: 20px;
+		justify-content: center;
+		text-align: center;
+		vertical-align: baseline;
+		width: 283px;
+	}

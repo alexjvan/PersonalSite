@@ -22,6 +22,42 @@
 					<div class="projectsheader">
 						Here are a list of projects I have worked on, that don't directly relate to online projects.
 					</div>
+					<div id="softwareprojects">
+						<div class="project">
+							<div class="p-img">
+								<img class="p-i-img" src="" alt="" />
+							</div>
+							<div class="p-info">
+								<div class="p-i-title">
+									Reneblade
+								</div>
+								<div class="p-i-desc">
+									A game I made with 5 other people for Microsoft's Hunt The Wumpus Alumni Competition.
+								</div>
+								<div class="p-i-links">
+									<a class="p-i-l-link" href="">Download</a>
+									<a class="p-i-l-link" href="">GitHub</a>
+								</div>
+							</div>
+						</div>
+						<div class="project">
+							<div class="p-img">
+								<img class="p-i-img" src="" alt="" />
+							</div>
+							<div class="p-info">
+								<div class="p-i-title">
+									MineSweeper
+								</div>
+								<div class="p-i-desc">
+									A custom rendition of the classic game MineSweeper that I made in C#.
+								</div>
+								<div class="p-i-links">
+									<a class="p-i-l-link" href="">Download</a>
+									<a class="p-i-l-link" href="">GitHub</a>
+								</div>
+							</div>
+						</div>
+					</div>
 				</div>
 				<div id="pright">
 					<div class="projectstitle" style="color: #e4e4e4">
@@ -29,6 +65,9 @@
 					</div>
 					<div class="projectsheader" style="color: #e4e4e4">
 						You can also head over to my <a style="color: #e4e4e4; text-decoration: underline; display: inline-block" href="<?php echo $prefix ?>/dev/playground/">playground</a>, to view live demos of current and previous projects.
+					</div>
+					<div id="webprojects">
+
 					</div>
 				</div>
 			</div>

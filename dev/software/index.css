@@ -44,6 +44,66 @@
 			.projectsheader {
 				width: 100%;
 			}
+				#softwareprojects {
+					width: 100%;
+				}
+				#webprojects {
+					width: 100%;
+				}
+					.project {
+						background-color: #b4b4b4;
+						border: 1px solid #343434;
+						border-radius: 5px;
+						display: flex;
+						margin: 10px 5%;
+						padding: 2%;
+						width: 86%;
+					}
+						#webprojects.project {
+							background-color: #545454;
+							border-color: #e4e4e4;
+						}
+						.p-img {
+							vertical-align: middle;
+							width: 20%;
+						}
+							.p-i-img {
+								padding: 5px 5%;
+								vertical-align: middle;
+								width: 90%;
+							}
+						.p-info {
+							color: #343434;
+							vertical-align: middle;
+							width: 80%;
+						}
+							#webprojects.p-info {
+								color: #e4e4e4;
+							}
+							.p-i-title {
+								font-size: 20px;
+								font-weight: bold;
+								text-align: center;
+								width: 100%;
+							}
+							.p-i-desc {
+								text-align: center;
+								width: 100%;
+							}
+							.p-i-links {
+								text-align: center;
+								width: 100%;
+							}
+								.p-i-l-link {
+									color: #343434;
+									display: inline-block;
+									font-size: 14px;
+									padding: 0px 5px;
+									text-decoration: underline;
+								}
+									#webprojects.p-i-l-link {
+										color: #e4e4e4;
+									}
 	#pright {
 		background-color: #343434;
 		border-bottom: 15px solid #343434;
