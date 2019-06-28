@@ -48,196 +48,198 @@
 		</style>
 	</head>
 	<body>
-		<div id="header">
-			<a id="h-logo" href="<?php echo $prefix ?>">
-				<img id="h-l-img" src="../../static/images/logos/logo.gif" />
-				<div id="h-l-text">
-					Alex Van Matre
-				</div>
-			</a>
-		</div>
-		<div id="me">
-			<div id="me-pic" class="me-row">
-				<img id="me-img" src="../../static/images/me/uwMe-square.jpg" alt="me" />
-			</div>
-			<div id="me-name" class="me-row">
-				Alex<sup>ander</sup> Van Matre
-			</div>
-			<div id="me-title" class="me-row">
-				<i>Pro</i> Weirdo
-			</div>
-			<div id="me-about" class="me-row">
-				<div id="me-school">
-					<div class="about-title">
-						School
+		<div id="content">
+			<div id="header">
+				<a id="h-logo" href="<?php echo $prefix ?>">
+					<img id="h-l-img" src="../../static/images/logos/logo.gif" />
+					<div id="h-l-text">
+						Alex Van Matre
 					</div>
-					<div id="me-uw" class="me-row">
-						<div id="me-uw-title" class="me-row">
-							University of Washington, Bothell
-						</div>
-						<div id="me-uw-desc">
-							Pursuing a <b>Minor in Information Technology</b> and a <b>Bachelors in Computer Science and Software Engineering</b>.
-						</div>
-					</div>
-				</div>
-				<div id="me-job">
-					<div class="about-title">
-						Job
-					</div>
-					<div id="me-tgt" class="me-row">
-						<div id="me-tgt-title" class="me-row">
-							Target - Guest Advocate
-						</div>
-						<div id="me-tgt-desc">
-							Cross trained as cashier, self checkout, guest service, GSA, hardlines, market, cash office, and Starbucks.
-						</div>
-					</div>
-				</div>
-			</div>
-			<div id="me-langs" class="me-row">
-				<div class="me-lang" data-ten="6">
-					<div class="me-lang-title">
-						CSS
-					</div>
-					<div class="me-lang-desc">
-						6 years
-					</div>
-				</div>
-				<div class="me-lang" data-ten="9">
-					<div class="me-lang-title">
-						C#
-					</div>
-					<div class="me-lang-desc">
-						4 years
-					</div>
-				</div>
-				<div class="me-lang" data-ten="3">
-					<div class="me-lang-title">
-						C++
-					</div>
-					<div class="me-lang-desc">
-						1 years
-					</div>
-				</div>
-				<div class="me-lang" data-ten="9">
-					<div class="me-lang-title">
-						Java
-					</div>
-					<div class="me-lang-desc">
-						8 years
-					</div>
-				</div>
-				<div class="me-lang" data-ten="7">
-					<div class="me-lang-title">
-						JavaScript
-					</div>
-					<div class="me-lang-desc">
-						5 years
-					</div>
-				</div>
-				<div class="me-lang" data-ten="7">
-					<div class="me-lang-title">
-						JQuery
-					</div>
-					<div class="me-lang-desc">
-					 	5 years
-					</div>
-				</div>
-				<div class="me-lang" data-ten="6">
-					<div class="me-lang-title">
-						HTML
-					</div>
-					<div class="me-lang-desc">
-						6 years
-					</div>
-				</div>
-				<div class="me-lang" data-ten="7">
-					<div class="me-lang-title">
-						PHP
-					</div>
-					<div class="me-lang-desc">
-						3 years
-					</div>
-				</div>
-				<div class="me-lang" data-ten="1">
-					<div class="me-lang-title">
-						Python
-					</div>
-					<div class="me-lang-desc">
-						1 years
-					</div>
-				</div>
-				<div class="me-lang" data-ten="4">
-					<div class="me-lang-title">
-						SQL
-					</div>
-					<div class="me-lang-desc">
-						2 years
-					</div>
-				</div>
-			</div>
-			<div id="me-resume" class="me-row">
-				<a id="me-resdown" href="../../static/files/PublicResume.pdf" download>
-					Resume
 				</a>
 			</div>
-		</div>
-		<div id="larrow">
-			<a id="la-int" class="a-int">
-				<div class="a-arrow">
-					<i></i>
+			<div id="me">
+				<div id="me-pic" class="me-row">
+					<img id="me-img" src="../../static/images/me/uwMe-square.jpg" alt="me" />
 				</div>
-				<div class="a-text">
-					About
+				<div id="me-name" class="me-row">
+					Alex<sup>ander</sup> Van Matre
 				</div>
-			</a>
-		</div>
-		<div id="main">
+				<div id="me-title" class="me-row">
+					<i>Pro</i> Weirdo
+				</div>
+				<div id="me-about" class="me-row">
+					<div id="me-school">
+						<div class="about-title">
+							School
+						</div>
+						<div id="me-uw" class="me-row">
+							<div id="me-uw-title" class="me-row">
+								University of Washington, Bothell
+							</div>
+							<div id="me-uw-desc">
+								Pursuing a <b>Minor in Information Technology</b> and a <b>Bachelors in Computer Science and Software Engineering</b>.
+							</div>
+						</div>
+					</div>
+					<div id="me-job">
+						<div class="about-title">
+							Job
+						</div>
+						<div id="me-tgt" class="me-row">
+							<div id="me-tgt-title" class="me-row">
+								Target - Guest Advocate
+							</div>
+							<div id="me-tgt-desc">
+								Cross trained as cashier, self checkout, guest service, GSA, hardlines, market, cash office, and Starbucks.
+							</div>
+						</div>
+					</div>
+				</div>
+				<div id="me-langs" class="me-row">
+					<div class="me-lang" data-ten="6">
+						<div class="me-lang-title">
+							CSS
+						</div>
+						<div class="me-lang-desc">
+							6 years
+						</div>
+					</div>
+					<div class="me-lang" data-ten="9">
+						<div class="me-lang-title">
+							C#
+						</div>
+						<div class="me-lang-desc">
+							4 years
+						</div>
+					</div>
+					<div class="me-lang" data-ten="3">
+						<div class="me-lang-title">
+							C++
+						</div>
+						<div class="me-lang-desc">
+							1 years
+						</div>
+					</div>
+					<div class="me-lang" data-ten="9">
+						<div class="me-lang-title">
+							Java
+						</div>
+						<div class="me-lang-desc">
+							8 years
+						</div>
+					</div>
+					<div class="me-lang" data-ten="7">
+						<div class="me-lang-title">
+							JavaScript
+						</div>
+						<div class="me-lang-desc">
+							5 years
+						</div>
+					</div>
+					<div class="me-lang" data-ten="7">
+						<div class="me-lang-title">
+							JQuery
+						</div>
+						<div class="me-lang-desc">
+						 	5 years
+						</div>
+					</div>
+					<div class="me-lang" data-ten="6">
+						<div class="me-lang-title">
+							HTML
+						</div>
+						<div class="me-lang-desc">
+							6 years
+						</div>
+					</div>
+					<div class="me-lang" data-ten="7">
+						<div class="me-lang-title">
+							PHP
+						</div>
+						<div class="me-lang-desc">
+							3 years
+						</div>
+					</div>
+					<div class="me-lang" data-ten="1">
+						<div class="me-lang-title">
+							Python
+						</div>
+						<div class="me-lang-desc">
+							1 years
+						</div>
+					</div>
+					<div class="me-lang" data-ten="4">
+						<div class="me-lang-title">
+							SQL
+						</div>
+						<div class="me-lang-desc">
+							2 years
+						</div>
+					</div>
+				</div>
+				<div id="me-resume" class="me-row">
+					<a id="me-resdown" href="../../static/files/PublicResume.pdf" download>
+						Resume
+					</a>
+				</div>
+			</div>
+			<div id="larrow">
+				<a id="la-int" class="a-int">
+					<div class="a-arrow">
+						<i></i>
+					</div>
+					<div class="a-text">
+						About
+					</div>
+				</a>
+			</div>
+			<div id="main">
 
-		</div>
-		<div id="code">
+			</div>
+			<div id="code">
 
-		</div>
-		<div id="rarrow">
-			<a id="ra-int" class="a-int">
-				<div class="a-arrow">
-					<i></i>
-				</div>
-				<div class="a-text">
-					Code
-				</div>
-			</a>
-		</div>
-		<div id="barrow">
-			<a id="ba-int" class="a-int">
-				<div class="a-arrow">
-					<i></i>
-				</div>
-				<div class="a-text">
-					Contact
-				</div>
-			</a>
-		</div>
-		<div id="contact">
-			<div id="contact-items">
-				<a id="contact-email" class="contact-item" href="mailto:contact@alexvanmatre.com" target="_blank">
-					<img class="contact-img" src="../../static/images/other-sites/hex/gmail.png" />
-				</a>
-				<a id="contact-insta" class="contact-item" href="https://www.instagram.com/poke.i.haunt.us/" target="_blank">
-					<img class="contact-img" src="../../static/images/other-sites/hex/instagram.png" />
-				</a>
-				<a id="contact-twitter" class="contact-item" href="https://twitter.com/alextomator" target="_blank">
-					<img class="contact-img" src="../../static/images/other-sites/hex/twitter.png" />
-				</a>
-				<a id="contact-github" class="contact-item" href="https://github.com/alexjvan" target="_blank">
-					<img class="contact-img" src="../../static/images/other-sites/hex/github.png" />
-				</a>
-				<a id="contact-linkedin" class="contact-item" href="https://www.linkedin.com/in/alex-v-147170b5/" target="_blank">
-					<img class="contact-img" src="../../static/images/other-sites/hex/linkedin.png" />
+			</div>
+			<div id="rarrow">
+				<a id="ra-int" class="a-int">
+					<div class="a-arrow">
+						<i></i>
+					</div>
+					<div class="a-text">
+						Code
+					</div>
 				</a>
 			</div>
-			<div id="contact-display">
+			<div id="barrow">
+				<a id="ba-int" class="a-int">
+					<div class="a-arrow">
+						<i></i>
+					</div>
+					<div class="a-text">
+						Contact
+					</div>
+				</a>
+			</div>
+			<div id="contact">
+				<div id="contact-items">
+					<a id="contact-email" class="contact-item" href="mailto:contact@alexvanmatre.com" target="_blank">
+						<img class="contact-img" src="../../static/images/other-sites/hex/gmail.png" />
+					</a>
+					<a id="contact-insta" class="contact-item" href="https://www.instagram.com/poke.i.haunt.us/" target="_blank">
+						<img class="contact-img" src="../../static/images/other-sites/hex/instagram.png" />
+					</a>
+					<a id="contact-twitter" class="contact-item" href="https://twitter.com/alextomator" target="_blank">
+						<img class="contact-img" src="../../static/images/other-sites/hex/twitter.png" />
+					</a>
+					<a id="contact-github" class="contact-item" href="https://github.com/alexjvan" target="_blank">
+						<img class="contact-img" src="../../static/images/other-sites/hex/github.png" />
+					</a>
+					<a id="contact-linkedin" class="contact-item" href="https://www.linkedin.com/in/alex-v-147170b5/" target="_blank">
+						<img class="contact-img" src="../../static/images/other-sites/hex/linkedin.png" />
+					</a>
+				</div>
+				<div id="contact-display">
 
+				</div>
 			</div>
 		</div>
 		<script>
@@ -358,10 +360,10 @@
 			function haveContactDisplay() {
 				if($(window).width() < 700 || isMobile) {
 					$('#contact-display').css({'display':'none'});
-					$('.contact-img').css({'height':'60px'});
+					$('.contact-img').css({'height':'60px','padding':'10px 5px'});
 				} else {
 					$('#contact-display').css({'display':'flex'});
-					$('.contact-img').css({'height':'70px'});
+					$('.contact-img').css({'height':'70px','padding':'5px'});
 				}
 			}
 
