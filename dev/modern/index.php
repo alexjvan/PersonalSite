@@ -322,7 +322,7 @@
 			$(window).resize(function() {
 				haveContactDisplay();
 				aboutSize();
-			})
+			});
 
 			function aboutSize() {
 				if($(window).width() < 800 || isMobile) {

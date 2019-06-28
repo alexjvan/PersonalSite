@@ -56,12 +56,12 @@ ul {
 }
 /* Specific Styles */
 body {
-	height: 100vh;
+	height: 100%;
 	overflow: hidden;
 	width: 100vw;
 }
 #content {
-	height: 100vh;
+	height: 100%;
 	overflow: hidden;
 	position: fixed;
 	width: 100vw;
