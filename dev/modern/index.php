@@ -255,6 +255,7 @@
 
 			$(document).ready(function() {
 				haveContactDisplay();
+				aboutSize();
 
 				$('.contact-item').hover(function() {
 					if($(this).is('#contact-email')) {
