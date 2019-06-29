@@ -90,7 +90,7 @@
 								Target - Guest Advocate
 							</div>
 							<div id="me-tgt-desc">
-								Cross trained as cashier, self checkout, guest service, GSA, hardlines, market, cash office, and Starbucks.
+								Cross trained as cashier, self checkout, guest service, GSTL, hardlines, market, cash office, and Starbucks.
 							</div>
 						</div>
 					</div>
