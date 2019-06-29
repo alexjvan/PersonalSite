@@ -197,7 +197,10 @@
 
 			</div>
 			<div id="code">
-
+				<!--
+					Software
+					Live Sites
+				-->
 			</div>
 			<div id="rarrow">
 				<a id="ra-int" class="a-int">
@@ -254,7 +257,7 @@
 			) { isMobile = true; }
 
 			$(document).ready(function() {
-				haveContactDisplay();
+				mobileContact();
 				aboutSize();
 
 				$('.contact-item').hover(function() {
@@ -320,7 +323,7 @@
 			});
 
 			$(window).resize(function() {
-				haveContactDisplay();
+				mobileContact();
 				aboutSize();
 			});
 
@@ -330,10 +333,11 @@
 					$('#me-img').css({'border-radius':'75px', 'height':'75px'});
 					$('#me-name').css({'font-size':'18px'});
 					$('#me-title').css({'font-size':'14px'});
-					$('#me-job').css({'font-size':'16px'});
+					$('#me-about').css({'display':'inline-block'});
+					$('#me-job').css({'font-size':'16px', 'width':'100%'});
 					$("#me-tgt").css({'font-size':'12px', 'margin':'5px', 'padding':'10px', 'width':'calc(100% - 30px)'});
 					$("#me-tgt-title").css({'font-size':'14px'});
-					$('#me-school').css({'font-size':'16px'});
+					$('#me-school').css({'font-size':'16px', 'width':'100%'});
 					$("#me-uw").css({'font-size':'12px', 'margin':'5px', 'padding':'10px', 'width':'calc(100% - 30px)'});
 					$("#me-uw-title").css({'font-size':'14px'});
 					$('.me-lang').css({'margin':'3px','padding':'3px 10px'});
@@ -345,10 +349,11 @@
 					$('#me-img').css({'border-radius':'100px', 'height':'100px'});
 					$('#me-name').css({'font-size':'20px'});
 					$('#me-title').css({'font-size':'16px'});
-					$('#me-job').css({'font-size':'18px'});
+					$('#me-about').css({'display':'flex'});
+					$('#me-job').css({'font-size':'18px', 'width':'50%'});
 					$("#me-tgt").css({'font-size':'14px', 'margin':'10px', 'padding':'15px', 'width':'calc(100% - 50px)'});
 					$("#me-tgt-title").css({'font-size':'16px'});
-					$('#me-school').css({'font-size':'18px'});
+					$('#me-school').css({'font-size':'18px', 'width':'50%'});
 					$("#me-uw").css({'font-size':'14px', 'margin':'10px', 'padding':'15px', 'width':'calc(100% - 50px)'});
 					$("#me-uw-title").css({'font-size':'16px'});
 					$('.me-lang').css({'margin':'5px','padding':'5px 15px'});
@@ -358,7 +363,7 @@
 				}
 			}
 
-			function haveContactDisplay() {
+			function mobileContact() {
 				if($(window).width() < 700 || isMobile) {
 					$('#contact-display').css({'display':'none'});
 					$('.contact-img').css({'height':'60px','padding':'10px 5px'});
