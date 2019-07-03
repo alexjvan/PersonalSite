@@ -329,6 +329,7 @@
 
 			function aboutSize() {
 				if($(window).width() < 800 || isMobile) {
+					$('#me').css({'width':'calc(100%-150px)','left':'-1*calc(100%-150px)'});
 					$('.me-row').css({'padding':'0px','width':'100%'});
 					$('#me-img').css({'border-radius':'75px', 'height':'75px'});
 					$('#me-name').css({'font-size':'18px'});
@@ -345,6 +346,7 @@
 					$('.me-lang-desc').css({'font-size':'12px'});
 					$('#me-resdown').css({'font-size':'14px'});
 				} else {
+					$('#me').css({'width':'60%','left':'-60%'})
 					$('.me-row').css({'padding':'5px 10px','width':'calc(100% - 20px)'});
 					$('#me-img').css({'border-radius':'100px', 'height':'100px'});
 					$('#me-name').css({'font-size':'20px'});
