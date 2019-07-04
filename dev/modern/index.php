@@ -66,6 +66,8 @@
 				</div>
 				<div id="me-title" class="me-row">
 					<i>Pro</i> Weirdo
+					<br />
+					<sup>as well as a</sup> Software Engineer
 				</div>
 				<div id="me-about" class="me-row">
 					<div id="me-school">
@@ -77,7 +79,9 @@
 								University of Washington, Bothell
 							</div>
 							<div id="me-uw-desc">
-								Pursuing a <b>Minor in Information Technology</b> and a <b>Bachelors in Computer Science and Software Engineering</b>.
+								Pursuing a <b>Bachelors of Science in Computer Science and Software Engineering</b> with a <b>Minor in Information Technology</b>.
+								<br />
+								<i>Planned Graduation Winter, 2020.</i>
 							</div>
 						</div>
 					</div>
@@ -96,20 +100,12 @@
 					</div>
 				</div>
 				<div id="me-langs" class="me-row">
-					<div class="me-lang" data-ten="6">
-						<div class="me-lang-title">
-							CSS
-						</div>
-						<div class="me-lang-desc">
-							6 years
-						</div>
-					</div>
 					<div class="me-lang" data-ten="9">
 						<div class="me-lang-title">
 							C#
 						</div>
 						<div class="me-lang-desc">
-							4 years
+							9/10
 						</div>
 					</div>
 					<div class="me-lang" data-ten="3">
@@ -117,7 +113,15 @@
 							C++
 						</div>
 						<div class="me-lang-desc">
-							1 years
+							3/10
+						</div>
+					</div>
+					<div class="me-lang" data-ten="6">
+						<div class="me-lang-title">
+							CSS
+						</div>
+						<div class="me-lang-desc">
+							6/10
 						</div>
 					</div>
 					<div class="me-lang" data-ten="9">
@@ -125,7 +129,7 @@
 							Java
 						</div>
 						<div class="me-lang-desc">
-							8 years
+							9/10
 						</div>
 					</div>
 					<div class="me-lang" data-ten="7">
@@ -133,7 +137,7 @@
 							JavaScript
 						</div>
 						<div class="me-lang-desc">
-							5 years
+							7/10
 						</div>
 					</div>
 					<div class="me-lang" data-ten="7">
@@ -141,7 +145,7 @@
 							JQuery
 						</div>
 						<div class="me-lang-desc">
-						 	5 years
+						 	7/10
 						</div>
 					</div>
 					<div class="me-lang" data-ten="6">
@@ -149,7 +153,7 @@
 							HTML
 						</div>
 						<div class="me-lang-desc">
-							6 years
+							6/10
 						</div>
 					</div>
 					<div class="me-lang" data-ten="7">
@@ -157,7 +161,7 @@
 							PHP
 						</div>
 						<div class="me-lang-desc">
-							3 years
+							7/10
 						</div>
 					</div>
 					<div class="me-lang" data-ten="1">
@@ -165,7 +169,7 @@
 							Python
 						</div>
 						<div class="me-lang-desc">
-							1 years
+							1/10
 						</div>
 					</div>
 					<div class="me-lang" data-ten="4">
@@ -173,7 +177,7 @@
 							SQL
 						</div>
 						<div class="me-lang-desc">
-							2 years
+							4/10
 						</div>
 					</div>
 				</div>
@@ -201,6 +205,23 @@
 					Software
 					Live Sites
 				-->
+				<div class="code-col">
+					<div class="code-title">
+						Software
+					</div>
+					<!--
+						Reneblade
+						Minesweeper
+					-->
+				</div>
+				<div class="code-col">
+					<div class="code-title">
+						Live Sites
+					</div>
+					<!--
+						projectzhub
+					-->
+				</div>
 			</div>
 			<div id="rarrow">
 				<a id="ra-int" class="a-int">
@@ -279,7 +300,7 @@
 
 				$('.me-lang').each(function() {
 					var ten = $(this).data('ten');
-					$(this).css({'background':'linear-gradient(90deg, var(--accent) '+ten+'0%, transparent 0%)'});
+					$(this).css({'background':'linear-gradient(90deg, var(--accent) '+ten+'0%, #545454 0%)'});
 				});
 
 				$('#la-int').click(function() {
