@@ -313,6 +313,7 @@
 			$(document).ready(function() {
 				mobileContact();
 				meSize();
+				headerFull();
 
 				$('.contact-item').hover(function() {
 					if($(this).is('#contact-email')) {
@@ -432,6 +433,15 @@
 						$('.me-lang-desc').css({'font-size':'14px'});
 						$('#me-resdown').css({'font-size':'16px'});
 					}
+				}
+			}
+
+			function headerFull() {
+				if(isMobile) {
+					$('#h-l-text').html('AVM');
+				}
+				else {
+					$('#h-l-text').html('AVM');
 				}
 			}
 
