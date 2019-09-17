@@ -57,7 +57,6 @@ ul {
 /* Specific Styles */
 body {
 	height: 100%;
-	overflow: hidden;
 	width: 100vw;
 }
 #content {
@@ -117,12 +116,12 @@ body {
 		}
 		#contact {
 			background-color: var(--secondary);
-			top: -4px;
 			display: flex;
 			height: 80px;
 			justify-content: center;
 			position: relative;
 			text-align: center;
+			top: -4px;
 			width: 100vw;
 			z-index: 3;
 		}
@@ -279,8 +278,7 @@ body {
 					font-size: 14px;
 				}
 		#me-resume {
-			bottom: 0;
-			position: relative;
+			padding-bottom: 20px;
 		}
 			#me-resdown {
 				color: #e4e4e4;
