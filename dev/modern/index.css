@@ -119,9 +119,9 @@ body {
 			display: flex;
 			height: 80px;
 			justify-content: center;
-			position: relative;
+			position: absolute;
 			text-align: center;
-			top: -5px;
+			bottom: 0px;
 			width: 100vw;
 			z-index: 3;
 		}
