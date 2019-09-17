@@ -439,9 +439,11 @@
 			function headerFull() {
 				if(isMobile) {
 					$('#h-l-text').html('AVM');
+					$('#h-logo').css({'width':'150px'});
 				}
 				else {
 					$('#h-l-text').html('AVM');
+					$('#h-logo').css({'width':'250px'});
 				}
 			}
 
