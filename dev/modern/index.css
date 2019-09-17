@@ -118,12 +118,9 @@ body {
 		}
 		#contact {
 			background-color: var(--secondary);
-			bottom: 0px;
 			display: flex;
 			height: 80px;
 			justify-content: center;
-			left: 0px;
-			position: absolute;
 			text-align: center;
 			width: 100vw;
 			z-index: 3;
