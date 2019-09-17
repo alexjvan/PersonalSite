@@ -56,6 +56,41 @@
 						Alex Van Matre
 					</div>
 				</a>
+				<div id="h-links">
+					<a id='h-l-me' class="h-l-link" href="javascript:void(0)">
+						Me
+					</a>
+					<a id='h-l-code' class="h-l-link" href="javascript:void(0)">
+						Code
+					</a>
+				</div>
+			</div>
+			<div id="main">
+				<div id="main-content">
+
+				</div>
+				<div id="contact">
+					<div id="contact-items">
+						<a id="contact-email" class="contact-item" href="mailto:contact@alexvanmatre.com" target="_blank">
+							<img class="contact-img" src="../../static/images/other-sites/hex/gmail.png" />
+						</a>
+						<a id="contact-insta" class="contact-item" href="https://www.instagram.com/poke.i.haunt.us/" target="_blank">
+							<img class="contact-img" src="../../static/images/other-sites/hex/instagram.png" />
+						</a>
+						<a id="contact-twitter" class="contact-item" href="https://twitter.com/alextomator" target="_blank">
+							<img class="contact-img" src="../../static/images/other-sites/hex/twitter.png" />
+						</a>
+						<a id="contact-github" class="contact-item" href="https://github.com/alexjvan" target="_blank">
+							<img class="contact-img" src="../../static/images/other-sites/hex/github.png" />
+						</a>
+						<a id="contact-linkedin" class="contact-item" href="https://www.linkedin.com/in/alex-v-147170b5/" target="_blank">
+							<img class="contact-img" src="../../static/images/other-sites/hex/linkedin.png" />
+						</a>
+					</div>
+					<div id="contact-display">
+
+					</div>
+				</div>
 			</div>
 			<div id="me">
 				<div id="me-pic" class="me-row">
@@ -69,37 +104,88 @@
 					<br />
 					<sup>as well as a</sup> Software Engineer
 				</div>
-				<div id="me-about" class="me-row">
-					<div id="me-school">
-						<div class="about-title">
-							School
+				<div id="me-school" class="me-row">
+					<div id="me-uw" class="me-row">
+						<div id="me-uw-title" class="me-row">
+							University of Washington, Bothell
 						</div>
-						<div id="me-uw" class="me-row">
-							<div id="me-uw-title" class="me-row">
-								University of Washington, Bothell
-							</div>
-							<div id="me-uw-desc">
-								Pursuing a <b>Bachelors of Science in Computer Science and Software Engineering</b> with a <b>Minor in Information Technology</b>.
-								<br />
-								<i>Planned Graduation Winter, 2020.</i>
-							</div>
+						<div id="me-uw-desc">
+							Pursuing a <b>Bachelors of Science in Computer Science and Software Engineering</b> with a <b>Minor in Information Technology</b>.
+							<br />
+							<i>Planned Graduation Fall, 2020.</i>
 						</div>
+						<table id="me-uw-table">
+							<tr id="me-uw-t-years">
+								<td>
+									2019
+								</td>
+								<td colspan="2">
+									2020
+								</td>
+								<td>
+									2021
+								</td>
+								<td>
+									2022
+								</td>
+								<td>
+									2023
+								</td>
+							</tr>
+							<tr>
+								<td colspan="2" class="purple">
+									BS CSSE
+								</td>
+								<td colspan="1" class="gold">
+									Classes for Fun
+								</td>
+								<td colspan="2" class="purple">
+									MS CSSE
+								</td>
+							</tr>
+							<tr>
+								<td colspan="1" class="gold">
+									IT Minor
+								</td>
+								<td colspan="2">
+
+								</td>
+								<td colspan="3" class="gold">
+									MS CSS
+								</td>
+							</tr>
+							<tr class="me-uw-t-end">
+								<td colspan="6">
+
+								</td>
+							</tr>
+						</table>
 					</div>
-					<div id="me-job">
-						<div class="about-title">
-							Job
+				</div>
+				<div id="me-job" class="me-row">
+					<div id="me-tgt" class="me-row">
+						<div id="me-tgt-title" class="me-row">
+							Target
 						</div>
-						<div id="me-tgt" class="me-row">
-							<div id="me-tgt-title" class="me-row">
-								Target - Guest Advocate
-							</div>
-							<div id="me-tgt-desc">
-								Cross trained as cashier, self checkout, guest service, GSTL, hardlines, market, cash office, and Starbucks.
-							</div>
+						<div id="me-tgt-job" class="me-row">
+							Guest Advocate <sup>June 2018 to Current</sup>
+						</div>
+						<div id="me-tgt-desc" class="me-row">
+							Working to provide a fun, guest friendly environment while giving efficient and effective services.
+							<br />
+							Cross trained as cashier, self checkout, guest service, GSTL, hardlines, market, cash office, and Starbucks.
 						</div>
 					</div>
 				</div>
 				<div id="me-langs" class="me-row">
+					<div class="me-lang" data-ten="1">
+						<div class="me-lang-title">
+							Assembly
+						</div>
+						<div class="me-lang-desc">
+							1/10
+						</div>
+					</div>
 					<div class="me-lang" data-ten="9">
 						<div class="me-lang-title">
 							C#
@@ -187,19 +273,6 @@
 					</a>
 				</div>
 			</div>
-			<div id="larrow">
-				<a id="la-int" class="a-int">
-					<div class="a-arrow">
-						<i></i>
-					</div>
-					<div class="a-text">
-						About
-					</div>
-				</a>
-			</div>
-			<div id="main">
-
-			</div>
 			<div id="code">
 				<!--
 					Software
@@ -223,48 +296,6 @@
 					-->
 				</div>
 			</div>
-			<div id="rarrow">
-				<a id="ra-int" class="a-int">
-					<div class="a-arrow">
-						<i></i>
-					</div>
-					<div class="a-text">
-						Code
-					</div>
-				</a>
-			</div>
-			<div id="barrow">
-				<a id="ba-int" class="a-int">
-					<div class="a-arrow">
-						<i></i>
-					</div>
-					<div class="a-text">
-						Contact
-					</div>
-				</a>
-			</div>
-			<div id="contact">
-				<div id="contact-items">
-					<a id="contact-email" class="contact-item" href="mailto:contact@alexvanmatre.com" target="_blank">
-						<img class="contact-img" src="../../static/images/other-sites/hex/gmail.png" />
-					</a>
-					<a id="contact-insta" class="contact-item" href="https://www.instagram.com/poke.i.haunt.us/" target="_blank">
-						<img class="contact-img" src="../../static/images/other-sites/hex/instagram.png" />
-					</a>
-					<a id="contact-twitter" class="contact-item" href="https://twitter.com/alextomator" target="_blank">
-						<img class="contact-img" src="../../static/images/other-sites/hex/twitter.png" />
-					</a>
-					<a id="contact-github" class="contact-item" href="https://github.com/alexjvan" target="_blank">
-						<img class="contact-img" src="../../static/images/other-sites/hex/github.png" />
-					</a>
-					<a id="contact-linkedin" class="contact-item" href="https://www.linkedin.com/in/alex-v-147170b5/" target="_blank">
-						<img class="contact-img" src="../../static/images/other-sites/hex/linkedin.png" />
-					</a>
-				</div>
-				<div id="contact-display">
-
-				</div>
-			</div>
 		</div>
 		<script>
 			var isMobile = false;
@@ -277,9 +308,11 @@
 			 || navigator.userAgent.match(/Windows Phone/i)
 			) { isMobile = true; }
 
+			var wasMobile = false;
+
 			$(document).ready(function() {
 				mobileContact();
-				aboutSize();
+				meSize();
 
 				$('.contact-item').hover(function() {
 					if($(this).is('#contact-email')) {
@@ -303,86 +336,102 @@
 					$(this).css({'background':'linear-gradient(90deg, var(--accent) '+ten+'0%, #545454 0%)'});
 				});
 
-				$('#la-int').click(function() {
-					// IF ANY OTHER MODULE IS OPEN, SHRINK IT -- ONLY ONE CAN BE OPEN AT ONCE
-					if($('#code').css('right') == '0px')
-						shrinkCode();
-					else if($('#contact').css('bottom') == '0px')
-						shrinkContact();
+				$('.h-l-link').hover(function() {
+					$(this).stop().animate({'border-width':'4px'}, 100);
+				}, function() {
+					$(this).stop().animate({'border-width':'0px'}, 100);
+				});
 
-					if($('#me').css('left') != '0px')
+				$('#h-l-me').click(function() {
+					if($('#me').css('right') == '-17px') {
+						shrinkMe();
+						$('#contact').stop().animate({'justify-content':'center'});
+						$('.h-l-link').stop().animate({'color':'black'});
+						$('.h-l-link').promise().done(function() {
+							$('.h-l-link').css({'color':'black'});
+						});
+					} else {
+						if($('#code').css('right') == '-17px')
+							shrinkCode();
 						growMe();
-					else
-						shrinkMe();
+						$('.h-l-link').stop().animate({'color':'white'});
+						$('.h-l-link').promise().done(function() {
+							$('.h-l-link').css({'color':'white'});
+						});
+					}
 				});
 
-				$('#ra-int').click(function() {
-					// IF ANY OTHER MODULE IS OPEN, SHRINK IT -- ONLY ONE CAN BE OPEN AT ONCE
-					if($('#me').css('left') == '0px')
-						shrinkMe();
-					else if($('#contact').css('bottom') == '0px')
-						shrinkContact();
-
-					if($('#code').css('right') != '0px')
+				$('#h-l-code').click(function() {
+					if($('#code').css('right') == '-17px') {
+						shrinkCode();
+						$('.h-l-link').css({'color':'black'});
+					} else {
+						if($('#me').css('right') == '-17px')
+							shrinkMe();
 						growCode();
-					else
-						shrinkCode();
-				});
-
-				$('#ba-int').click(function() {
-					// IF ANY OTHER MODULE IS OPEN, SHRINK IT -- ONLY ONE CAN BE OPEN AT ONCE
-					if($('#me').css('left') == '0px')
-						shrinkMe();
-					else if($('#code').css('right') == '0px')
-						shrinkCode();
-
-					if($('#contact').css('bottom') != '0px')
-						growContact();
-					else
-						shrinkContact();
+						$('.h-l-link').css({'color':'white'});
+					}
 				});
 			});
 
 			$(window).resize(function() {
 				mobileContact();
-				aboutSize();
+				meSize();
 			});
 
-			function aboutSize() {
-				if($(window).width() < 800 || isMobile) {
-					$('#me').css({'width':'calc(100%-150px)','left':'-1*calc(100%-150px)'});
-					$('.me-row').css({'padding':'0px','width':'100%'});
-					$('#me-img').css({'border-radius':'75px', 'height':'75px'});
-					$('#me-name').css({'font-size':'18px'});
-					$('#me-title').css({'font-size':'14px'});
-					$('#me-about').css({'display':'inline-block'});
-					$('#me-job').css({'font-size':'16px', 'width':'100%'});
-					$("#me-tgt").css({'font-size':'12px', 'margin':'5px', 'padding':'10px', 'width':'calc(100% - 30px)'});
-					$("#me-tgt-title").css({'font-size':'14px'});
-					$('#me-school').css({'font-size':'16px', 'width':'100%'});
-					$("#me-uw").css({'font-size':'12px', 'margin':'5px', 'padding':'10px', 'width':'calc(100% - 30px)'});
-					$("#me-uw-title").css({'font-size':'14px'});
-					$('.me-lang').css({'margin':'3px','padding':'3px 10px'});
-					$('.me-lang-title').css({'font-size':'14px'});
-					$('.me-lang-desc').css({'font-size':'12px'});
-					$('#me-resdown').css({'font-size':'14px'});
+			function mobileCheck() {
+				if($(window).width() < 800 || isMobile)
+					return true;
+				return false;
+			}
+
+			function meSize() {
+				if(mobileCheck()) {
+					if(!wasMobile) {
+						shrinkMe();
+						shrinkCode();
+						wasMobile = true;
+						$('.h-l-link').css({'color':'black'});
+						$('#me').css({'width':'calc(100% - 100px)','right':'-100%'});
+						$('.me-row').css({'padding':'0px','width':'100%'});
+						$('#me-img').css({'border-radius':'75px', 'height':'75px'});
+						$('#me-name').css({'font-size':'18px'});
+						$('#me-title').css({'font-size':'14px'});
+						$('#me-about').css({'display':'inline-block'});
+						$('#me-job').css({'font-size':'16px', 'width':'100%'});
+						$("#me-tgt").css({'font-size':'12px', 'margin':'5px', 'padding':'10px', 'width':'calc(100% - 30px)'});
+						$("#me-tgt-title").css({'font-size':'14px'});
+						$('#me-school').css({'font-size':'16px', 'width':'100%'});
+						$("#me-uw").css({'font-size':'12px', 'margin':'5px', 'padding':'10px', 'width':'calc(100% - 30px)'});
+						$("#me-uw-title").css({'font-size':'14px'});
+						$('.me-lang').css({'margin':'3px','padding':'3px 10px'});
+						$('.me-lang-title').css({'font-size':'14px'});
+						$('.me-lang-desc').css({'font-size':'12px'});
+						$('#me-resdown').css({'font-size':'14px'});
+					}
 				} else {
-					$('#me').css({'width':'60%','left':'-60%'})
-					$('.me-row').css({'padding':'5px 10px','width':'calc(100% - 20px)'});
-					$('#me-img').css({'border-radius':'100px', 'height':'100px'});
-					$('#me-name').css({'font-size':'20px'});
-					$('#me-title').css({'font-size':'16px'});
-					$('#me-about').css({'display':'flex'});
-					$('#me-job').css({'font-size':'18px', 'width':'50%'});
-					$("#me-tgt").css({'font-size':'14px', 'margin':'10px', 'padding':'15px', 'width':'calc(100% - 50px)'});
-					$("#me-tgt-title").css({'font-size':'16px'});
-					$('#me-school').css({'font-size':'18px', 'width':'50%'});
-					$("#me-uw").css({'font-size':'14px', 'margin':'10px', 'padding':'15px', 'width':'calc(100% - 50px)'});
-					$("#me-uw-title").css({'font-size':'16px'});
-					$('.me-lang').css({'margin':'5px','padding':'5px 15px'});
-					$('.me-lang-title').css({'font-size':'16px'});
-					$('.me-lang-desc').css({'font-size':'14px'});
-					$('#me-resdown').css({'font-size':'16px'});
+					if(wasMobile) {
+						shrinkMe();
+						shrinkCode();
+						wasMobile = false;
+						$('.h-l-link').css({'color':'black'});
+						$('#me').css({'width':'60%','right':'-60%'})
+						$('.me-row').css({'padding':'5px 10px','width':'calc(100% - 20px)'});
+						$('#me-img').css({'border-radius':'100px', 'height':'100px'});
+						$('#me-name').css({'font-size':'20px'});
+						$('#me-title').css({'font-size':'16px'});
+						$('#me-about').css({'display':'flex'});
+						$('#me-job').css({'font-size':'18px', 'width':'50%'});
+						$("#me-tgt").css({'font-size':'14px', 'margin':'10px', 'padding':'15px', 'width':'calc(100% - 50px)'});
+						$("#me-tgt-title").css({'font-size':'16px'});
+						$('#me-school').css({'font-size':'18px', 'width':'50%'});
+						$("#me-uw").css({'font-size':'14px', 'margin':'10px', 'padding':'15px', 'width':'calc(100% - 50px)'});
+						$("#me-uw-title").css({'font-size':'16px'});
+						$('.me-lang').css({'margin':'5px','padding':'5px 15px'});
+						$('.me-lang-title').css({'font-size':'16px'});
+						$('.me-lang-desc').css({'font-size':'14px'});
+						$('#me-resdown').css({'font-size':'16px'});
+					}
 				}
 			}
 
@@ -396,44 +445,27 @@
 				}
 			}
 
+			var aboutSize = 0;
 			function growMe() {
-				$('#barrow').css({'display':'none'});
-				$('#me').stop().animate({'left':'0px'});
-				$('#larrow').stop().animate({'left':'60%'});
-				$('#la-int').find('i').css({'transform':'rotate(45deg)'});
+				$('#me').stop().animate({'right':'-17px'});
 			}
 
 			function shrinkMe() {
-				$('#me').stop().animate({'left':'-60%'});
-				$('#larrow').stop().animate({'left':'0px'});
-				$('#la-int').find('i').css({'transform':'rotate(-135deg)'});
-				$('#barrow').css({'display':'inline-block'});
+				if(mobileCheck())
+					$('#me').stop().animate({'right':'-100%'});
+				else
+					$('#me').stop().animate({'right':'-60%'});
 			}
 
 			function growCode() {
-				$('#barrow').css({'display':'none'});
-				$('#code').stop().animate({'right':'0%'});
-				$('#rarrow').stop().animate({'right':'60%'});
-				$('#ra-int').find('i').css({'transform':'rotate(45deg)'});
+				$('#code').stop().animate({'right':'-17px'});
 			}
 
 			function shrinkCode() {
-				$('#code').stop().animate({'right':'-60%'});
-				$('#rarrow').stop().animate({'right':'0px'});
-				$('#ra-int').find('i').css({'transform':'rotate(-135deg)'});
-				$('#barrow').css({'display':'inline-block'});
-			}
-
-			function growContact() {
-				$('#contact').stop().animate({'bottom':'0px'});
-				$('#barrow').stop().animate({'bottom':'80px'});
-				$('#ba-int').find('i').css({'transform':'rotate(45deg)'});
-			}
-
-			function shrinkContact() {
-				$('#contact').stop().animate({'bottom':'-80px'});
-				$('#barrow').stop().animate({'bottom':'0px'});
-				$('#ba-int').find('i').css({'transform':'rotate(-135deg)'});
+				if(mobileCheck())
+					$('#code').stop().animate({'right':'-100%'});
+				else
+					$('#code').stop().animate({'right':'-60%'});
 			}
 		</script>
 	</body>
