@@ -82,6 +82,11 @@ body {
 			top: 0;
 			width: 60%;
 		}
+			@media screen and (max-width: 800px) {
+				#h-back {
+					width: calc(100% - 100px);
+				}
+			}
 		#h-logo {
 			display: inline-block;
 			padding: 5px 20px;
@@ -89,6 +94,11 @@ body {
 			width: 250px;
 			z-index: 3;
 		}
+			@media screen and (max-width: 800px) {
+				#h-logo {
+					width: 150px;
+				}
+			}
 			#h-l-img {
 				height: 70px;
 				vertical-align: middle;
@@ -167,6 +177,12 @@ body {
 						height: 70px;
 						padding: 5px;
 					}
+						@media screen and (max-width: 800px) {
+							.contact-img {
+								height: 60px;
+								padding: 10px 5px;
+							}
+						}
 			#contact-display {
 				align-items: center;
 				color: #e4e4e4;
@@ -177,6 +193,11 @@ body {
 				vertical-align: baseline;
 				width: 283px;
 			}
+				@media screen and (max-width: 800px) {
+					#contact-display {
+						display: none;
+					}
+				}
 	#me {
 		background-color: var(--secondary);
 		color: #e4e4e4;
@@ -190,11 +211,22 @@ body {
 		width: 60%;
 		z-index: 3;
 	}
+		@media screen and (max-width: 800px) {
+			#me {
+				width: calc(100% - 100px);
+			}
+		}
 		.me-row {
 			padding: 5px 10px;
 			text-align: center;
 			width: calc(100% - 20px);
 		}
+			@media screen and (max-width: 800px) {
+				.me-row {
+					padding: 0px;
+					width: 100%;
+				}
+			}
 		#me-pic {
 
 		}
@@ -202,9 +234,20 @@ body {
 				border-radius: 100px;
 				height: 100px;
 			}
+				@media screen and (max-width: 800px) {
+					#me-img {
+						border-radius: 75px;
+						height: 75px;
+					}
+				}
 		#me-name {
 			font-size: 20px;
 		}
+			@media screen and (max-width: 800px) {
+				#me-name {
+					font-size: 18px;
+				}
+			}
 			#me-name sup {
 				font-size: xx-small;
 			}
@@ -212,6 +255,11 @@ body {
 			color: white;
 			font-size: 16px;
 		}
+			@media screen and (max-width: 800px) {
+				#me-title {
+					font-size: 14px;
+				}
+			}
 			#me-title i {
 				color: #d4d4d4;
 			}
@@ -220,6 +268,12 @@ body {
 			font-size: 18px;
 			font-weight: bold;
 		}
+			@media screen and (max-width: 800px) {
+				#me-school {
+					font-size: 16px;
+					width: 100%;
+				}
+			}
 			#me-uw {
 				background-color: #4b2e83;
 				border-radius: 15px;
@@ -229,11 +283,24 @@ body {
 				padding: 15px;
 				width: calc(100% - 50px);
 			}
+				@media screen and (max-width: 800px) {
+					#me-uw {
+						font-size: 12px;
+						margin: 5px;
+						padding: 10px;
+						width: calc(100% - 30px);
+					}
+				}
 				#me-uw-title {
 					font-size: 20px;
 					font-weight: bold;
 					padding-bottom: 5px;
 				}
+					@media screen and (max-width: 800px) {
+						#me-uw-title {
+							font-size: 18px;
+						}
+					}
 				#me-uw-table {
 					background-color: rgba(255, 255, 255, .3);
 					border-radius: 10px;
@@ -277,6 +344,12 @@ body {
 			font-size: 18px;
 			font-weight: bold;
 		}
+			@media screen and (max-width: 800px) {
+				#me-job {
+					font-size: 16px;
+					width: 100%;
+				}
+			}
 			#me-tgt {
 				background-color: #CC0000;
 				border-radius: 15px;
@@ -286,14 +359,32 @@ body {
 				padding: 15px;
 				width: calc(100% - 50px);
 			}
+				@media screen and (max-width: 800px) {
+					#me-tgt {
+						font-size: 12px;
+						margin: 5px;
+						padding: 10px;
+						width: calc(100% - 30px);
+					}
+				}
 				#me-tgt-title {
 					font-size: 20px;
 					font-weight: bold;
 					padding-bottom: 5px;
 				}
+					@media screen and (max-width: 800px) {
+						#me-tgt-title {
+							font-size: 18px;
+						}
+					}
 				#me-tgt-job {
-					font-weight: 14px;
+					font-size: 14px;
 				}
+					@media screen and (max-width: 800px) {
+						#me-tgt-job {
+							font-size: 12px;
+						}
+					}
 		#me-langs {
 
 		}
@@ -302,13 +393,29 @@ body {
 				margin: 5px;
 				padding: 5px 15px;
 			}
+				@media screen and (max-width: 800px) {
+					.me-lang {
+						margin: 3px;
+						padding: 3px 10px;
+					}
+				}
 				.me-lang-title {
 					display: block;
 				}
+					@media screen and (max-width: 800px) {
+						.me-lang-title {
+							font-size: 14px;
+						}
+					}
 				.me-lang-desc {
 					display: block;
 					font-size: 14px;
 				}
+					@media screen and (max-width: 800px) {
+						.me-lang-desc {
+							font-size: 12px;
+						}
+					}
 		#me-resume {
 			padding-bottom: 20px!important;
 		}
@@ -316,12 +423,16 @@ body {
 				color: #e4e4e4;
 				text-decoration: underline;
 			}
+				@media screen and (max-width: 800px) {
+					#me-resdown {
+						font-size: 14px;
+					}
+				}
 				#me-resdown:hover {
 					color: #b4b4b4;
 				}
 	#code {
 		background-color: var(--secondary);
-		display: flex;
 		float: right;
 		height: calc(100% - 70px);
 		overflow-y: scroll;
@@ -332,12 +443,80 @@ body {
 		width: 60%;
 		z-index: 3;
 	}
-		.code-col {
+		@media screen and (max-width: 800px) {
+			#code {
+				width: calc(100% - 100px);
+			}
+		}
+		.code-row {
+			margin-bottom: 10px;
+			padding: 5px 10px;
 			text-align: center;
-			width: 50%;
+			width: calc(100% - 20px);
 		}
 			.code-title {
 				color: var(--primary);
 				font-size: 18px;
 				font-weight: bold;
 			}
+			#repos {
+				width: 100%;
+			}
+				.repoitem {
+					border-left: 5px solid;
+					display: inline-block!important;
+					margin-top: 15px;
+					margin-right: 2px;
+					padding: 5px;
+					text-align: left;
+					vertical-align: top;
+					width: calc(33.333% - 17px);
+				}
+					@media screen and (max-width: 800px) {
+						.repoitem {
+							margin-left: 3px;
+							width: calc(100% - 18px);
+						}
+					}
+					.repoitem:hover {
+						background-color: #545454;
+					}
+					.ri-clickable {
+						border: 0px!important;
+						color: black;
+						width: calc(100% - 30px)!important;
+					}
+						.ri-c-title {
+							color: white;
+							display: block;
+							font-weight: bold;
+							padding-top: 1px;
+						}
+							@media screen and (max-width: 800px) {
+								.ri-c-title {
+									font-size: 14px;
+								}
+							}
+						.ri-c-desc {
+							color: #e4e4e4;
+							display: block;
+							font-size: 14px;
+							padding-top: 1px;
+						}
+							@media screen and (max-width: 800px) {
+								.ri-c-desc {
+									font-size: 12px;
+								}
+							}
+						.ri-c-lang {
+							color: #529EFB;
+							display: block;
+							font-size: 14px;
+							font-style: italic;
+							padding-top: 3px;
+						}
+							@media screen and (max-width: 800px) {
+								.ri-c-lang {
+									font-size: 12px;
+								}
+							}

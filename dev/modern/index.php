@@ -33,7 +33,7 @@
 		<!--OPTIMIZATION-->
 		<meta http-equiv="Content-Language" contet="en-us" />
 		<meta charset="UTF-8" />
-		<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
 		<meta name="author" content="Alex Van Matre" />
 		<meta name="description" content="Alex Van Matre is a web developer, programmer, and creator from a town near Woodinville, Washington. This is his personal site, a space where he can show off his resume, skills, projects, and host random code." />
 		<meta name="robots" content="index, follow" />
@@ -147,7 +147,7 @@
 									BS CSSE
 								</td>
 								<td colspan="1" class="gold">
-									Classes for Fun
+									AI Classes
 								</td>
 								<td colspan="2" class="purple">
 									MS CSSE
@@ -170,21 +170,6 @@
 								</td>
 							</tr>
 						</table>
-					</div>
-				</div>
-				<div id="me-job" class="me-row">
-					<div id="me-tgt" class="me-row">
-						<div id="me-tgt-title" class="me-row">
-							Target
-						</div>
-						<div id="me-tgt-job" class="me-row">
-							Guest Advocate <sup>June 2018 to Current</sup>
-						</div>
-						<div id="me-tgt-desc" class="me-row">
-							Working to provide a fun, guest friendly environment while giving efficient and effective services.
-							<br />
-							Cross trained as cashier, self checkout, guest service, GSTL, hardlines, market, cash office, and Starbucks.
-						</div>
 					</div>
 				</div>
 				<div id="me-langs" class="me-row">
@@ -277,6 +262,21 @@
 						</div>
 					</div>
 				</div>
+				<div id="me-job" class="me-row">
+					<div id="me-tgt" class="me-row">
+						<div id="me-tgt-title" class="me-row">
+							Target
+						</div>
+						<div id="me-tgt-job" class="me-row">
+							Guest Advocate <sup>June 2018 to Current</sup>
+						</div>
+						<div id="me-tgt-desc" class="me-row">
+							Working to provide a fun, guest friendly environment while giving efficient and effective services.
+							<br />
+							Cross trained as cashier, self checkout, guest service, GSTL, hardlines, market, cash office, and Starbucks.
+						</div>
+					</div>
+				</div>
 				<div id="me-resume" class="me-row">
 					<a id="me-resdown" href="../../static/files/PublicResume.pdf" download>
 						Resume
@@ -288,22 +288,64 @@
 					Software
 					Live Sites
 				-->
-				<div class="code-col">
+				<div class="code-row">
 					<div class="code-title">
 						Software
+					</div>
+					<div class="code-item">
+
 					</div>
 					<!--
 						Reneblade
 						Minesweeper
 					-->
 				</div>
-				<div class="code-col">
+				<div class="code-row">
 					<div class="code-title">
 						Live Sites
 					</div>
 					<!--
 						projectzhub
+						Web crawler demo
 					-->
+				</div>
+				<div class="code-row">
+					<div class="code-title">
+						Github Repositories
+					</div>
+					<div id="repos">
+
+					</div>
+					<script>
+						var repos;
+						var colors;
+						// GRAB COLORS
+						$(document).ready(function() {
+							$.getJSON('../../static/files/colors.json', function(data) {
+								colors=data;
+								gitRepos(colors);
+							});
+						});
+
+						function gitRepos(colors) {
+							var xhttp = new XMLHttpRequest();
+							xhttp.onreadystatechange = function() {
+								if (this.readyState == 4 && this.status == 200) {
+									repos = JSON.parse(this.responseText);
+									for(var i = 0; i < repos.length; i++){
+										var current = repos[i];
+										// name
+										// svn_url
+										// description
+										// language
+										$('#repos').html($('#repos').html() + '<div class="repoitem" style="border-color:  '+colors[current['language']]+'"><a class="ri-clickable" href="'+current['svn_url']+'" target="_blank"><div class="ri-c-title">'+current['name']+'</div><div class="ri-c-desc">'+current['description']+'</div><div class="ri-c-lang">'+current['language']+'</div></a></div>');
+									}
+								}
+							};
+							xhttp.open("GET", "https://api.github.com/users/alexjvan/repos", true);
+							xhttp.send();
+						}
+					</script>
 				</div>
 			</div>
 		</div>
@@ -321,7 +363,6 @@
 			var wasMobile = false;
 
 			$(document).ready(function() {
-				mobileContact();
 				sideSizes();
 				headerFull();
 
@@ -348,9 +389,11 @@
 				});
 
 				$('.h-l-link').hover(function() {
-					$(this).stop().animate({'border-width':'4px'}, 100);
+					if(!mobileCheck())
+						$(this).stop().animate({'border-width':'4px'}, 100);
 				}, function() {
-					$(this).stop().animate({'border-width':'0px'}, 100);
+					if(!mobileCheck())
+						$(this).stop().animate({'border-width':'0px'}, 100);
 				});
 
 				$('#h-l-me').click(function() {
@@ -386,8 +429,8 @@
 			});
 
 			$(window).resize(function() {
-				mobileContact();
 				sideSizes();
+				headerFull();
 			});
 
 			function mobileCheck() {
@@ -402,91 +445,23 @@
 						shrinkMe();
 						shrinkCode();
 						wasMobile = true;
-						mobileMe();
-						mobileCode();
+						$('.h-l-link').css({'color':'black'});
 					}
 				} else {
 					if(wasMobile) {
 						shrinkMe();
 						shrinkCode();
 						wasMobile = false;
-						desktopMe();
-						desktopCode();
+						$('.h-l-link').css({'color':'black'});
 					}
 				}
 			}
 
-			function mobileMe() {
-				$('.h-l-link').css({'color':'black'});
-				$('#me').css({'width':'calc(100% - 100px)'});
-				$('#h-back').css({'width':'calc(100% - 100px)'});
-				$('.me-row').css({'padding':'0px','width':'100%'});
-				$('#me-img').css({'border-radius':'75px', 'height':'75px'});
-				$('#me-name').css({'font-size':'18px'});
-				$('#me-title').css({'font-size':'14px'});
-				$('#me-job').css({'font-size':'16px', 'width':'100%'});
-				$("#me-tgt").css({'font-size':'12px', 'margin':'5px', 'padding':'10px', 'width':'calc(100% - 30px)'});
-				$("#me-tgt-title").css({'font-size':'14px'});
-				$('#me-school').css({'font-size':'16px', 'width':'100%'});
-				$("#me-uw").css({'font-size':'12px', 'margin':'5px', 'padding':'10px', 'width':'calc(100% - 30px)'});
-				$("#me-uw-title").css({'font-size':'14px'});
-				$('.me-lang').css({'margin':'3px','padding':'3px 10px'});
-				$('.me-lang-title').css({'font-size':'14px'});
-				$('.me-lang-desc').css({'font-size':'12px'});
-				$('#me-resdown').css({'font-size':'14px'});
-			}
-
-			function desktopMe() {
-				$('.h-l-link').css({'color':'black'});
-				$('#me').css({'width':'60%'})
-				$('#h-back').css({'width':'60%'})
-				$('.me-row').css({'padding':'5px 10px','width':'calc(100% - 20px)'});
-				$('#me-img').css({'border-radius':'100px', 'height':'100px'});
-				$('#me-name').css({'font-size':'20px'});
-				$('#me-title').css({'font-size':'16px'});
-				$('#me-job').css({'font-size':'18px'});
-				$("#me-tgt").css({'font-size':'14px', 'margin':'10px', 'padding':'15px', 'width':'calc(100% - 50px)'});
-				$("#me-tgt-title").css({'font-size':'20px'});
-				$('#me-school').css({'font-size':'18px'});
-				$("#me-uw").css({'font-size':'14px', 'margin':'10px', 'padding':'15px', 'width':'calc(100% - 50px)'});
-				$("#me-uw-title").css({'font-size':'20px'});
-				$('.me-lang').css({'margin':'5px','padding':'5px 15px'});
-				$('.me-lang-title').css({'font-size':'16px'});
-				$('.me-lang-desc').css({'font-size':'14px'});
-				$('#me-resdown').css({'font-size':'16px'});
-			}
-
-			function mobileCode() {
-				$('.h-l-link').css({'color':'black'});
-				$('#code').css({'width':'calc(100% - 100px)'});
-				$('#h-back').css({'width':'calc(100% - 100px)'});
-			}
-
-			function desktopCode() {
-				$('.h-l-link').css({'color':'black'});
-				$('#code').css({'width':'60%'})
-				$('#h-back').css({'width':'60%'})
-			}
-
 			function headerFull() {
-				if(isMobile) {
+				if(mobileCheck())
 					$('#h-l-text').html('AVM');
-					$('#h-logo').css({'width':'150px'});
-				}
-				else {
+				else
 					$('#h-l-text').html('Alex Van Matre');
-					$('#h-logo').css({'width':'250px'});
-				}
-			}
-
-			function mobileContact() {
-				if($(window).width() < 700 || isMobile) {
-					$('#contact-display').css({'display':'none'});
-					$('.contact-img').css({'height':'60px','padding':'10px 5px'});
-				} else {
-					$('#contact-display').css({'display':'flex'});
-					$('.contact-img').css({'height':'70px','padding':'5px'});
-				}
 			}
 
 			var aboutSize = 0;
