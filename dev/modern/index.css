@@ -223,8 +223,8 @@ body {
 		}
 			@media screen and (max-width: 800px) {
 				.me-row {
-					padding: 0px;
-					width: 100%;
+					padding: 5px;
+					width: calc(100% - 10px);
 				}
 			}
 		#me-pic {
