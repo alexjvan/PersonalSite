@@ -73,10 +73,21 @@ body {
 		width: calc(100vw - 10%);
 		z-index: 5;
 	}
+		#h-back {
+			background-color: var(--secondary);
+			height: 50px;
+			line-height: 0px;
+			position: absolute;
+			right: -100%;
+			top: 0;
+			width: 60%;
+		}
 		#h-logo {
 			display: inline-block;
 			padding: 5px 20px;
+			position: relative;
 			width: 250px;
+			z-index: 3;
 		}
 			#h-l-img {
 				height: 70px;
@@ -90,6 +101,8 @@ body {
 		#h-links {
 			float: right;
 			height: 80px;
+			position: relative;
+			z-index: 3;
 		}
 			.h-l-link {
 				border-bottom: 0px solid var(--accent);
@@ -114,6 +127,25 @@ body {
 			height: calc(100% - 80px);
 			width: 100%;
 		}
+			#overlay {
+				background-color: rgba(255, 255, 255, .3);
+				left: calc(50% - 125px);
+				padding: 25px 10px;
+				position: relative;
+				text-align: center;
+				top: calc(50% - 108px);
+				width: 250px;
+			}
+				#o-name {
+					border-bottom: 1px solid black;
+					font-size: 24px;
+					margin-bottom: 5px;
+					padding-bottom: 2px;
+					width: 235px;
+				}
+				#o-text {
+					font-size: 16px;
+				}
 		#contact {
 			background-color: var(--secondary);
 			display: flex;
@@ -278,7 +310,7 @@ body {
 					font-size: 14px;
 				}
 		#me-resume {
-			padding-bottom: 20px;
+			padding-bottom: 20px!important;
 		}
 			#me-resdown {
 				color: #e4e4e4;

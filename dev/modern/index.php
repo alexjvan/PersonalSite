@@ -50,6 +50,9 @@
 	<body>
 		<div id="content">
 			<div id="header">
+				<div id="h-back">
+					<!--EMPTY-->
+				</div>
 				<a id="h-logo" href="<?php echo $prefix ?>">
 					<img id="h-l-img" src="../../static/images/logos/logo.gif" />
 					<div id="h-l-text">
@@ -67,7 +70,14 @@
 			</div>
 			<div id="main">
 				<div id="main-content">
-
+					<div id="overlay">
+						<div id="o-name">
+							Alex Van Matre
+						</div>
+						<div id="o-text">
+							Developer of many trades.
+						</div>
+					</div>
 				</div>
 				<div id="contact">
 					<div id="contact-items">
@@ -312,7 +322,7 @@
 
 			$(document).ready(function() {
 				mobileContact();
-				meSize();
+				sideSizes();
 				headerFull();
 
 				$('.contact-item').hover(function() {
@@ -377,7 +387,7 @@
 
 			$(window).resize(function() {
 				mobileContact();
-				meSize();
+				sideSizes();
 			});
 
 			function mobileCheck() {
@@ -386,54 +396,76 @@
 				return false;
 			}
 
-			function meSize() {
+			function sideSizes() {
 				if(mobileCheck()) {
 					if(!wasMobile) {
 						shrinkMe();
 						shrinkCode();
 						wasMobile = true;
-						$('.h-l-link').css({'color':'black'});
-						$('#me').css({'width':'calc(100% - 100px)','right':'-100%'});
-						$('.me-row').css({'padding':'0px','width':'100%'});
-						$('#me-img').css({'border-radius':'75px', 'height':'75px'});
-						$('#me-name').css({'font-size':'18px'});
-						$('#me-title').css({'font-size':'14px'});
-						$('#me-about').css({'display':'inline-block'});
-						$('#me-job').css({'font-size':'16px', 'width':'100%'});
-						$("#me-tgt").css({'font-size':'12px', 'margin':'5px', 'padding':'10px', 'width':'calc(100% - 30px)'});
-						$("#me-tgt-title").css({'font-size':'14px'});
-						$('#me-school').css({'font-size':'16px', 'width':'100%'});
-						$("#me-uw").css({'font-size':'12px', 'margin':'5px', 'padding':'10px', 'width':'calc(100% - 30px)'});
-						$("#me-uw-title").css({'font-size':'14px'});
-						$('.me-lang').css({'margin':'3px','padding':'3px 10px'});
-						$('.me-lang-title').css({'font-size':'14px'});
-						$('.me-lang-desc').css({'font-size':'12px'});
-						$('#me-resdown').css({'font-size':'14px'});
+						mobileMe();
+						mobileCode();
 					}
 				} else {
 					if(wasMobile) {
 						shrinkMe();
 						shrinkCode();
 						wasMobile = false;
-						$('.h-l-link').css({'color':'black'});
-						$('#me').css({'width':'60%','right':'-60%'})
-						$('.me-row').css({'padding':'5px 10px','width':'calc(100% - 20px)'});
-						$('#me-img').css({'border-radius':'100px', 'height':'100px'});
-						$('#me-name').css({'font-size':'20px'});
-						$('#me-title').css({'font-size':'16px'});
-						$('#me-about').css({'display':'flex'});
-						$('#me-job').css({'font-size':'18px', 'width':'50%'});
-						$("#me-tgt").css({'font-size':'14px', 'margin':'10px', 'padding':'15px', 'width':'calc(100% - 50px)'});
-						$("#me-tgt-title").css({'font-size':'16px'});
-						$('#me-school').css({'font-size':'18px', 'width':'50%'});
-						$("#me-uw").css({'font-size':'14px', 'margin':'10px', 'padding':'15px', 'width':'calc(100% - 50px)'});
-						$("#me-uw-title").css({'font-size':'16px'});
-						$('.me-lang').css({'margin':'5px','padding':'5px 15px'});
-						$('.me-lang-title').css({'font-size':'16px'});
-						$('.me-lang-desc').css({'font-size':'14px'});
-						$('#me-resdown').css({'font-size':'16px'});
+						desktopMe();
+						desktopCode();
 					}
 				}
+			}
+
+			function mobileMe() {
+				$('.h-l-link').css({'color':'black'});
+				$('#me').css({'width':'calc(100% - 100px)'});
+				$('#h-back').css({'width':'calc(100% - 100px)'});
+				$('.me-row').css({'padding':'0px','width':'100%'});
+				$('#me-img').css({'border-radius':'75px', 'height':'75px'});
+				$('#me-name').css({'font-size':'18px'});
+				$('#me-title').css({'font-size':'14px'});
+				$('#me-job').css({'font-size':'16px', 'width':'100%'});
+				$("#me-tgt").css({'font-size':'12px', 'margin':'5px', 'padding':'10px', 'width':'calc(100% - 30px)'});
+				$("#me-tgt-title").css({'font-size':'14px'});
+				$('#me-school').css({'font-size':'16px', 'width':'100%'});
+				$("#me-uw").css({'font-size':'12px', 'margin':'5px', 'padding':'10px', 'width':'calc(100% - 30px)'});
+				$("#me-uw-title").css({'font-size':'14px'});
+				$('.me-lang').css({'margin':'3px','padding':'3px 10px'});
+				$('.me-lang-title').css({'font-size':'14px'});
+				$('.me-lang-desc').css({'font-size':'12px'});
+				$('#me-resdown').css({'font-size':'14px'});
+			}
+
+			function desktopMe() {
+				$('.h-l-link').css({'color':'black'});
+				$('#me').css({'width':'60%'})
+				$('#h-back').css({'width':'60%'})
+				$('.me-row').css({'padding':'5px 10px','width':'calc(100% - 20px)'});
+				$('#me-img').css({'border-radius':'100px', 'height':'100px'});
+				$('#me-name').css({'font-size':'20px'});
+				$('#me-title').css({'font-size':'16px'});
+				$('#me-job').css({'font-size':'18px'});
+				$("#me-tgt").css({'font-size':'14px', 'margin':'10px', 'padding':'15px', 'width':'calc(100% - 50px)'});
+				$("#me-tgt-title").css({'font-size':'20px'});
+				$('#me-school').css({'font-size':'18px'});
+				$("#me-uw").css({'font-size':'14px', 'margin':'10px', 'padding':'15px', 'width':'calc(100% - 50px)'});
+				$("#me-uw-title").css({'font-size':'20px'});
+				$('.me-lang').css({'margin':'5px','padding':'5px 15px'});
+				$('.me-lang-title').css({'font-size':'16px'});
+				$('.me-lang-desc').css({'font-size':'14px'});
+				$('#me-resdown').css({'font-size':'16px'});
+			}
+
+			function mobileCode() {
+				$('.h-l-link').css({'color':'black'});
+				$('#code').css({'width':'calc(100% - 100px)'});
+				$('#h-back').css({'width':'calc(100% - 100px)'});
+			}
+
+			function desktopCode() {
+				$('.h-l-link').css({'color':'black'});
+				$('#code').css({'width':'60%'})
+				$('#h-back').css({'width':'60%'})
 			}
 
 			function headerFull() {
@@ -442,7 +474,7 @@
 					$('#h-logo').css({'width':'150px'});
 				}
 				else {
-					$('#h-l-text').html('AVM');
+					$('#h-l-text').html('Alex Van Matre');
 					$('#h-logo').css({'width':'250px'});
 				}
 			}
@@ -460,24 +492,22 @@
 			var aboutSize = 0;
 			function growMe() {
 				$('#me').stop().animate({'right':'-17px'});
+				$('#h-back').stop().animate({'right':'-17px'});
 			}
 
 			function shrinkMe() {
-				if(mobileCheck())
-					$('#me').stop().animate({'right':'-100%'});
-				else
-					$('#me').stop().animate({'right':'-60%'});
+				$('#me').stop().animate({'right':'-100%'});
+				$('#h-back').stop().animate({'right':'-100%'});
 			}
 
 			function growCode() {
 				$('#code').stop().animate({'right':'-17px'});
+				$('#h-back').stop().animate({'right':'-17px'});
 			}
 
 			function shrinkCode() {
-				if(mobileCheck())
-					$('#code').stop().animate({'right':'-100%'});
-				else
-					$('#code').stop().animate({'right':'-60%'});
+				$('#code').stop().animate({'right':'-100%'});
+				$('#h-back').stop().animate({'right':'-100%'});
 			}
 		</script>
 	</body>
