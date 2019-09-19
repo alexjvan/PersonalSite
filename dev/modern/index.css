@@ -221,12 +221,6 @@ body {
 			text-align: center;
 			width: calc(100% - 20px);
 		}
-			@media screen and (max-width: 800px) {
-				.me-row {
-					padding: 5px;
-					width: calc(100% - 10px);
-				}
-			}
 		#me-pic {
 
 		}
