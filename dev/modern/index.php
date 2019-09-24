@@ -293,16 +293,48 @@
 						Software
 					</div>
 					<div class="code-item">
-
+						<div class="c-i-title">
+							Reneblade
+						</div>
+						<div class="c-i-desc">
+							Reneblade is game, designed in Unity, that I worked on with 4 other people in 12th grade. Here we designed the first level of a 2d platform game, for the Microsoft Hunt the Wumpus Alumni competition.
+						</div>
+						<a class="c-i-link" href="https://github.com/alexjvan/Wumpus-Alumni-Game" target="_blank">
+							Github
+						</a>
+						<a class="c-i-link" href="../../static/files/Reneblade.zip" download>
+							Download
+						</a>
 					</div>
-					<!--
-						Reneblade
-						Minesweeper
-					-->
+					<div class="code-item">
+						<div class="c-i-title">
+							Minesweeper
+						</div>
+						<div class="c-i-desc">
+							In 10th grade, I developed my own version of the classic game MineSweeper. The code is a bit old, but it still works pretty well.
+						</div>
+						<a class="c-i-link" href="https://github.com/alexjvan/MineSweeper" target="_blank">
+							Github
+						</a>
+						<a class="c-i-link" href="../../static/files/MineSweeper.zip" download>
+							Download
+						</a>
+					</div>
 				</div>
 				<div class="code-row">
 					<div class="code-title">
 						Live Sites
+					</div>
+					<div class="code-item">
+						<div class="c-i-title">
+							Projectzhub
+						</div>
+						<div class="c-i-desc">
+							Projectzhub was a website that I had created, and am currently in the process of actually recreating and making better.
+						</div>
+						<a class="c-i-link" href="javaScript:void(0)">
+							Currently being rewritten.
+						</a>
 					</div>
 					<!--
 						projectzhub
@@ -347,6 +379,16 @@
 						}
 					</script>
 				</div>
+				<script>
+					$(document).ready(function() {
+						$('.code-item').each(function() {
+							if($(this).find('.c-i-link').length == 2) {
+								$($(this).find('.c-i-link')[0]).css({'padding-right':'4%','text-align':'right','width':'45%'});
+								$($(this).find('.c-i-link')[1]).css({'padding-left':'4%','text-align':'left','width':'45%'});
+							}
+						});
+					});
+				</script>
 			</div>
 		</div>
 		<script>

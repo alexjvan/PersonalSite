@@ -30,6 +30,11 @@ body {
     overflow-x: hidden;
 	padding: 0px;
 }
+	@media screen and (max-width: 800px) {
+		body {
+			font-size: 14px;
+		}
+	}
 
 div {
 	display: inline-block;
@@ -454,9 +459,37 @@ body {
 		}
 			.code-title {
 				color: var(--primary);
-				font-size: 18px;
+				font-size: 20px;
 				font-weight: bold;
 			}
+				@media screen and (max-width: 800px) {
+					.code-title {
+						font-size: 18px;
+					}
+				}
+				.code-item {
+					padding: 10px 10px;
+					text-align: center;
+					width: calc(100% - 20px);
+				}
+					.c-i-title {
+						color: var(--accent);
+						display: block;
+						font-size: 18px;
+					}
+					.c-i-desc {
+						color: white;
+						display: block;
+					}
+					.c-i-link {
+						color: white;
+						display: inline-block;
+						text-decoration: underline;
+						width: 100%;
+					}
+						.c-i-link:hover {
+							color: #b4b4b4;
+						}
 			#repos {
 				width: 100%;
 			}
