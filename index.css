@@ -1,85 +1,553 @@
-#landing {
-	background-image: url('static/images/backgrounds/calibw.jpg');
-	background-position: 50% 50%;
-	background-size: cover;
-	height: 100vh;
-	text-align: center;
-	vertical-align: middle;
-	width: 100%;
+/* Color Palette */
+/*
+*/
+:root {
+	--accent: #529EFB;
+	--primary: #e4e4e4;
+	--secondary: #343434;
 }
-	#l-mtext {
-		padding-top: calc(50vh - 47.6px);
-	}
-		#l-mtext div {
-			color: white;
-			display: block;
+
+/* Overall Styles */
+button:hover {
+    cursor: pointer;
+}
+
+* {
+	margin: 0px;
+	padding: 0px;
+}
+
+a {
+	display: block;
+	text-decoration: none;
+}
+
+body {
+	border: 0px;
+	font-family: 'Montserrat', verdana, arial, sans-serif;
+	font-size: 16px;
+	margin: 0px;
+    overflow-x: hidden;
+	padding: 0px;
+}
+	@media screen and (max-width: 800px) {
+		body {
+			font-size: 14px;
 		}
-			#l-mtext div::selection {
-				background-color: black;
-			}
-				#l-mtext div br::selection {
-					background-color: black;
+	}
+
+div {
+	display: inline-block;
+}
+
+li {
+	display: inline-block;
+	list-style-type: none;
+	margin: 0px;
+	padding: 0px;
+}
+
+p {
+	text-align: left;
+}
+
+ul {
+	display: block;
+	list-style-type: none;
+}
+
+.disabled {
+	display: none!important;
+}
+/* Specific Styles */
+body {
+	height: 100%;
+	width: 100vw;
+}
+#content {
+	height: 100%;
+	position: fixed;
+	width: 100vw;
+}
+	#header {
+		height: 80px;
+		left: 0;
+		padding: 0px 5%;
+		position: absolute;
+		top: 0;
+		width: calc(100vw - 10%);
+		z-index: 5;
+	}
+		#h-back {
+			background-color: var(--secondary);
+			height: 50px;
+			line-height: 0px;
+			position: absolute;
+			right: -100%;
+			top: 0;
+			width: 60%;
+		}
+			@media screen and (max-width: 800px) {
+				#h-back {
+					width: calc(100% - 100px);
 				}
-		#l-mt-name {
-			font-size: 30px;
+			}
+		#h-logo {
+			display: inline-block;
+			padding: 5px 20px;
+			position: relative;
+			width: 250px;
+			z-index: 3;
+		}
+			@media screen and (max-width: 800px) {
+				#h-logo {
+					width: 150px;
+				}
+			}
+			#h-l-img {
+				height: 70px;
+				vertical-align: middle;
+			}
+			#h-l-text {
+				color: black;
+				font-size: 20px;
+				vertical-align: middle;
+			}
+		#h-links {
+			float: right;
+			height: 80px;
+			position: relative;
+			z-index: 3;
+		}
+			.h-l-link {
+				border-bottom: 0px solid var(--accent);
+				color: black;
+				display: inline-block;
+				font-size: 16px;
+				padding: 30.5px 10px 4px 10px;
+			}
+	#main {
+		height: 100%;
+		left: 0;
+		position: absolute;
+		top: 0;
+		width: 100vw;
+		z-index: 1;
+	}
+		#main-content {
+			background-image: url('static/images/backgrounds/calibw.jpg');
+			background-position-x: 55%;
+			background-position-y: 50%;
+			background-size: cover;
+			height: calc(100% - 80px);
+			width: 100%;
+		}
+			#overlay {
+				background-color: rgba(255, 255, 255, .3);
+				left: calc(50% - 125px);
+				padding: 25px 10px;
+				position: relative;
+				text-align: center;
+				top: calc(50% - 108px);
+				width: 250px;
+			}
+				#o-name {
+					border-bottom: 1px solid black;
+					font-size: 24px;
+					margin-bottom: 5px;
+					padding-bottom: 2px;
+					width: 235px;
+				}
+				#o-text {
+					font-size: 16px;
+				}
+		#contact {
+			background-color: var(--secondary);
+			display: flex;
+			height: 80px;
+			justify-content: center;
+			position: absolute;
+			text-align: center;
+			bottom: 0px;
+			width: 100vw;
+			z-index: 3;
+		}
+			#contact-items {
+				width: 417px;
+			}
+				.contact-item {
+					display: inline-block;
+				}
+					.contact-img {
+						height: 70px;
+						padding: 5px;
+					}
+						@media screen and (max-width: 800px) {
+							.contact-img {
+								height: 60px;
+								padding: 10px 5px;
+							}
+						}
+			#contact-display {
+				align-items: center;
+				color: #e4e4e4;
+				display: flex;
+				font-size: 20px;
+				justify-content: center;
+				text-align: center;
+				vertical-align: baseline;
+				width: 283px;
+			}
+				@media screen and (max-width: 800px) {
+					#contact-display {
+						display: none;
+					}
+				}
+	#me {
+		background-color: var(--secondary);
+		color: #e4e4e4;
+		float: right;
+		height: calc(100% - 70px);
+		overflow-y: scroll;
+		padding-top: 70px;
+		position: absolute;
+		right: -100%;
+		top: 0;
+		width: 60%;
+		z-index: 3;
+	}
+		@media screen and (max-width: 800px) {
+			#me {
+				width: calc(100% - 100px);
+			}
+		}
+		.me-row {
+			padding: 5px 10px;
+			text-align: center;
+			width: calc(100% - 20px);
+		}
+			@media screen and (max-width: 800px) {
+				.me-row {
+					padding: 5px 0px 5px 5px;
+					width: calc(100% - 20px);
+				}
+			}
+		#me-pic {
+
+		}
+			#me-img {
+				border-radius: 100px;
+				height: 100px;
+			}
+				@media screen and (max-width: 800px) {
+					#me-img {
+						border-radius: 75px;
+						height: 75px;
+					}
+				}
+		#me-name {
+			font-size: 20px;
+		}
+			@media screen and (max-width: 800px) {
+				#me-name {
+					font-size: 18px;
+				}
+			}
+			#me-name sup {
+				font-size: xx-small;
+			}
+		#me-title {
+			color: white;
+			font-size: 16px;
+		}
+			@media screen and (max-width: 800px) {
+				#me-title {
+					font-size: 14px;
+				}
+			}
+			#me-title i {
+				color: #d4d4d4;
+			}
+		#me-school {
+			color: var(--accent);
+			font-size: 18px;
 			font-weight: bold;
 		}
-		#l-mt-slogan {
-			font-size: 24px;
-		}
-		#l-mt-translate {
-			padding-top: 5px;
-		}
-			#l-mt-t-button {
-				background-color: transparent;
-				border: 2px solid white;
-				border-radius: 5px;
-				color: white;
-				font-size: 24px;
-				padding: 5px 15px;
-				outline: none;
-			}
-				#l-mt-t-button:hover {
-					background-color: rgba(230, 230, 230, .2);
+			@media screen and (max-width: 800px) {
+				#me-school {
+					font-size: 16px;
 				}
-.section {
-	padding-top: 3%;
-	padding-bottom: 5%;
-	text-align: center;
-	width: 100%;
-}
-	.section-title {
-		display: block;
-		font-size: 30px;
-		letter-spacing: 5px;
-		padding: 15px;
-		text-transform: uppercase;
-	}
-#about {
-	background-color: #343434;
-	color: #e4e4e4;
-}
-	#about a {
-		border: 1px solid white;
-		border-radius: 5px;
-		color: white;
-		display: inline-block;
-		padding: 5px 15px;
-	}
-		#about a:hover {
-			background-color: rgba(255, 255, 255, 0.1);
+			}
+			#me-uw {
+				background-color: #4b2e83;
+				border-radius: 15px;
+				color: #e8e3d3;
+				font-size: 14px;
+				margin: 10px;
+				padding: 15px;
+				width: calc(100% - 50px);
+			}
+				@media screen and (max-width: 800px) {
+					#me-uw {
+						font-size: 12px;
+						margin: 5px;
+						padding: 10px;
+						width: calc(100% - 30px);
+					}
+				}
+				#me-uw-title {
+					font-size: 20px;
+					font-weight: bold;
+					padding-bottom: 5px;
+				}
+					@media screen and (max-width: 800px) {
+						#me-uw-title {
+							font-size: 18px;
+						}
+					}
+				#me-uw-table {
+					background-color: rgba(255, 255, 255, .3);
+					border-radius: 10px;
+					border-spacing: 0px;
+					table-layout: fixed;
+					width: 100%;
+				}
+					#me-uw-t-years {
+
+					}
+						#me-uw-t-years td {
+							color: black!important;
+						}
+					#me-uw-t-end {
+
+					}
+						#me-uw-t-end td {
+
+						}
+					#me-uw-table tr {
+
+					}
+						#me-uw-table tr td {
+							color: white;
+							font-weight: bold;
+							padding: 5px;
+						}
+							#me-uw-table tr td.blue {
+								background-color: #529EFB;
+								color: black;
+							}
+							#me-uw-table tr td.purple {
+								background-color: #4b2e83;
+
+							}
+							#me-uw-table tr td.gold {
+								background-color: #85754d;
+							}
+		#me-job {
+			color: var(--accent);
+			font-size: 18px;
+			font-weight: bold;
 		}
-#contact {
-	background-color: #e4e4e4;
-	color: black;
-}
-	#contact a {
-		border: 1px solid black;
-		border-radius: 5px;
-		color: black;
-		display: inline-block;
-		padding: 5px 15px;
-	}
-		#contact a:hover {
-			background-color: rgba(0, 0, 0, 0.1);
+			@media screen and (max-width: 800px) {
+				#me-job {
+					font-size: 16px;
+				}
+			}
+			#me-tgt {
+				background-color: #CC0000;
+				border-radius: 15px;
+				color: white;
+				font-size: 14px;
+				margin: 10px;
+				padding: 15px;
+				width: calc(100% - 50px);
+			}
+				@media screen and (max-width: 800px) {
+					#me-tgt {
+						font-size: 12px;
+						margin: 5px;
+						padding: 10px;
+						width: calc(100% - 30px);
+					}
+				}
+				#me-tgt-title {
+					font-size: 20px;
+					font-weight: bold;
+					padding-bottom: 5px;
+				}
+					@media screen and (max-width: 800px) {
+						#me-tgt-title {
+							font-size: 18px;
+						}
+					}
+				#me-tgt-job {
+					font-size: 14px;
+				}
+					@media screen and (max-width: 800px) {
+						#me-tgt-job {
+							font-size: 12px;
+						}
+					}
+		#me-langs {
+
 		}
+			.me-lang {
+				background-color: #545454;
+				margin: 5px;
+				padding: 5px 15px;
+			}
+				@media screen and (max-width: 800px) {
+					.me-lang {
+						margin: 3px;
+						padding: 3px 10px;
+					}
+				}
+				.me-lang-title {
+					display: block;
+				}
+					@media screen and (max-width: 800px) {
+						.me-lang-title {
+							font-size: 14px;
+						}
+					}
+				.me-lang-desc {
+					display: block;
+					font-size: 14px;
+				}
+					@media screen and (max-width: 800px) {
+						.me-lang-desc {
+							font-size: 12px;
+						}
+					}
+		#me-resume {
+			padding-bottom: 20px!important;
+		}
+			#me-resdown {
+				color: #e4e4e4;
+				text-decoration: underline;
+			}
+				@media screen and (max-width: 800px) {
+					#me-resdown {
+						font-size: 14px;
+					}
+				}
+				#me-resdown:hover {
+					color: #b4b4b4;
+				}
+	#code {
+		background-color: var(--secondary);
+		float: right;
+		height: calc(100% - 70px);
+		overflow-y: scroll;
+		padding-top: 70px;
+		position: absolute;
+		right: -100%;
+		top: 0;
+		width: 60%;
+		z-index: 3;
+	}
+		@media screen and (max-width: 800px) {
+			#code {
+				width: calc(100% - 100px);
+			}
+		}
+		.code-row {
+			margin-bottom: 10px;
+			padding: 5px 10px;
+			text-align: center;
+			width: calc(100% - 20px);
+		}
+			.code-title {
+				color: var(--primary);
+				font-size: 20px;
+				font-weight: bold;
+			}
+				@media screen and (max-width: 800px) {
+					.code-title {
+						font-size: 18px;
+					}
+				}
+				.code-item {
+					padding: 10px 10px;
+					text-align: center;
+					width: calc(100% - 20px);
+				}
+					.c-i-title {
+						color: var(--accent);
+						display: block;
+						font-size: 18px;
+					}
+					.c-i-desc {
+						color: white;
+						display: block;
+					}
+					.c-i-link {
+						color: white;
+						display: inline-block;
+						text-decoration: underline;
+						width: 100%;
+					}
+						.c-i-link:hover {
+							color: #b4b4b4;
+						}
+			#repos {
+				width: 100%;
+			}
+				.repoitem {
+					border-left: 5px solid;
+					display: inline-block!important;
+					margin-top: 15px;
+					margin-right: 2px;
+					padding: 5px;
+					text-align: left;
+					vertical-align: top;
+					width: calc(33.333% - 17px);
+				}
+					@media screen and (max-width: 800px) {
+						.repoitem {
+							margin-left: 3px;
+							width: calc(100% - 18px);
+						}
+					}
+					.repoitem:hover {
+						background-color: #545454;
+					}
+					.ri-clickable {
+						border: 0px!important;
+						color: black;
+						width: calc(100% - 30px)!important;
+					}
+						.ri-c-title {
+							color: white;
+							display: block;
+							font-weight: bold;
+							padding-top: 1px;
+						}
+							@media screen and (max-width: 800px) {
+								.ri-c-title {
+									font-size: 14px;
+								}
+							}
+						.ri-c-desc {
+							color: #e4e4e4;
+							display: block;
+							font-size: 14px;
+							padding-top: 1px;
+						}
+							@media screen and (max-width: 800px) {
+								.ri-c-desc {
+									font-size: 12px;
+								}
+							}
+						.ri-c-lang {
+							color: #529EFB;
+							display: block;
+							font-size: 14px;
+							font-style: italic;
+							padding-top: 3px;
+						}
+							@media screen and (max-width: 800px) {
+								.ri-c-lang {
+									font-size: 12px;
+								}
+							}
