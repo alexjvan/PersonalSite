@@ -75,7 +75,7 @@
 							Alex Van Matre
 						</div>
 						<div id="o-text">
-							Developer of many trades.
+							Full Stack and Software Developer.
 						</div>
 					</div>
 				</div>
