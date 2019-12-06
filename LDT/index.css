@@ -107,11 +107,57 @@ body {
 						color: black;
 					}
 		#cone {
-
+			width: 50%;
 		}
 		#ctwo {
 			margin-left: 50px;
 		}
+	#langs {
+		float: left;
+		width: 70%;
+	}
+		#one {
+			width: 50%;
+		}
+		#two {
+			width: 50%;
+		}
+			.langtitle {
+				color: var(--blue);
+				display: block;
+				font-size: 18px;
+				font-weight: bold;
+				text-align: center;
+			}
+				.langitem {
+					width: 100%;
+				}
+					.langname {
+						font-weight: bold;
+						vertical-align: top;
+						width: 30%;
+					}
+					.langmethods {
+						width: 70%;
+					}
+						.lm-row {
+							width: 100%;
+						}
+							.lm-name {
+								width: 60%;
+							}
+							.lm-params {
+								width: 40$;
+							}
+			.langbool {
+
+			}
+			.langint {
+
+			}
+			.langstring {
+
+			}
 	#datatype {
 		font-size: 20px;
 		margin-top: 25px;
@@ -135,7 +181,7 @@ body {
 	float: right;
 	height: 100%;
 	position: relative;
-	top: -79px;
+	top: -142px;
 	width: 30%;
 }
 	#feed {
@@ -143,6 +189,7 @@ body {
 		height: calc(100% - 64px);
 		overflow-y: scroll;
 		width: 100%;
+		word-wrap: break-word;
 	}
 	#input {
 		background-color: #141414;

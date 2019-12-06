@@ -56,53 +56,33 @@
 			<div id="choice">
 				<div id="cone">
 					<div class="choiceset">
-						<div class="choice">
-							C#
-						</div>
-						<div class="choice">
-							Java
-						</div>
-						<div class="choice">
-							Python
-						</div>
+						<div class="choice">C#</div>
+						<div class="choice">Java</div>
+						<div class="choice">Python</div>
 					</div>
 				</div>
+<!--
 				<div id="ctwo">
 					<div class="choiceset">
-						<div class="choice">
-							C#
-						</div>
-						<div class="choice">
-							Java
-						</div>
-						<div class="choice">
-							Python
-						</div>
+						<div class="choice">C#</div>
+						<div class="choice">Java</div>
+						<div class="choice">Python</div>
 					</div>
 				</div>
-			</div>
-<!--
-			<div id="datatype">
-				<div id="dtchoices">
-					<div class="dtchoice">
-						Bool
-					</div>
-					<div class="dtchoice">
-						Int
-					</div>
-					<div class="dtchoice">
-						String
-					</div>
-				</div>
-			</div>
 -->
+			</div>
 			<div id="langs">
 				<div id="one">
-
+					<div class="langtitle"></div>
+					<div class="langbool"></div>
+					<div class="langint"></div>
+					<div class="langstring"></div>
 				</div>
+<!--
 				<div id="two">
 
 				</div>
+-->
 			</div>
 
 			<div id="console">
@@ -143,9 +123,36 @@
 
 			var items;
 			if(twoLang == null) {
-				items = Query('SELECT * FROM DataTypeInLang AS dtil, Methods as m, Parameters as p WHERE dtil.Language='+oneLang+' AND dtil.id=m.DataTypeInLangID AND p.MethodID=m.id;');
+				items = Query('SELECT dtil.DataType, dtil.Name, dtil.Language, m.Method, p.Type FROM DataTypeInLang AS dtil, Methods as m, Parameters as p WHERE dtil.Language=\''+oneLang+'\' AND dtil.id=m.DataTypeInLangID AND p.MethodID=m.id;');
+				setTimeout(function() {
+					$('#one').find('.langtitle').html(oneLang);
+					$('#one').find('.langstring').html('');
+					$('#one').find('.langint').html('');
+					$('#one').find('.langbool').html('');
+					for(var row = 0; row < qData.length; row++) {
+						console.log(qData[row]);
+						if(qData[row]['DataType'] == 'String') {
+							if($('#one').find('.langstring').html() == "") {
+								$('#one').find('.langstring').append('<div class="langitem"><div class="langname">'+qData[row]["Name"]+'</div><div class="langmethods"><div class="lm-row"><div class="lm-name">'+qData[row]["Method"]+'</div><div class="lm-params">'+qData[row]["Type"]+'</div></div></div></div>');
+							} else {
+								$('#one').find('.langstring').find('.langmethods').append('<div class="lm-row"><div class="lm-name">'+qData[row]["Method"]+'</div><div class="lm-params">'+qData[row]["Type"]+'</div>');
+							}
+						} else if(qData[row]['DataType'] == 'Integer') {
+							if($('#one').find('.langint').html() == "") {
+								$('#one').find('.langint').append('<div class="langitem"><div class="langname">'+qData[row]["Name"]+'</div><div class="langmethods"><div class="lm-row"><div class="lm-name">'+qData[row]["Method"]+'</div><div class="lm-params">'+qData[row]["Type"]+'</div></div></div></div>');
+							} else {
+								$('#one').find('.langint').find('.langmethods').append('<div class="lm-row"><div class="lm-name">'+qData[row]["Method"]+'</div><div class="lm-params">'+qData[row]["Type"]+'</div>');
+							}
+						} else if(qData[row]['DataType'] == 'Boolean') {
+							if($('#one').find('.langbool').html() == "") {
+								$('#one').find('.langbool').append('<div class="langitem"><div class="langname">'+qData[row]["Name"]+'</div><div class="langmethods"><div class="lm-row"><div class="lm-name">'+qData[row]["Method"]+'</div><div class="lm-params">'+qData[row]["Type"]+'</div></div></div></div>');
+							} else {
+								$('#one').find('.langbool').find('.langmethods').append('<div class="lm-row"><div class="lm-name">'+qData[row]["Method"]+'</div><div class="lm-params">'+qData[row]["Type"]+'</div>');
+							}
+						}
+					}
+				}, 200);
 			}
-			console.log(items);
 		});
 
 		$('.dtchoice').click(function() {
@@ -169,6 +176,8 @@
 		Query(val);
 	}
 
+	var qData;
+
 	function Query(q) {
 		$('#feed').append("<br />" + q);
 		var messageBody = document.querySelector('#feed');
@@ -185,7 +194,7 @@
 				$('#feed').append("<br />" + data);
 				var messageBody = document.querySelector('#feed');
 				messageBody.scrollTop = messageBody.scrollHeight - messageBody.clientHeight;
-				return data;
+					qData = JSON.parse(data);
 			},
 			error:function(data) {
 				console.log(data);

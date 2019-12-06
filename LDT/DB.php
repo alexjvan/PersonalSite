@@ -1,7 +1,7 @@
 <?php
     class DB {
         private static function connect() {
-            $pdo = new PDO('mysql:host=165.22.140.244:3306; dbname=LDT; charset=utf8', 'thejokers', 'CSS475_TheJokers');
+            $pdo = new PDO('mysql:host=165.22.140.244; port=3306; dbname=LDT; charset=utf8', 'thejokers', 'CSS475_TheJokers');
             $pdo->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
             return $pdo;
         }

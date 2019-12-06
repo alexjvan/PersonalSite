@@ -3,6 +3,6 @@
 	if($_POST['query']) {
 		$q = $_POST['query'];
 		$r = DB::query($q);
-		echo $r;
+		echo json_encode($r);
 	}
 ?>
