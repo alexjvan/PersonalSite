@@ -126,46 +126,28 @@
 						</div>
 						<table id="me-uw-table">
 							<tr id="me-uw-t-years">
-								<td>
+								<td colspan="4">
 									2019
 								</td>
-								<td colspan="2">
+								<td colspan="4">
 									2020
-								</td>
-								<td>
-									2021
-								</td>
-								<td>
-									2022
-								</td>
-								<td>
-									2023
 								</td>
 							</tr>
 							<tr>
-								<td colspan="2" class="purple">
+								<td colspan="7" class="purple">
 									BS CSSE
 								</td>
 								<td colspan="1" class="gold">
 									AI Classes
 								</td>
-								<td colspan="2" class="purple">
-									MS CSSE
-								</td>
 							</tr>
 							<tr>
-								<td colspan="1" class="gold">
+								<td colspan="2" class="gold">
 									IT Minor
-								</td>
-								<td colspan="2">
-
-								</td>
-								<td colspan="3" class="gold">
-									MS CSS
 								</td>
 							</tr>
 							<tr class="me-uw-t-end">
-								<td colspan="6">
+								<td colspan="3">
 
 								</td>
 							</tr>
@@ -181,6 +163,22 @@
 							1/10
 						</div>
 					</div>
+					<div class="me-lang" data-ten="2">
+						<div class="me-lang-title">
+							C
+						</div>
+						<div class="me-lang-desc">
+							1/10
+						</div>
+					</div>
+					<div class="me-lang" data-ten="4">
+						<div class="me-lang-title">
+							C++
+						</div>
+						<div class="me-lang-desc">
+							3/10
+						</div>
+					</div>
 					<div class="me-lang" data-ten="9">
 						<div class="me-lang-title">
 							C#
@@ -189,17 +187,17 @@
 							9/10
 						</div>
 					</div>
-					<div class="me-lang" data-ten="3">
+					<div class="me-lang" data-ten="6">
 						<div class="me-lang-title">
-							C++
+							CSS
 						</div>
 						<div class="me-lang-desc">
-							3/10
+							6/10
 						</div>
 					</div>
 					<div class="me-lang" data-ten="6">
 						<div class="me-lang-title">
-							CSS
+							HTML
 						</div>
 						<div class="me-lang-desc">
 							6/10
@@ -227,14 +225,6 @@
 						</div>
 						<div class="me-lang-desc">
 						 	7/10
-						</div>
-					</div>
-					<div class="me-lang" data-ten="6">
-						<div class="me-lang-title">
-							HTML
-						</div>
-						<div class="me-lang-desc">
-							6/10
 						</div>
 					</div>
 					<div class="me-lang" data-ten="7">

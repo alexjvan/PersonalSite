@@ -119,7 +119,14 @@ body {
 		#one {
 			width: 50%;
 		}
+			#one div {
+				display: block;
+			}
+				#one div div {
+					display: inline-block;
+				}
 		#two {
+			float: right;
 			width: 50%;
 		}
 			.langtitle {
@@ -144,11 +151,21 @@ body {
 							width: 100%;
 						}
 							.lm-name {
+								vertical-align: top;
 								width: 60%;
 							}
 							.lm-params {
-								width: 40$;
+								width: 40%;
 							}
+			.langboolsame {
+
+			}
+			.langintsame {
+
+			}
+			.langstringsame {
+
+			}
 			.langbool {
 
 			}

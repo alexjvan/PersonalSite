@@ -61,7 +61,6 @@
 						<div class="choice">Python</div>
 					</div>
 				</div>
-<!--
 				<div id="ctwo">
 					<div class="choiceset">
 						<div class="choice">C#</div>
@@ -69,20 +68,26 @@
 						<div class="choice">Python</div>
 					</div>
 				</div>
--->
 			</div>
 			<div id="langs">
 				<div id="one">
 					<div class="langtitle"></div>
+					<div class="langboolsame"></div>
+					<div class="langintsame"></div>
+					<div class="langstringsame"></div>
 					<div class="langbool"></div>
 					<div class="langint"></div>
 					<div class="langstring"></div>
 				</div>
-<!--
 				<div id="two">
-
+					<div class="langtitle"></div>
+					<div class="langboolsame"></div>
+					<div class="langintsame"></div>
+					<div class="langstringsame"></div>
+					<div class="langbool"></div>
+					<div class="langint"></div>
+					<div class="langstring"></div>
 				</div>
--->
 			</div>
 
 			<div id="console">
@@ -121,16 +126,26 @@
 			var id = $(this).parent().parent().attr('id');
 			id = id.substr(1);
 
-			var items;
 			if(twoLang == null) {
-				items = Query('SELECT dtil.DataType, dtil.Name, dtil.Language, m.Method, p.Type FROM DataTypeInLang AS dtil, Methods as m, Parameters as p WHERE dtil.Language=\''+oneLang+'\' AND dtil.id=m.DataTypeInLangID AND p.MethodID=m.id;');
+				Query('SELECT dtil.DataType, dtil.Name, dtil.Language, m.Method, p.Type FROM DataTypeInLang AS dtil, Methods as m, Parameters as p WHERE dtil.Language=\''+oneLang+'\' AND dtil.id=m.DataTypeInLangID AND p.MethodID=m.id;');
 				setTimeout(function() {
 					$('#one').find('.langtitle').html(oneLang);
+					$('#two').find('.langtitle').html('');
+
+					$('#one').find('.langstringsame').html('');
+					$('#one').find('.langintsame').html('');
+					$('#one').find('.langboolsame').html('');
 					$('#one').find('.langstring').html('');
 					$('#one').find('.langint').html('');
 					$('#one').find('.langbool').html('');
+					$('#two').find('.langstringsame').html('');
+					$('#two').find('.langintsame').html('');
+					$('#two').find('.langboolsame').html('');
+					$('#two').find('.langstring').html('');
+					$('#two').find('.langint').html('');
+					$('#two').find('.langbool').html('');
+
 					for(var row = 0; row < qData.length; row++) {
-						console.log(qData[row]);
 						if(qData[row]['DataType'] == 'String') {
 							if($('#one').find('.langstring').html() == "") {
 								$('#one').find('.langstring').append('<div class="langitem"><div class="langname">'+qData[row]["Name"]+'</div><div class="langmethods"><div class="lm-row"><div class="lm-name">'+qData[row]["Method"]+'</div><div class="lm-params">'+qData[row]["Type"]+'</div></div></div></div>');
@@ -151,12 +166,42 @@
 							}
 						}
 					}
+				}, 100);
+			} else {
+				Query('SELECT one.DataType, one.Name, one.Language, onem.Method, onep.Type, two.DataType, two.Name, two.Language, twom.Method, twop.Type FROM Equivalency as eq, Methods as onem, Methods as twom, DataTypeInLang as one, DataTypeInLang as two, Parameters as onep, Parameters as twop WHERE eq.MethodID=onem.id AND eq.EQID=twom.id AND one.Language=\''+oneLang+'\' AND two.Language=\''+twoLang+'\' AND onem.DataTypeInLangID=one.id AND twom.DataTypeInLangID=two.id AND onep.MethodID=onem.id AND twop.MethodID=twom.id;');
+				setTimeout(function() {
+					console.log(qData);
+					$('#one').find('.langstringsame').html('');
+					$('#one').find('.langintsame').html('');
+					$('#one').find('.langboolsame').html('');
+					$('#one').find('.langstring').html('');
+					$('#one').find('.langint').html('');
+					$('#one').find('.langbool').html('');
+					$('#two').find('.langstringsame').html('');
+					$('#two').find('.langintsame').html('');
+					$('#two').find('.langboolsame').html('');
+					$('#two').find('.langstring').html('');
+					$('#two').find('.langint').html('');
+					$('#two').find('.langbool').html('');
+
+					$('#one').find('.langtitle').html(oneLang);
+					$('#two').find('.langtitle').html(twoLang);
+
+					for(var row = 0; row < qData.length; row++) {
+						// index 0-4 is onelang, inde 5-9 is twolang
+						if(qData[row]['DataType'] == 'String') {
+							if($('#one').find('.langstring').html() == "") {
+								$('#one').find('.langstringsame').append('<div class="langitem"><div class="langname">'+qData[row][1]+'</div><div class="langmethods"><div class="lm-row"><div class="lm-name">'+qData[row][3]+'</div><div class="lm-params">'+qData[row][4]+'</div></div></div></div>');
+								$('#two').find('.langstringsame').append('<div class="langitem"><div class="langname">'+qData[row][6]+'</div><div class="langmethods"><div class="lm-row"><div class="lm-name">'+qData[row][8]+'</div><div class="lm-params">'+qData[row][9]+'</div></div></div></div>');
+							} else {
+								$('#one').find('.langstringsame').find('.langmethods').append('<div class="lm-row"><div class="lm-name">'+qData[row][3]+'</div><div class="lm-params">'+qData[row][4]+'</div>');
+								$('#two').find('.langstringsame').find('.langmethods').append('<div class="lm-row"><div class="lm-name">'+qData[row][8]+'</div><div class="lm-params">'+qData[row][9]+'</div>');
+							}
+						}
+					}
+
 				}, 200);
 			}
-		});
-
-		$('.dtchoice').click(function() {
-
 		});
 
 		$('#enter').click(function() {
