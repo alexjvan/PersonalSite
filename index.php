@@ -93,7 +93,7 @@
 						<a id="contact-github" class="contact-item" href="https://github.com/alexjvan" target="_blank">
 							<img class="contact-img" src="static/images/other-sites/hex/github.png" />
 						</a>
-						<a id="contact-linkedin" class="contact-item" href="https://www.linkedin.com/in/alex-v-147170b5/" target="_blank">
+						<a id="contact-linkedin" class="contact-item" href="https://www.linkedin.com/in/alexvanmatre/" target="_blank">
 							<img class="contact-img" src="static/images/other-sites/hex/linkedin.png" />
 						</a>
 					</div>
