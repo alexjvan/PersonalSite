@@ -1,0 +1,193 @@
+#landing {
+	height: calc(100vh - 100px);
+	width: 100%;
+}
+	#landing-background {
+		height: calc(100vh - 100px);
+		left: 0px;
+		position: absolute;
+		top: 100px;
+		width: 100%;
+		z-index: 1;
+	}
+		#landing-background::selection {
+			background-color: var(--dark-tetriary);
+		}
+	#helloIm {
+		font-size: 24px;
+		left: calc(15% + 5px);
+		top: calc(40% - 25px);
+		position: absolute;
+		z-index: 2;
+	}
+		#helloIm::selection {
+			background-color: var(--dark-tetriary);
+			color: var(--light-tetriary);
+		}
+	#alex {
+		background-color: rgba(255, 255, 255, .4);
+		font-size: 54px;
+		left: 15%;
+		padding: 15px 35px;
+		position: absolute;
+		top: 40%;
+		z-index: 2;
+	}
+		#alex::selection {
+			background-color: var(--dark-tetriary);
+			color: var(--light-tetriary);
+		}
+.bodyitem {
+	background-color: var(--dark-secondary);
+	color: var(--light-primary);
+	padding: 3% 15%;
+	width: 70%;
+}
+	.bodyitem::selection {
+		background-color: var(--light-tetriary);
+		color: var(--dark-tetriary);
+	}
+	.bodyitem.inv {
+		background-color: var(--light-primary);
+		color: var(--dark-secondary);
+	}
+		.bodyitem.inv::selection {
+			background-color: var(--dark-tetriary);
+			color: var(--light-tetriary);
+		}
+	.bititle {
+		float: right;
+		font-size: 54px;
+		text-align: left;
+		width: 250px;
+	}
+		.bititle::selection {
+			background-color: var(--light-tetriary);
+			color: var(--dark-tetriary);
+		}
+		.bodyitem.inv .bititle {
+			float: left;
+		}
+			.bodyitem.inv .bititle::selection {
+				background-color: var(--dark-tetriary);
+				color: var(--light-tetriary);
+			}
+	.bisection {
+		float: left;
+		width: 50%;
+	}
+		.bodyitem.inv .bisection {
+			float: right;
+		}
+		.biheadliner {
+			display: block;
+			font-size: 36px;
+		}
+			.biheadliner::selection {
+				background-color: var(--light-tetriary);
+				color: var(--dark-tetriary);
+			}
+			.bodyitem.inv .biheadliner::selection {
+				background-color: var(--dark-tetriary);
+				color: var(--light-tetriary);
+			}
+			.biheadliner sup {
+				font-size: 24px;
+			}
+				.biheadliner sup::selection {
+					background-color: var(--light-tetriary);
+					color: var(--dark-tetriary);
+				}
+				.bodyitem.inv .biheadliner sup::selection {
+					background-color: var(--dark-tetriary);
+					color: var(--light-tetriary);
+				}
+		.bi-p {
+			display: block;
+			font-size: 24px;
+			margin-bottom: 10px;
+		}
+			.bi-p::selection {
+				background-color: var(--light-tetriary);
+				color: var(--dark-tetriary);
+			}
+			.bodyitem.inv .bi-p::selection {
+				background-color: var(--dark-tetriary);
+				color: var(--light-tetriary);
+			}
+			.bi-p sup {
+				font-size: 20px;
+			}
+				.bi-p sup::selection {
+					background-color: var(--light-tetriary);
+					color: var(--dark-tetriary);
+				}
+				.bodyitem.inv .bi-p sup::selection {
+					background-color: var(--dark-tetriary);
+					color: var(--light-tetriary);
+				}
+		.bilink {
+			border: 3px solid var(--light-secondary);
+			border-radius: 5px;
+			color: inherit;
+			font-size: 24px;
+			margin: 20px auto 0px auto;
+			padding: 5px 15px;
+			text-align: center;
+			width: fit-content;
+		}
+		.bodyitem.inv .bilink {
+			border-color: var(--dark-secondary);
+		}
+			.bilink::selection {
+				background-color: var(--light-tetriary);
+				color: var(--dark-tetriary);
+			}
+			.bodyitem.inv .bilink::selection {
+				background-color: var(--dark-tetriary);
+				color: var(--light-tetriary);
+			}
+			.bilink:hover {
+				border-color: var(--accent)!important ;
+				color: var(--accent);
+			}
+#pitch {
+
+}
+	#pitch div::selection {
+		background-color: var(--light-tetriary);
+		color: var(--dark-tetriary);
+	}
+		#pitch div span::selection {
+			background-color: var(--light-tetriary);
+			color: var(--accent);
+		}
+	#pitchfirst {
+		display: block;
+		font-size: 36px;
+	}
+	#pitchsecond {
+		display: block;
+		font-size: 24px;
+	}
+	#pitchthird {
+		display: block;
+		font-size: 36px;
+	}
+		#pitchthird span {
+			color: var(--accent);
+		}
+#about {
+
+}
+	#aboutme {
+
+	}
+			#am-big div {
+				background-color: black;
+				color: black;
+			}
+				#am-big div::selection {
+					background-color: black;
+					color: black;
+				}

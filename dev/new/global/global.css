@@ -1,0 +1,157 @@
+/* Color Palette */
+:root {
+	--red: #ff5656;
+	--orange: #ff794d;
+	--yellow: #ffff4d;
+	--green: #73ff73;
+	--blue: #529feb;
+	--purple: #ff66ff;
+
+	--accent: #529feb;
+	--dark-primary: #343434;
+	--dark-secondary: #1d1d1d;
+	--dark-tetriary: black;
+	--light-primary: #e4e4e4;
+	--light-secondary: #b4b4b4;
+	--light-tetriary: white;
+}
+
+/* Overall Styles */
+button:hover {
+    cursor: pointer;
+}
+
+* {
+	margin: 0px;
+	padding: 0px;
+}
+
+a {
+	display: block;
+	text-decoration: none;
+}
+
+body {
+	border: 0px;
+	display: grid;
+	font-family: 'Montserrat', verdana, arial, sans-serif;
+	font-size: 16px;
+	margin: 0px;
+    overflow-x: hidden;
+	padding: 0px;
+}
+
+div {
+	display: inline-block;
+}
+
+li {
+	display: inline-block;
+	list-style-type: none;
+	margin: 0px;
+	padding: 0px;
+}
+
+p {
+	text-align: left;
+}
+
+ul {
+	display: block;
+	list-style-type: none;
+}
+
+.disabled {
+	display: none!important;
+}
+
+.clickable {
+
+}
+	.clickable:hover {
+		cursor: pointer;
+	}
+
+/* ------------------------- */
+/* HEADER */
+/* ------------------------- */
+#header {
+	background-color: white;
+	height: 80px;
+	padding: 10px 5%;
+	width: 90%;
+}
+	#logo {
+		display: inline-block;
+		height: 80px;
+	}
+		#logoimg {
+			height: 75px;
+			padding: 2.5px;
+		}
+			#logoimg::selection {
+				background-color: var(--dark-tetriary);
+			}
+		#logotext {
+			color: black;
+			display: inline-block;
+			font-size: 24px;
+			height: 30px;
+			margin: 25px 5px;
+			position: absolute;
+		}
+			#logotext::selection {
+				background-color: var(--dark-tetriary);
+				color: var(--light-tetriary);
+			}
+	#headerlinks {
+		display: flex;
+		float: right;
+	}
+		.headerlink {
+			border-color: var(--accent);
+			border-style: solid;
+			border-width: 0px;
+			color: black;
+			display: inline-block;
+			font-size: 24px;
+			height: 30px;
+			margin: 25px 15px 23px 15px;
+			padding-bottom: 2px;
+			position: relative;
+		}
+			.headerlink::selection {
+				background-color: var(--dark-tetriary);
+				color: var(--light-tetriary);
+			}
+#footer {
+	background-color: var(--dark-primary);
+	color: var(--light-primary);
+	padding: 10px 5%;
+	width: 90%;
+}
+	#footerlinks {
+		display: flex;
+		float: left;
+	}
+		.footlink {
+			color: inherit;
+			display: inline-block;
+			padding: 0px 10px;
+			text-decoration: underline;
+		}
+			.footlink::selection {
+				background-color: var(--dark-tetriary);
+				color: var(--light-tetriary);
+			}
+			.footlink:hover {
+				color: var(--accent);
+			}
+	#madeby {
+		display: inline-block;
+		float: right;
+	}
+		#madeby::selection {
+			background-color: var(--dark-tetriary);
+			color: var(--light-tetriary);
+		}
