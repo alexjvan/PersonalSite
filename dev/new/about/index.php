@@ -38,7 +38,7 @@
 						<!-- MUSIC -->
 					</div>
 					<div class="passionitem">
-						<!-- COFFEE -->
+						<!--  -->
 					</div>
 				</div>
 				<div id="meddlingimage" class="aboutportion">

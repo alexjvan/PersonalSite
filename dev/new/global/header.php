@@ -19,7 +19,7 @@
 			Projects
 		</a>
 		<a class="headerlink" href="<?php echo $prefix ?>contact/">
-			Contacts
+			Contact
 		</a>
 	</div>
 </div>
