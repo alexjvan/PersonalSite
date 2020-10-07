@@ -125,7 +125,7 @@ ul {
 				color: var(--light-tetriary);
 			}
 #footer {
-	background-color: var(--dark-primary);
+	background-color: var(--dark-secondary);
 	color: var(--light-primary);
 	padding: 10px 5%;
 	width: 90%;

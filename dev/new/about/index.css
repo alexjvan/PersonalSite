@@ -1,0 +1,49 @@
+#aboutpanel {
+	background-color: white;
+	float: left;
+	height: calc(100vh - 100px - 40px);
+	width: 250px;
+}
+	#image {
+		height: 200px;
+		padding: 25px 0px;
+		text-align: center;
+		width: 250px;
+	}
+		#meimg {
+			border: 3px solid black;
+			border-radius: 200px;
+			height: 200px;
+			width: 200px;
+		}
+	#name {
+		font-family: 'Dancing Script';
+		font-size: 32px;
+		text-align: center;
+		width: 100%;
+	}
+#content {
+	background-color: var(--dark-primary);
+	float: right;
+	height: calc(100vh - 100px - 40px);
+	left: 250px;
+	overflow-y: scroll;
+	position: absolute;
+	top: 100px;
+	/* Add 100px to the right to get rid of scroll bar */
+	width: calc(100% - 150px);
+}
+	#onpage {
+		height: 100%;
+		width: calc(100% - 100px);
+	}
+		.aboutportion {
+			width: 100%;
+		}
+		#meddlingimage {
+			height: 200px;
+		}
+			#mi-img {
+				height: 200px;
+				width: inherit;
+			}

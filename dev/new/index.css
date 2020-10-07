@@ -29,7 +29,7 @@
 			color: var(--light-tetriary);
 		}
 .bodyitem {
-	background-color: var(--dark-secondary);
+	background-color: var(--dark-primary);
 	color: var(--light-primary);
 	padding: 3% 15%;
 	width: 70%;
@@ -40,7 +40,7 @@
 	}
 	.bodyitem.inv {
 		background-color: var(--light-primary);
-		color: var(--dark-secondary);
+		color: var(--dark-primary);
 	}
 		.bodyitem.inv::selection {
 			background-color: var(--dark-tetriary);
@@ -139,7 +139,7 @@
 			width: fit-content;
 		}
 		.bodyitem.inv .bilink {
-			border-color: var(--dark-secondary);
+			border-color: var(--dark-primary);
 		}
 			.bilink::selection {
 				background-color: var(--light-tetriary);
