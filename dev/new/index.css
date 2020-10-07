@@ -1,18 +1,9 @@
 #landing {
+	background: url('static/images/backgrounds/mtns.jpg');
+	background-position: 20% 60%;
 	height: calc(100vh - 100px);
 	width: 100%;
 }
-	#landing-background {
-		height: calc(100vh - 100px);
-		left: 0px;
-		position: absolute;
-		top: 100px;
-		width: 100%;
-		z-index: 1;
-	}
-		#landing-background::selection {
-			background-color: var(--dark-tetriary);
-		}
 	#helloIm {
 		font-size: 24px;
 		left: calc(15% + 5px);
@@ -115,6 +106,17 @@
 				background-color: var(--dark-tetriary);
 				color: var(--light-tetriary);
 			}
+			.bi-p div {
+				color: var(--accent);
+			}
+				.bi-p div::selection {
+					background-color: var(--light-tetriary);
+					color: var(--accent);
+				}
+					.bodyitem.inv .bi-p div::selection {
+						background-color: var(--dark-tetriary);
+						color: var(--accent);
+					}
 			.bi-p sup {
 				font-size: 20px;
 			}

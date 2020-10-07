@@ -28,13 +28,13 @@
 		$('.headerlink').hover(
 		// Hover
 		function() {
-			$(this).stop().animate({'margin-top':'20px', 'margin-bottom':'28px', 'top':'-5px', 'border-bottom-width':'5px'}, 200, function() {
-				$(this).stop().animate({'margin-top':'25px','margin-bottom':'18px','top':'0px'}, 200);
+			$(this).stop().animate({'margin-top':'20px', 'margin-bottom':'18px', 'padding-bottom':'7px', 'top':'-5px', 'border-bottom-width':'5px'}, 200, function() {
+				$(this).stop().animate({'margin-top':'25px','margin-bottom':'18px','top':'0px', 'padding-bottom':'2px'}, 200);
 			});
 		},
 		// Unhover
 		function() {
-			$(this).stop().animate({'margin-top':'25px','margin-bottom':'23px','top':'0px', 'border-width':'0px'}, 100);
+			$(this).stop().animate({'margin-top':'25px','margin-bottom':'23px', 'padding-bottom':'2px','top':'0px', 'border-width':'0px'}, 100);
 		});
 	});
 </script>
