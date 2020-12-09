@@ -19,7 +19,7 @@
 
 	<!-- STYLES -->
 	<link href="index.css" rel="stylesheet" type="text/css" />
-	<link href="<?php echo $prefix?>global/global.css" rel="stylesheet" type="text/css" />
+	<link href="<?php echo $prefix?>global/global.css" rel="stylesheet" type="text/css" media="screen" />
 	<!-- SCRIPTS -->
 
 	<!-- LOGO SETUP -->

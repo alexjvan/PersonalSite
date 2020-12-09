@@ -25,16 +25,27 @@
 </div>
 <script>
 	$(document).ready(function() {
+		var smallboi = false;
 		$('.headerlink').hover(
-		// Hover
-		function() {
-			$(this).stop().animate({'margin-top':'20px', 'margin-bottom':'18px', 'padding-bottom':'7px', 'top':'-5px', 'border-bottom-width':'5px'}, 200, function() {
-				$(this).stop().animate({'margin-top':'25px','margin-bottom':'18px','top':'0px', 'padding-bottom':'2px'}, 200);
-			});
-		},
-		// Unhover
-		function() {
-			$(this).stop().animate({'margin-top':'25px','margin-bottom':'23px', 'padding-bottom':'2px','top':'0px', 'border-width':'0px'}, 100);
-		});
+			// Hover
+			function() {
+				if($(this).css("margin-top") == "15px") {
+					smallboi = true;
+					$(this).stop().animate({'border-bottom-width':'5px'}, 100);
+				} else {
+					$(this).stop().animate({'margin-top':'20px', 'margin-bottom':'18px', 'padding-bottom':'7px', 'top':'-5px', 'border-bottom-width':'5px'}, 200, function() {
+						$(this).stop().animate({'margin-top':'25px','margin-bottom':'18px','top':'0px', 'padding-bottom':'2px'}, 200);
+					});
+				}
+			},
+			// Unhover
+			function() {
+				if(smallboi) {
+					$(this).stop().animate({'border-bottom-width':'0px'}, 100);
+				} else {
+					$(this).stop().animate({'margin-top':'25px','margin-bottom':'23px', 'padding-bottom':'2px','top':'0px', 'border-width':'0px'}, 100);
+				}
+			}
+		);
 	});
 </script>

@@ -35,11 +35,16 @@ body {
 	border: 0px;
 	display: grid;
 	font-family: 'Montserrat', verdana, arial, sans-serif;
-	font-size: 16px;
+	font-size: 24px;
 	margin: 0px;
     overflow-x: hidden;
 	padding: 0px;
 }
+	@media only screen and (max-width: 1000px) {
+		body {
+			font-size: 16px;
+		}
+	}
 
 div {
 	display: inline-block;
@@ -81,25 +86,47 @@ ul {
 	padding: 10px 5%;
 	width: 90%;
 }
+	@media only screen and (max-width: 1000px) {
+		#header {
+			height: 50px;
+			padding: 5px 3%;
+			width: 94%;
+		}
+	}
 	#logo {
 		display: inline-block;
 		height: 80px;
 	}
+		@media only screen and (max-width: 1000px) {
+			#logo {
+				height: 50px;
+			}
+		}
 		#logoimg {
 			height: 75px;
 			padding: 2.5px;
 		}
+			@media only screen and (max-width: 1000px) {
+				#logoimg {
+					height: 50px;
+					padding: 0px;
+				}
+			}
 			#logoimg::selection {
 				background-color: var(--dark-tetriary);
 			}
 		#logotext {
 			color: black;
 			display: inline-block;
-			font-size: 24px;
-			height: 30px;
 			margin: 25px 5px;
 			position: absolute;
 		}
+			@media only screen and (max-width: 1000px) {
+				#logotext {
+					height: 20px;
+					margin: 15px 3px 15px 0px;
+				}
+			}
 			#logotext::selection {
 				background-color: var(--dark-tetriary);
 				color: var(--light-tetriary);
@@ -114,12 +141,18 @@ ul {
 			border-width: 0px;
 			color: black;
 			display: inline-block;
-			font-size: 24px;
 			height: 30px;
 			margin: 25px 15px 23px 15px;
 			padding-bottom: 2px;
 			position: relative;
 		}
+
+			@media only screen and (max-width: 1000px) {
+				.headerlink {
+					height: 20px;
+					margin: 15px 3px 13px 3px;
+				}
+			}
 			.headerlink::selection {
 				background-color: var(--dark-tetriary);
 				color: var(--light-tetriary);
@@ -130,16 +163,33 @@ ul {
 	padding: 10px 5%;
 	width: 90%;
 }
+	@media only screen and (max-width: 1000px) {
+		#footer {
+			text-align: center;
+		}
+	}
 	#footerlinks {
 		display: flex;
 		float: left;
 	}
+		@media only screen and (max-width: 1000px) {
+			#footerlinks {
+				display: inline-block;
+				float: unset;
+			}
+		}
 		.footlink {
 			color: inherit;
 			display: inline-block;
+			font-size: 16px;
 			padding: 0px 10px;
 			text-decoration: underline;
 		}
+			@media only screen and (max-width: 1000px) {
+				.footlink {
+					font-size: 12px;
+				}
+			}
 			.footlink::selection {
 				background-color: var(--dark-tetriary);
 				color: var(--light-tetriary);
@@ -150,7 +200,14 @@ ul {
 	#madeby {
 		display: inline-block;
 		float: right;
+		font-size: 16px;
 	}
+		@media only screen and (max-width: 1000px) {
+			#madeby {
+				float: unset;
+				font-size: 12px;
+			}
+		}
 		#madeby::selection {
 			background-color: var(--dark-tetriary);
 			color: var(--light-tetriary);

@@ -1,17 +1,21 @@
 #landing {
 	background: url('static/images/backgrounds/cliffmid.jpg');
-	background-position: 15% 0%;
+	background-position: 5% 0%;
 	height: calc(100vh - 100px);
 	width: 100%;
 }
 	#helloIm {
-		font-size: 24px;
 		font-weight: bold;
 		left: calc(15% + 5px);
 		top: calc(40% - 25px);
 		position: absolute;
 		z-index: 2;
 	}
+		@media only screen and (max-width: 1000px) {
+			#helloIm {
+				top: calc(40% - 17px);
+			}
+		}
 		#helloIm::selection {
 			background-color: var(--dark-tetriary);
 			color: var(--light-tetriary);
@@ -25,6 +29,11 @@
 		top: 40%;
 		z-index: 2;
 	}
+		@media only screen and (max-width: 1000px) {
+			#alex {
+				font-size: 48px;
+			}
+		}
 		#alex::selection {
 			background-color: var(--dark-tetriary);
 			color: var(--light-tetriary);
@@ -35,6 +44,11 @@
 	padding: 3% 15%;
 	width: 70%;
 }
+	@media only screen and (max-width: 1000px) {
+		.bodyitem {
+			text-align: center;
+		}
+	}
 	.bodyitem::selection {
 		background-color: var(--light-tetriary);
 		color: var(--dark-tetriary);
@@ -53,6 +67,13 @@
 		text-align: left;
 		width: 250px;
 	}
+		@media only screen and (max-width: 1000px) {
+			.bititle {
+				float: unset;
+				font-size: 48px;
+				width: 100%;
+			}
+		}
 		.bititle::selection {
 			background-color: var(--light-tetriary);
 			color: var(--dark-tetriary);
@@ -68,6 +89,12 @@
 		float: left;
 		width: 50%;
 	}
+		@media only screen and (max-width: 1000px) {
+			.bisection {
+				float: unset;
+				width: 90%;
+			}
+		}
 		.bodyitem.inv .bisection {
 			float: right;
 		}
@@ -75,6 +102,11 @@
 			display: block;
 			font-size: 36px;
 		}
+			@media only screen and (max-width: 1000px) {
+				.biheadliner {
+					font-size: 24px;
+				}
+			}
 			.biheadliner::selection {
 				background-color: var(--light-tetriary);
 				color: var(--dark-tetriary);
@@ -84,7 +116,7 @@
 				color: var(--light-tetriary);
 			}
 			.biheadliner sup {
-				font-size: 24px;
+
 			}
 				.biheadliner sup::selection {
 					background-color: var(--light-tetriary);
@@ -96,7 +128,6 @@
 				}
 		.bi-p {
 			display: block;
-			font-size: 24px;
 			margin-bottom: 10px;
 		}
 			.bi-p::selection {
@@ -121,6 +152,11 @@
 			.bi-p sup {
 				font-size: 20px;
 			}
+				@media only screen and (max-width: 1000px) {
+					.bi-p sup {
+						font-size: 14px;
+					}
+				}
 				.bi-p sup::selection {
 					background-color: var(--light-tetriary);
 					color: var(--dark-tetriary);
@@ -133,7 +169,6 @@
 			border: 3px solid var(--light-secondary);
 			border-radius: 5px;
 			color: inherit;
-			font-size: 24px;
 			margin: 20px auto 0px auto;
 			padding: 5px 15px;
 			text-align: center;
@@ -169,14 +204,23 @@
 		display: block;
 		font-size: 36px;
 	}
+		@media only screen and (max-width: 1000px) {
+			#pitchfirst {
+				font-size: 24px;
+			}
+		}
 	#pitchsecond {
 		display: block;
-		font-size: 24px;
 	}
 	#pitchthird {
 		display: block;
 		font-size: 36px;
 	}
+		@media only screen and (max-width: 1000px) {
+			#pitchthird {
+				font-size: 24px;
+			}
+		}
 		#pitchthird span {
 			color: var(--accent);
 		}
