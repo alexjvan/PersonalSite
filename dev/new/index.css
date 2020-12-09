@@ -1,11 +1,12 @@
 #landing {
-	background: url('static/images/backgrounds/mtns.jpg');
-	background-position: 20% 60%;
+	background: url('static/images/backgrounds/cliffmid.jpg');
+	background-position: 15% 0%;
 	height: calc(100vh - 100px);
 	width: 100%;
 }
 	#helloIm {
 		font-size: 24px;
+		font-weight: bold;
 		left: calc(15% + 5px);
 		top: calc(40% - 25px);
 		position: absolute;

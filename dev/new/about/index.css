@@ -27,6 +27,7 @@
 	float: right;
 	height: calc(100vh - 100px - 40px);
 	left: 250px;
+	overflow-x: hidden;
 	overflow-y: scroll;
 	position: absolute;
 	top: 100px;
@@ -35,15 +36,27 @@
 }
 	#onpage {
 		height: 100%;
-		width: calc(100% - 100px);
+		width: calc(100% - 80px);
 	}
 		.aboutportion {
-			width: 100%;
+			color: var(--light-primary);
+			font-size: 24px;
+			padding: 15px 5%;
+			width: 90%;
 		}
+			.aptitle {
+				display: block;
+				font-size: 54px;
+			}
 		#meddlingimage {
 			height: 200px;
+			padding: 0px;
+			width: 100%;
 		}
 			#mi-img {
 				height: 200px;
 				width: inherit;
 			}
+		#elevatorpitch {
+
+		}
