@@ -40,7 +40,7 @@ body {
     overflow-x: hidden;
 	padding: 0px;
 }
-	@media only screen and (max-width: 1000px) {
+	@media only screen and (max-width: 992px) {
 		body {
 			font-size: 16px;
 		}
@@ -86,7 +86,7 @@ ul {
 	padding: 10px 5%;
 	width: 90%;
 }
-	@media only screen and (max-width: 1000px) {
+	@media only screen and (max-width: 992px) {
 		#header {
 			height: 50px;
 			padding: 5px 3%;
@@ -97,7 +97,7 @@ ul {
 		display: inline-block;
 		height: 80px;
 	}
-		@media only screen and (max-width: 1000px) {
+		@media only screen and (max-width: 992px) {
 			#logo {
 				height: 50px;
 			}
@@ -106,7 +106,7 @@ ul {
 			height: 75px;
 			padding: 2.5px;
 		}
-			@media only screen and (max-width: 1000px) {
+			@media only screen and (max-width: 992px) {
 				#logoimg {
 					height: 50px;
 					padding: 0px;
@@ -121,7 +121,7 @@ ul {
 			margin: 25px 5px;
 			position: absolute;
 		}
-			@media only screen and (max-width: 1000px) {
+			@media only screen and (max-width: 992px) {
 				#logotext {
 					height: 20px;
 					margin: 15px 3px 15px 0px;
@@ -147,7 +147,7 @@ ul {
 			position: relative;
 		}
 
-			@media only screen and (max-width: 1000px) {
+			@media only screen and (max-width: 992px) {
 				.headerlink {
 					height: 20px;
 					margin: 15px 3px 13px 3px;
@@ -163,7 +163,7 @@ ul {
 	padding: 10px 5%;
 	width: 90%;
 }
-	@media only screen and (max-width: 1000px) {
+	@media only screen and (max-width: 992px) {
 		#footer {
 			text-align: center;
 		}
@@ -172,7 +172,7 @@ ul {
 		display: flex;
 		float: left;
 	}
-		@media only screen and (max-width: 1000px) {
+		@media only screen and (max-width: 992px) {
 			#footerlinks {
 				display: inline-block;
 				float: unset;
@@ -185,7 +185,7 @@ ul {
 			padding: 0px 10px;
 			text-decoration: underline;
 		}
-			@media only screen and (max-width: 1000px) {
+			@media only screen and (max-width: 992px) {
 				.footlink {
 					font-size: 12px;
 				}
@@ -202,7 +202,7 @@ ul {
 		float: right;
 		font-size: 16px;
 	}
-		@media only screen and (max-width: 1000px) {
+		@media only screen and (max-width: 992px) {
 			#madeby {
 				float: unset;
 				font-size: 12px;
