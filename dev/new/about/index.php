@@ -8,7 +8,7 @@
 		<?php include $prefix."global/header.php" ?>
 		<div id="aboutpanel">
 			<div id="image">
-				<img id="meimg" src="https://via.placeholder.com/200x200/b4b4b4" />
+				<img id="meimg" src="../static/images/me/photo.jpg" />
 			</div>
 			<div id="name">
 				Alex Van Matre

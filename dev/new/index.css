@@ -2,6 +2,7 @@
 	background: url('static/images/backgrounds/cliffmid.jpg');
 	background-position: 5% 0%;
 	height: calc(100vh - 100px);
+	margin-top: 100px;
 	width: 100%;
 }
 	@media only screen and (max-width: 992px) {

@@ -31,7 +31,7 @@
 			</div>
 			<div class="bisection">
 				<div id="am-big" class="biheadliner">
-					Hey there! My full name is Alex<sup>ander</sup> <div>______</div> Van Matre
+					Hey there! My full name is Alex<sup>ander</sup> <div>oh_hi</div> Van Matre
 				</div>
 				<div class="bi-p">
 					I am currently a University of Washington, Bothell student and a service advocate (and master barista) at Target. These are probably the easiest labels to put on me. Maybe minimalist. And nerd...
