@@ -12,40 +12,17 @@
 		<a class="headerlink" href="<?php echo $prefix ?>about/">
 			About
 		</a>
-		<a class="headerlink" href="<?php echo $prefix ?>toolbox/">
-			Toolbox
-		</a>
 		<a class="headerlink" href="<?php echo $prefix ?>projects/">
 			Projects
+		</a>
+		<a class="headerlink" href="<?php echo $prefix ?>resume/">
+			Resume
 		</a>
 		<a class="headerlink" href="<?php echo $prefix ?>contact/">
 			Contact
 		</a>
 	</div>
 </div>
-<script>
-	$(document).ready(function() {
-		var smallboi = false;
-		$('.headerlink').hover(
-			// Hover
-			function() {
-				if($(this).css("margin-top") == "15px") {
-					smallboi = true;
-					$(this).stop().animate({'border-bottom-width':'5px'}, 100);
-				} else {
-					$(this).stop().animate({'margin-top':'20px', 'margin-bottom':'18px', 'padding-bottom':'7px', 'top':'-5px', 'border-bottom-width':'5px'}, 200, function() {
-						$(this).stop().animate({'margin-top':'25px','margin-bottom':'18px','top':'0px', 'padding-bottom':'2px'}, 200);
-					});
-				}
-			},
-			// Unhover
-			function() {
-				if(smallboi) {
-					$(this).stop().animate({'border-bottom-width':'0px'}, 100);
-				} else {
-					$(this).stop().animate({'margin-top':'25px','margin-bottom':'23px', 'padding-bottom':'2px','top':'0px', 'border-width':'0px'}, 100);
-				}
-			}
-		);
-	});
-</script>
+<div id="headerblock">
+	<!-- INTENTIONALLY EMPTY -->
+</div>
