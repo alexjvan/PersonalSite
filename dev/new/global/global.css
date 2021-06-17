@@ -134,7 +134,7 @@ ul {
 		}
 			@media only screen and (max-width: 1000px) {
 				.headerlink {
-					padding: 0px 5px;
+					padding: 0px 5px 5px 4px;
 				}
 			}
 			.headerlink.active {
