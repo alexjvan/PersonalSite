@@ -129,7 +129,7 @@ ul {
 			border-width: 0px;
 			color: black;
 			display: inline-block;
-			padding: 0px 15px;
+			padding: 0px 15px 4px 15px;
 			transition: .25s;
 		}
 			@media only screen and (max-width: 1000px) {
@@ -139,9 +139,11 @@ ul {
 			}
 			.headerlink.active {
 				border-bottom-width: 4px;
+				padding-bottom: 0px;
 			}
 		.headerlink:hover {
 			border-bottom-width: 4px;
+			padding-bottom: 0px;
 			transition: .25s;
 		}
 #headerblock {
