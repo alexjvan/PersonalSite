@@ -6,19 +6,19 @@
 		</div>
 	</a>
 	<div id="headerlinks">
-		<a class="headerlink" href="<?php echo $prefix ?>">
+		<a class="headerlink <?php if($index == 0) echo 'active' ?>" href="<?php echo $prefix ?>">
 			Home
 		</a>
-		<a class="headerlink" href="<?php echo $prefix ?>about/">
+		<a class="headerlink <?php if($index == 1) echo 'active' ?>" href="<?php echo $prefix ?>about/">
 			About
 		</a>
-		<a class="headerlink" href="<?php echo $prefix ?>projects/">
+		<a class="headerlink <?php if($index == 2) echo 'active' ?>" href="<?php echo $prefix ?>projects/">
 			Projects
 		</a>
-		<a class="headerlink" href="<?php echo $prefix ?>resume/">
+		<a class="headerlink <?php if($index == 3) echo 'active' ?>" href="<?php echo $prefix ?>resume/">
 			Resume
 		</a>
-		<a class="headerlink" href="<?php echo $prefix ?>contact/">
+		<a class="headerlink <?php if($index == 4) echo 'active' ?>" href="<?php echo $prefix ?>contact/">
 			Contact
 		</a>
 	</div>

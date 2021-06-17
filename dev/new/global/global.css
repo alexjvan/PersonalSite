@@ -35,17 +35,21 @@ body {
 	border: 0px;
 	display: grid;
 	font-family: 'Montserrat', verdana, arial, sans-serif;
-	font-size: 24px;
+	font-size: 150%;
 	margin: 0px;
     overflow-x: hidden;
 	padding: 0px;
 }
-	@media only screen and (max-width: 992px) {
+	@media only screen and (max-width: 1000px) {
 		body {
-			font-size: 16px;
+			font-size: 100%;
 		}
 	}
-
+	@media only screen and (max-width: 600px) {
+		body {
+			font-size: 75%;
+		}
+	}
 div {
 	display: inline-block;
 }
@@ -78,7 +82,7 @@ ul {
 	}
 
 /* ------------------------- */
-/* HEADER */
+/* HEADER                    */
 /* ------------------------- */
 #header {
 	background-color: white;
@@ -88,7 +92,7 @@ ul {
 	width: 90%;
 	z-index: 5;
 }
-	@media only screen and (max-width: 992px) {
+	@media only screen and (max-width: 1000px) {
 		#header {
 			height: 50px;
 			padding: 5px 3%;
@@ -96,21 +100,23 @@ ul {
 		}
 	}
 	#logo {
+		align-items: center;
 		color: black;
+		display: flex;
 		float: left;
-		height: 80px;
+		height: 100%;
 	}
 		#logoimg {
-			height: 70px;
-			padding: 5px;
+			height: 100%;
 		}
 		#logotext {
-			padding: 25.5px 5px;
-			vertical-align: top;
+
 		}
 	#headerlinks {
+		align-items: center;
+		display: flex;
 		float: right;
-		padding: 25.5px 0px;
+		height: 100%;
 	}
 		.headerlink {
 			border-color: var(--accent);
@@ -121,6 +127,14 @@ ul {
 			padding: 0px 15px;
 			transition: .25s;
 		}
+			@media only screen and (max-width: 1000px) {
+				.headerlink {
+					padding: 0px 5px;
+				}
+			}
+			.headerlink.active {
+				border-bottom-width: 4px;
+			}
 		.headerlink:hover {
 			border-bottom-width: 4px;
 			transition: .25s;
@@ -128,6 +142,14 @@ ul {
 #headerblock {
 	height: 100px;
 }
+	@media only screen and (max-width: 1000px) {
+		#headerblock {
+			height: 60px;
+		}
+	}
+/* ------------------------- */
+/* FOOTER                    */
+/* ------------------------- */
 #footer {
 	background-color: var(--dark-primary);
 	color: var(--light-primary);
@@ -140,16 +162,16 @@ ul {
 		#footerleft {
 			color: var(--light-primary);
 			float: left;
-			font-size: 16px;
+			font-size: 100%;
 		}
 		#footerlinks {
 			float: right;
-			font-size: 16px;
+			font-size: 100%;
 		}
 			.footlink {
 				color: var(--light-primary);
 				display: inline-block;
-				font-size: 16px;
+				font-size: 100%;
 				vertical-align: top;
 			}
 				.footlink:hover {
@@ -157,7 +179,8 @@ ul {
 				}
 	#footerkit {
 		color: var(--light-primary);
-		font-size: 16px;
+		font-size: 100%;
+		padding-top: 15px;
 		text-align: center;
 		width: 100%;
 	}
@@ -169,15 +192,14 @@ ul {
 		.fsocial {
 			background-color: var(--light-tetriary);
 			border-radius: 75px;
-			height: 75px;
 			justify-content: space-around;
-			margin: 10px;
+			margin: 1%;
 			text-align: center;
 			transition: .25s;
 			vertical-align: middle;
-			width: 75px;
+			width: 4%;
 		}
 			.fsocimg {
-				padding: 12.5px;
-				width: 50px;
+				padding: 16.66%;
+				width: 66.66%;
 			}

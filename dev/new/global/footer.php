@@ -32,6 +32,10 @@
 		</a>
 	</div>
 	<script>
+		$(window).resize(function() {
+			cssSetup();
+		});
+		cssSetup();
 		$('#footersocials').hover(function() {
 			$('.fsocial').stop().animate({"background-color":"#b4b4b4"}, 250);
 		}, function() {
@@ -42,5 +46,10 @@
 		}, function() {
 			$(this).stop().animate({"background-color":"#b4b4b4"}, 250);
 		});
+
+		function cssSetup() {
+			$('.fsocial').css({'height':$('.fsocial').width()+"px"});
+		}
+
 	</script>
 </div>

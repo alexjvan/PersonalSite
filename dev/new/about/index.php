@@ -1,5 +1,5 @@
 <?php
-	$prefix = "";
+	$prefix = "../";
 	$index = 1;
 ?>
 <!DOCTYPE html>
