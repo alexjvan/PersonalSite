@@ -112,6 +112,11 @@ ul {
 		#logotext {
 
 		}
+			@media only screen and (max-width: 600px) {
+				#logotext {
+					display: none;
+				}
+			}
 	#headerlinks {
 		align-items: center;
 		display: flex;

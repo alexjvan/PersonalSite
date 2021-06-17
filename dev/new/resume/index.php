@@ -169,14 +169,6 @@
 					</div>
 				</div>
 			</div>
-			<div id="certifications" class="section">
-				<div class="sectionleft">
-					Certifications
-				</div>
-				<div class="sectionright">
-
-				</div>
-			</div>
 			<div class="section">
 				<div class="sectionleft">
 
