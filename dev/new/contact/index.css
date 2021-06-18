@@ -9,7 +9,9 @@
 }
 .title {
 	background-color: var(--light-primary);
-	padding: 0px 5%;
+	font-size: 200%;
+	padding: 50px 5% 15px 5%;
+	text-align: center;
 	width: 90%;
 }
 	.title.dark {
@@ -17,9 +19,47 @@
 	}
 .section {
 	background-color: var(--light-primary);
-	padding: 3% 5%;
+	display: flex;
+	padding: 1% 5% 5% 5%;
 	width: 90%;
 }
+	@media only screen and (max-width: 1000px) {
+		.section {
+			padding: 1% 0% 5% 0%;
+			width: 100%;
+		}
+	}
+	@media only screen and (max-width: 600px) {
+		.section {
+			display: inline-block;
+		}
+	}
 	.section.dark {
 		background-color: var(--light-secondary);
 	}
+	.socmed {
+		width: 20%;
+	}
+		@media only screen and (max-width: 600px) {
+			.socmed {
+				width: 100%;
+			}
+		}
+		.socmed img {
+			padding: 10px 25%;
+			width: 50%;
+		}
+		.socmed div {
+			text-align: center;
+			width: 100%;
+			word-break: break-all;
+		}
+		.socmed a {
+			color: var(--dark-secondary);
+			text-align: center;
+			text-decoration: underline;
+			word-break: break-all;
+		}
+			.socmed a:hover {
+				text-decoration-color: var(--accent);
+			}

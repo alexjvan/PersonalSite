@@ -250,6 +250,9 @@
 								<div class="tl-date">
 									Graduated<br/>June 2021
 								</div>
+								<div class="v-subtitle">
+									B.S. Computer Science and Software Engineering
+								</div>
 								<div class="tl-description">
 									Completed classes including Analysis and Design, Cloud Computing, Data Structures and Algorithms 1 and 2, Database Systems, Hardware and Computer Organization, Information Management and Analysis, Introduction to Compilers, Operating Systems, Parallel and Distributed Systems, and Software Engineering. Finished thesis project of writing shortest path algorithm for a distributed systems cluster.
 								</div>

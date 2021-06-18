@@ -52,6 +52,9 @@
 					width: calc(100% - 70px);
 				}
 			}
+			.sectionright .section {
+				padding: 0%;
+			}
 			.sectionright.split {
 				display: flex;
 				justify-content: space-evenly;
