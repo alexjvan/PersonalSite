@@ -20,12 +20,12 @@
 .section {
 	background-color: var(--light-primary);
 	display: flex;
-	padding: 1% 5% 5% 5%;
+	padding: 1% 5% 3% 5%;
 	width: 90%;
 }
 	@media only screen and (max-width: 1000px) {
 		.section {
-			padding: 1% 0% 5% 0%;
+			padding: 1% 0% 3% 0%;
 			width: 100%;
 		}
 	}
@@ -37,6 +37,43 @@
 	.section.dark {
 		background-color: var(--light-secondary);
 	}
+		.desktop {
+			display: flex;
+			width: 100%;
+		}
+			.desktop a {
+				color: var(--dark-secondary);
+				display: inline-block;
+			}
+				.desktop a:hover {
+					text-decoration: underline;
+					text-decoration-color: var(--accent);
+				}
+		.mobile {
+			display: none;
+			width: 100%;
+		}
+		@media only screen and (max-width: 600px) {
+			.desktop {
+				display: none;
+			}
+			.mobile {
+				display: inline-block;
+			}
+		}
+			.mobile .text {
+				padding-top: 15px;
+				padding-bottom: 25px;
+				width: 100%;
+			}
+				.mobile a {
+					color: var(--dark-secondary);
+					display: inline-block;
+				}
+					.mobile a:hover {
+						text-decoration: underline;
+						text-decoration-color: var(--accent);
+					}
 	.socmed {
 		width: 20%;
 	}
@@ -59,7 +96,19 @@
 			text-align: center;
 			text-decoration: underline;
 			word-break: break-all;
+			width: 100%;
 		}
 			.socmed a:hover {
 				text-decoration-color: var(--accent);
 			}
+	.text {
+		padding: 0px 1%;
+		width: 58%;
+	}
+		.text .title {
+			background: none;
+			font-size: 150%;
+			padding: 0px;
+			text-align: left;
+			width: 100%;
+		}
