@@ -103,12 +103,13 @@
 				text-decoration-color: var(--accent);
 			}
 	.text {
+		font-size: 150%;
 		padding: 0px 1%;
 		width: 58%;
 	}
 		.text .title {
 			background: none;
-			font-size: 150%;
+			font-size: 200%;
 			padding: 0px;
 			text-align: left;
 			width: 100%;

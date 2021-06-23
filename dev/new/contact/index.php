@@ -104,7 +104,7 @@
 						https://github.com/alexjvan
 					</a>
 				</div>
-				<div class="text" style="width: 78%">
+				<div class="text">
 					<div class="title">
 						The Work I Do
 					</div>
