@@ -169,40 +169,12 @@
 					</div>
 				</div>
 			</div>
-			<div class="section">
-				<div class="sectionleft">
-
-				</div>
-				<div class="sectionright timeline">
-					<div class="sectionsplit">
-						2021
-					</div>
-					<div class="sectionsplit">
-						2020
-					</div>
-					<div class="sectionsplit">
-						2019
-					</div>
-					<div class="sectionsplit">
-						2018
-					</div>
-					<div class="sectionsplit">
-						2017
-					</div>
-					<div class="sectionsplit">
-						2016
-					</div>
-				</div>
-			</div>
 			<div id="work" class="section">
 				<div class="sectionleft">
 					Work
 				</div>
 				<div class="sectionright">
-					<div style="flex-grow: 1">
-						<!-- INTENTIONALLY EMPTY -->
-					</div>
-					<div id="expedia" class="tlbox disabled" style="flex-grow: 1">
+					<div id="expedia" class="tlbox disabled">
 						<img src="../static/images/other-sites/expedia.png" />
 						<div class="tl-content">
 							<div class="tl-title">
@@ -213,7 +185,7 @@
 							</div>
 						</div>
 					</div>
-					<div id="target" class="tlbox" style="flex-grow: 4">
+					<div id="target" class="tlbox">
 						<img src="../static/images/other-sites/target.png" />
 						<div class="tl-content">
 							<div class="tl-title">
@@ -230,9 +202,6 @@
 							</div>
 						</div>
 					</div>
-					<div style="flex-grow: 4">
-						<!-- INTENTIONALLY EMPTY -->
-					</div>
 				</div>
 			</div>
 			<div id="edu" class="section">
@@ -241,7 +210,7 @@
 				</div>
 				<div class="sectionright">
 					<div class="tlrow">
-						<div id="uwb" class="tlbox" style="flex-grow: 3">
+						<div id="uwb" class="tlbox">
 							<img src="../static/images/other-sites/uw-gold.png" />
 							<div class="tl-content">
 								<div class="tl-title">
@@ -257,46 +226,6 @@
 									Completed classes including Analysis and Design, Cloud Computing, Data Structures and Algorithms 1 and 2, Database Systems, Hardware and Computer Organization, Information Management and Analysis, Introduction to Compilers, Operating Systems, Parallel and Distributed Systems, and Software Engineering. Finished thesis project of writing shortest path algorithm for a distributed systems cluster.
 								</div>
 							</div>
-						</div>
-						<div id="bhs" class="tlbox" style="flex-grow: 3">
-							<div class="tl-pic">
-								<img src="../static/images/other-sites/bhs.png" />
-							</div>
-							<div class="tl-content">
-								<div class="tl-title">
-									Bothell High School
-								</div>
-								<div class="tl-date">
-									Sept. 2015<br/>to June 2018
-								</div>
-								<div class="tl-description">
-									Completed classes including Computer Graphics, Computer Programming 1 and 2, Microsoft Applications, and Web Design.
-								</div>
-							</div>
-						</div>
-					</div>
-					<div class="tlrow">
-						<div style="flex-grow: 3">
-							<!-- INTENTIONALLY EMPTY -->
-						</div>
-						<div id="cascadia" class="tlbox" style="flex-grow: 2">
-							<div class="tl-pic">
-								<img src="../static/images/other-sites/cascadia.png" />
-							</div>
-							<div class="tl-content">
-								<div class="tl-title">
-									Cascadia Community College
-								</div>
-								<div class="tl-date">
-									Sept. 2016<br/>to June 2018
-								</div>
-								<div class="tl-description">
-									Completed classes including Programming Data Structures and Scripting.
-								</div>
-							</div>
-						</div>
-						<div style="flex-grow: 1">
-							<!-- INTENTIONALLY EMPTY -->
 						</div>
 					</div>
 				</div>
