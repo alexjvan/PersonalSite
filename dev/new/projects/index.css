@@ -7,6 +7,7 @@
 	background-color: var(--light-secondary);
 	display: flex;
 	flex-wrap: wrap;
+	width: 100vw;
 }
 	@media only screen and (max-width: 1000px) {
 		#filtercontainer {
@@ -36,6 +37,7 @@
 		}
 #projectscontainer {
 	background-color: var(--light-secondary);
+	width: 100vw;
 }
 	.yearcontainer {
 		padding-bottom: 25px;
@@ -110,6 +112,7 @@
 	justify-content: center;
 	flex-wrap: wrap;
 	padding: 10px 25px 35px 25px;
+	width: calc(100vw - 50px);
 }
 	.repoitem {
 		border-left: 5px solid var(--accent);
