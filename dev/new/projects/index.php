@@ -75,7 +75,7 @@
 		<div id="projectscontainer">
 
 		</div>
-		<div class="sectiontitle" style="background-color: var(--light-primary); padding-top: 50px;">
+		<div class="sectiontitle" style="background-color: var(--light-primary)">
 			My Repositories
 		</div>
 		<div id="reposcontainer">

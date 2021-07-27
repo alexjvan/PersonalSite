@@ -1,13 +1,12 @@
 .sectiontitle {
 	background-color: var(--light-secondary);
 	font-size: 200%;
-	padding-left: 5px;
+	padding-top: 50px;
 }
 #filtercontainer {
 	background-color: var(--light-secondary);
 	display: flex;
 	flex-wrap: wrap;
-	width: 100vw;
 }
 	@media only screen and (max-width: 1000px) {
 		#filtercontainer {
@@ -37,7 +36,6 @@
 		}
 #projectscontainer {
 	background-color: var(--light-secondary);
-	width: 100vw;
 }
 	.yearcontainer {
 		padding-bottom: 25px;
@@ -63,27 +61,48 @@
 				border-radius: 5px;
 				margin: 5px;
 			}
+				.projectbox div {
+					width: 425px;
+				}
+					@media only screen and (max-width: 1000px) {
+						.projectbox div {
+							width: 300px;
+						}
+					}
+					@media only screen and (max-width: 600px) {
+						.projectbox div {
+							width: 250px;
+						}
+					}
 				.projectimg {
 					display: block;
 					padding: 0px 25px;
 					padding-top: 25px;
-					width: 425px;
 				}
 				.projectname {
 					display: block;
 					padding: 0px 25px;
-					width: 425px;
 				}
 				.projectdescription {
 					display: block;
 					font-size: 100%;
 					padding: 0px 25px;
-					width: 425px;
 				}
 				.langbars {
 					display: flex;
 					padding-top: 15px;
+					width: 475px!important;
 				}
+					@media only screen and (max-width: 1000px) {
+						.langbars {
+							width: 350px!important;
+						}
+					}
+					@media only screen and (max-width: 600px) {
+						.langbars {
+							width: 300px!important;
+						}
+					}
 					.bar {
 						flex-grow: 1;
 						height: 5px;
@@ -112,7 +131,6 @@
 	justify-content: center;
 	flex-wrap: wrap;
 	padding: 10px 25px 35px 25px;
-	width: calc(100vw - 50px);
 }
 	.repoitem {
 		border-left: 5px solid var(--accent);
