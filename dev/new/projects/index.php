@@ -155,6 +155,13 @@
 			});
 			$("#year"+yearone).find('.projects').html($("#year"+yearone).find('.projects').html() + '<div class="projectbox"><img class="projectimg" src="../static/images/projects/" /><div class="projectname">'+project['name']+'</div><div class="projectdescription">'+project['description']+'</div><div class="langbars">'+bars+'</div></div>');
 		});
+		// Create placeholders
+		var count = 5 - projects.length;
+		while(count < 0)
+			count += 5;
+		for(var i = 0; i < count; i++) {
+			$("#year"+yearone).find('.projects').html($("#year"+yearone).find('.projects').html() + '<div class="projectplaceholder"></div>');
+		}
 		// -- Create revision containers
 		revisions[year].forEach(function(rev, rindex, array){
 			var bars = "";
