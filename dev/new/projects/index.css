@@ -1,3 +1,11 @@
+#warning {
+	align-items: center;
+	background-color: var(--red);
+	display: flex;
+	justify-content: center;
+	padding: 25px 0px 15px 0px;
+	width: 100%;
+}
 .sectiontitle {
 	background-color: var(--light-secondary);
 	font-size: 200%;

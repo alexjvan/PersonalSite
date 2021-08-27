@@ -7,6 +7,9 @@
 	<?php include $prefix."global/head.php" ?>
 	<body>
 		<?php include $prefix."global/header.php" ?>
+		<div id="warning">
+			This page is still under construction, so give it a little mercy :)
+		</div>
 		<div id="landing">
 
 		</div>

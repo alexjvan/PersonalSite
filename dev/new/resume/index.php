@@ -17,7 +17,7 @@
 				</div>
 				<div class="sectionright split">
 					<div class="sectionsplit">
-						Comfortable With
+						Competencies
 					</div>
 					<div class="sectionsplit">
 						Experience With

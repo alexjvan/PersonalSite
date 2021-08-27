@@ -202,19 +202,6 @@
 				"category":"Personal",
 				"big":false,
 				"img":"",
-				"name":"Sudoku Solver",
-				"description":"",
-				"languages": [
-					"Java"
-				],
-				"documents":[],
-				"code":[],
-				"revisions":[]
-			},
-			{
-				"category":"Personal",
-				"big":false,
-				"img":"",
 				"name":"Sync",
 				"description":"",
 				"languages": [
