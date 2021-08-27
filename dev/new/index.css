@@ -117,10 +117,10 @@
 
 			}
 			.portion.img {
-
+				background-color: var(--green);
 			}
-			.portion.text {
-
+			.portion.list {
+				background-color: var(--orange);
 			}
 		.action {
 			color: var(--dark-tetriary);
