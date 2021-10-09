@@ -75,6 +75,13 @@
     "Gnuplot": "#f0a9f0",
     "Go": "#375eab",
     "Golo": "#88562A",
+
+
+
+    "Google Script": "#51f0ea",
+
+
+
     "Gosu": "#82937f",
     "Grammatical Framework": "#79aa7a",
     "Groovy": "#e69f56",
@@ -94,6 +101,13 @@
     "Java": "#b07219",
     "JavaScript": "#f1e05a",
     "Jolie": "#843179",
+
+
+
+    "JQuery": "#b1a01a",
+
+
+
     "JSONiq": "#40d47e",
     "Julia": "#a270ba",
     "Jupyter Notebook": "#DA5B0B",
@@ -120,6 +134,7 @@
     "MQL4": "#62A8D6",
     "MQL5": "#4A76B8",
     "MTML": "#b7e1f4",
+	"MySQL": "#52c779",
     "NCL": "#28431f",
     "Nearley": "#990000",
     "Nemerle": "#3d3c6e",
@@ -129,9 +144,23 @@
     "NetLogo": "#ff6375",
     "NewLisp": "#87AED7",
     "Nextflow": "#3ac486",
+
+
+
+    "Node.JS": "#22118a",
+
+
+
     "Nim": "#37775b",
     "Nit": "#009917",
     "Nix": "#7e7eff",
+
+
+
+	"NoSQL": "#229749",
+
+
+
     "Nu": "#c9df40",
     "Objective-C": "#438eff",
     "Objective-C++": "#6866fb",

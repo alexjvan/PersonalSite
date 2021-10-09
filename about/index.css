@@ -1,0 +1,61 @@
+#landing {
+	background-image: url("../static/images/backgrounds/caliedited.jpg");
+	background-position: bottom;
+	background-size: cover;
+	height: calc(100vh - 100px);
+}
+	@media only screen and (max-width: 1000px) {
+		#landing {
+			height: calc(100vh - 50px);
+		}
+	}
+	#landingimg {
+		bottom: 0;
+		height: 65vh;
+		position: absolute;
+		right: 0;
+	}
+		#landingtext {
+			background-color: rgba(255, 255, 255, 0.6);
+			font-size: 200%;
+			left: 10%;
+			padding: 10px 50px;
+			position: absolute;
+			top: 40vh;
+			z-index: 3;
+		}
+			#landingmore {
+				display: block;
+				font-size: 250%;
+				text-align: center;
+				text-transform: uppercase;
+			}
+.section {
+	background-color: var(--light-primary);
+	padding: 1% 5% 3% 5%;
+	width: 90%;
+}
+	.section.dark {
+		background-color: var(--light-secondary);
+	}
+	.sectiontitle {
+		font-size: 200%;
+	}
+	.sectioncontent {
+		display: flex;
+		justify-content: space-between;
+	}
+		.sectionitem {
+			flex: 1;
+			padding: 0px 50px;
+		}
+			.sititle {
+				display: block;
+				font-size: 150%;
+				text-align: center;
+			}
+			.sidesc {
+				display: block;
+				font-size: 100%;
+				text-align: center;
+			}
