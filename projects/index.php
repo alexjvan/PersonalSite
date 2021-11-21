@@ -49,6 +49,7 @@
 		$('.filteroption').click(function() { filterClick($(this)) });
 	});
 
+	// langs, cats
 	var allEnabled = [true, true];
 
 	function filterClick(item) {
@@ -65,6 +66,7 @@
 				allEnabled[1] = false;
 			}
 			if(en) {
+				console.log($(item).parent().find('.filteroption'));
 				$(item).parent().find('.filteroption').each(function() {
 					if($(this).attr('id') != $(item).attr('id')) {
 						$(this).addClass('nope');
@@ -110,8 +112,13 @@
 		  classes.splice(index, 1);
 		classes.forEach(function(item, index, array) {
 			if(allEnabled[1] == false && window.cats.includes(item)) {
-				if(!$("#"+item).hasClass('nope'))
-					retVal = false;
+				var options = $("#categories").find('.filteroption');
+				for(var i = 0; i < options.length; i++)
+					if($(options[i]).attr('id') == item)
+						if(!$(options[i]).hasClass('nope'))
+							retVal = false;
+						else
+							break;
 			} else if(allEnabled[0] == false && window.langs.includes(item)) {
 				var options = $("#languages").find('.filteroption');
 				for(var i = 0; i < options.length; i++)
@@ -175,7 +182,7 @@
 		}); // End languages foreach
 		// Categories
 		categories.forEach(function(cat, cindex, array) {
-			$("#categories").html($("#categories").html() + '<div class="filteroption clickable">'+cat+'</div>');
+			$("#categories").html($("#categories").html() + '<div class="filteroption clickable" id="'+cat+'">'+cat+'</div>');
 		}); // End categories foreach
 		// -- Create containers
 		json.forEach(function(item, index, array) {
