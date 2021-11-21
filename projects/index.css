@@ -25,13 +25,19 @@
 		max-width: 1000px;
 	}
 		.filteroption {
-			border: 3px solid var(--accent);
+			background-color: var(--light-primary);
+			border: 3px solid var(--light-secondary);
+			/* border: 3px solid var(--accent); */
 			border-radius: 5px;
 			margin: 5px 10px;
 			padding: 5px 15px;
 		}
+			.filteroption.nope {
+				background-color: #848484!important;
+				color: var(--light-primary)!important;
+			}
 			.filteroption:hover {
-				background-color: var(--light-primary);
+				border-color: var(--accent);
 			}
 	#categories {
 		padding-left: 100px;
@@ -57,6 +63,7 @@
 			width: 100%;
 		}
 		.projects {
+			align-items: flex-start;
 			display: flex;
 			justify-content: center;
 			flex-wrap: wrap;
@@ -67,21 +74,10 @@
 				background-color: var(--light-primary);
 				border: 1px solid black;
 				border-radius: 5px;
+				flex: 0 1 450px;
 				margin: 5px;
+				position: relative;
 			}
-				.projectbox div {
-					width: 425px;
-				}
-					@media only screen and (max-width: 1000px) {
-						.projectbox div {
-							width: 300px;
-						}
-					}
-					@media only screen and (max-width: 600px) {
-						.projectbox div {
-							width: 250px;
-						}
-					}
 				.projectimg {
 					display: block;
 					padding: 0px 25px;
@@ -89,17 +85,19 @@
 				}
 				.projectname {
 					display: block;
-					padding: 0px 25px;
+					padding: 10px 25px 0px 25px;
 				}
 				.projectdescription {
 					display: block;
-					font-size: 100%;
-					padding: 0px 25px;
+					font-size: 75%;
+					padding: 0px 25px 10px 25px;
 				}
 				.langbars {
+					bottom: 0px;
 					display: flex;
 					padding-top: 15px;
-					width: 475px!important;
+					position: absolute;
+					width: 100%;
 				}
 					@media only screen and (max-width: 1000px) {
 						.langbars {
@@ -127,10 +125,11 @@
 					border: 1px solid black;
 					border-radius: 5px;
 					margin: 5px;
+					position: relative;
 				}
 					.revtitle {
 						display: block;
-						padding: 0px 25px;
+						padding: 5px 25px;
 					}
 #reposcontainer {
 	background-color: var(--light-primary);

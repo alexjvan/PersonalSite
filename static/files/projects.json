@@ -7,7 +7,7 @@
 				"big":false,
 				"img":"",
 				"name":"Addy Compiler",
-				"description":"",
+				"description":"A compiler program written for a fictional programming language based in C#.",
 				"languages": [
 					"C#"
 				],
@@ -234,8 +234,21 @@
 				"category":"Personal",
 				"big":false,
 				"img":"",
+				"name":"Search Algorithm",
+				"description":"A program written in Scala that indexes files and then uses basic text-based input to retrieve files fitting the query and rank them based off of importance.",
+				"languages": [
+					"Scala"
+				],
+				"documents":[],
+				"code":[],
+				"revisions":[]
+			},
+			{
+				"category":"Personal",
+				"big":false,
+				"img":"",
 				"name":"Personal Site",
-				"description":"",
+				"description":"The project that is my personal website (the website you're on now)!",
 				"languages": [
 					"CSS",
 					"HTML",
@@ -369,7 +382,7 @@
 				"big":false,
 				"img":"",
 				"name":"Strings and Pins",
-				"description":"",
+				"description":"A 6-month long project completed for my capstone in unison with Professor Munehiro Fukuda at the University of Washington, Bothell. Worked in the universities own distributed computing library, MASS. Wrote a program that translated the common shortest path problem into a two-dimensional spacial problem and used an agent-based model in order to derive another solution to the problem.",
 				"languages": [
 					"Java"
 				],
@@ -444,7 +457,7 @@
 				"big":false,
 				"img":"",
 				"name":"Tic Tac Toe",
-				"description":"",
+				"description":"A 3-month project working with two others to build a server program and a client program to host, list, join, and play games of Tic-Tac-Toe with others using the program.",
 				"languages": [
 					"Java"
 				],
@@ -535,7 +548,7 @@
 				"big":false,
 				"img":"",
 				"name":"Interpreter",
-				"description":"",
+				"description":"A quick program written in C to create an interpreter for a programming language.",
 				"languages": [
 					"C"
 				],
@@ -548,7 +561,7 @@
 				"big":false,
 				"img":"",
 				"name":"Parser",
-				"description":"",
+				"description":"A quick program written in C to create a parser for a programming language.",
 				"languages": [
 					"C"
 				],
@@ -583,7 +596,7 @@
 				"big":false,
 				"img":"",
 				"name":"Recognizer",
-				"description":"",
+				"description":"A quick program written in C to create a recognizer for a programming language.",
 				"languages": [
 					"C"
 				],
@@ -596,7 +609,7 @@
 				"big":false,
 				"img":"",
 				"name":"Lexer",
-				"description":"",
+				"description":"A quick program written in C to create a lexer for a programming language.",
 				"languages": [
 					"C"
 				],
@@ -609,7 +622,7 @@
 				"big":false,
 				"img":"",
 				"name":"Calculator",
-				"description":"",
+				"description":"An introductory program into C building a text-based commandline calculator.",
 				"languages": [
 					"C"
 				],
@@ -676,7 +689,7 @@
 				"big":false,
 				"img":"",
 				"name":"Stat Tracker",
-				"description":"",
+				"description":"A two-part program written in C# and the common web platform that allows statical tracking in Unity programs to be pushed and analyzed in a web-based client.",
 				"languages": [
 					"C#",
 					"CSS",
@@ -695,7 +708,7 @@
 				"big":false,
 				"img":"",
 				"name":"Image Editor",
-				"description":"",
+				"description":"A small program written in C# that allows you to import an image and perform simple quick edits to it such as edge detection, color transposition, sharpening, and more.",
 				"languages": [
 					"C#"
 				],
@@ -774,7 +787,7 @@
 				"big":false,
 				"img":"",
 				"name":"Web Crawler",
-				"description":"",
+				"description":"A simple program written in PHP that, when given a website URL, traverses the page and retrieves the links of the page. These links are then traversed as well, and is done so until no new links are provided.",
 				"languages": [
 					"CSS",
 					"HTML",
