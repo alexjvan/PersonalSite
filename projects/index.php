@@ -84,6 +84,7 @@
 				if($(this).hasClass(value) && $(this).hasClass('disabled'))
 					$(this).removeClass('disabled');
 			});
+			checkYears();
 			// Set value
 			$(item).parent().each(function() {
 				var checkEn = true;
@@ -101,6 +102,21 @@
 		$('.projectbox').each(function() {
 			if(!$(this).hasClass('disabled') && shouldDisable($(this)))
 				$(this).addClass('disabled');
+		});
+		checkYears();
+	}
+
+	function checkYears() {
+		$('.yearcontainer').each(function() {
+			var shouldDisable = true;
+			$(this).find('.projectbox').each(function() {
+				if(!$(this).hasClass('disabled'))
+					shouldDisable = false;
+			});
+			if(shouldDisable && !$(this).hasClass('disabled'))
+				$(this).addClass('disabled');
+			else if(!shouldDisable && $(this).hasClass('disabled'))
+				$(this).removeClass('disabled');
 		});
 	}
 
