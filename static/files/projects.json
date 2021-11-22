@@ -171,7 +171,7 @@
 				"big":false,
 				"img":"",
 				"name":"Broken Cube",
-				"description":"",
+				"description":"A program being worked on in Java that is the extent of an entirety of a Minecraft mini-game server.",
 				"languages": [
 					"Java",
 					"MySQL"
@@ -185,7 +185,7 @@
 				"big":false,
 				"img":"",
 				"name":"ProjectzHUB",
-				"description":"",
+				"description":"A google-drive like website that is used to organize projects among others.",
 				"languages": [
 					"CSS",
 					"HTML",
@@ -202,8 +202,82 @@
 				"category":"Personal",
 				"big":false,
 				"img":"",
+				"name":"Reddit Grabber",
+				"description":"A program that is used to grab and filter through subreddits in a personally desired manner.",
+				"languages": [
+					"CSS",
+					"HTML",
+					"JavaScript",
+					"JQuery",
+					"PHP"
+				],
+				"documents":[],
+				"code":[],
+				"revisions":[
+					{
+						"year":"2020",
+						"revname":"7",
+						"img":"",
+						"description":"",
+						"documents":"",
+						"code":[]
+					},
+					{
+						"year":"2019",
+						"revname":"6",
+						"img":"",
+						"description":"",
+						"documents":"",
+						"code":[]
+					},
+					{
+						"year":"2019",
+						"revname":"5",
+						"img":"",
+						"description":"",
+						"documents":"",
+						"code":[]
+					},
+					{
+						"year":"2019",
+						"revname":"4",
+						"img":"",
+						"description":"",
+						"documents":"",
+						"code":[]
+					},
+					{
+						"year":"2019",
+						"revname":"3",
+						"img":"",
+						"description":"",
+						"documents":"",
+						"code":[]
+					},
+					{
+						"year":"2019",
+						"revname":"2",
+						"img":"",
+						"description":"",
+						"documents":"",
+						"code":[]
+					},
+					{
+						"year":"2018",
+						"revname":"1",
+						"img":"",
+						"description":"",
+						"documents":"",
+						"code":[]
+					}
+				]
+			},
+			{
+				"category":"Personal",
+				"big":false,
+				"img":"",
 				"name":"Sync",
-				"description":"",
+				"description":"A program that syncs my Google Drive projects with my web-server folder.",
 				"languages": [
 					"C#",
 					"CSS",
@@ -304,80 +378,6 @@
 				]
 			},
 			{
-				"category":"Personal",
-				"big":false,
-				"img":"",
-				"name":"Reddit Grabber",
-				"description":"",
-				"languages": [
-					"CSS",
-					"HTML",
-					"JavaScript",
-					"JQuery",
-					"PHP"
-				],
-				"documents":[],
-				"code":[],
-				"revisions":[
-					{
-						"year":"2020",
-						"revname":"7",
-						"img":"",
-						"description":"",
-						"documents":"",
-						"code":[]
-					},
-					{
-						"year":"2019",
-						"revname":"6",
-						"img":"",
-						"description":"",
-						"documents":"",
-						"code":[]
-					},
-					{
-						"year":"2019",
-						"revname":"5",
-						"img":"",
-						"description":"",
-						"documents":"",
-						"code":[]
-					},
-					{
-						"year":"2019",
-						"revname":"4",
-						"img":"",
-						"description":"",
-						"documents":"",
-						"code":[]
-					},
-					{
-						"year":"2019",
-						"revname":"3",
-						"img":"",
-						"description":"",
-						"documents":"",
-						"code":[]
-					},
-					{
-						"year":"2019",
-						"revname":"2",
-						"img":"",
-						"description":"",
-						"documents":"",
-						"code":[]
-					},
-					{
-						"year":"2018",
-						"revname":"1",
-						"img":"",
-						"description":"",
-						"documents":"",
-						"code":[]
-					}
-				]
-			},
-			{
 				"category":"School",
 				"big":false,
 				"img":"",
@@ -395,7 +395,7 @@
 				"big":false,
 				"img":"",
 				"name":"Disassembler",
-				"description":"",
+				"description":"A 3-month project working in the 68k assembler to write a program that takes in the binary of a compiled program and de-compiles it into its original 68k language.",
 				"languages": [
 					"Assembly"
 				],
@@ -408,7 +408,7 @@
 				"big":false,
 				"img":"",
 				"name":"Steam Parties",
-				"description":"",
+				"description":"A 3-month project working with 2 others to create a program running in AWS to help find and create steam parties off of people that have similar games to the user.",
 				"languages": [
 					"C#",
 					"CSS",
@@ -426,7 +426,7 @@
 				"big":false,
 				"img":"",
 				"name":"Backup and Retrieve Files",
-				"description":"",
+				"description":"A simple program written in Java to help backup and store files to AWS.",
 				"languages": [
 					"Java"
 				],
@@ -444,7 +444,7 @@
 				"big":false,
 				"img":"",
 				"name":"ThreadOS File System",
-				"description":"",
+				"description":"A program written in Java that creates and runs as an operating system's file system.",
 				"languages": [
 					"Java"
 				],
@@ -470,7 +470,7 @@
 				"big":false,
 				"img":"",
 				"name":"Sliding Window Algorithm",
-				"description":"",
+				"description":"A simple algorithm written in C++ that replicates the sliding window algorithm used for networking and communications.",
 				"languages": [
 					"C++"
 				],
@@ -483,7 +483,7 @@
 				"big":false,
 				"img":"",
 				"name":"Memory Allocation Algorithm",
-				"description":"",
+				"description":"A program written in C++ that allocates memory for a program.",
 				"languages": [
 					"C++"
 				],
@@ -496,7 +496,7 @@
 				"big":false,
 				"img":"",
 				"name":"Webpage Retriever",
-				"description":"",
+				"description":"A program written in C++ that makes a request to a web server and retrieves a data-page.",
 				"languages": [
 					"C++"
 				],
@@ -509,7 +509,7 @@
 				"big":false,
 				"img":"",
 				"name":"Thread Scheduler MFQ",
-				"description":"",
+				"description":"A program written in Java that enacts as a thread scheduler using the MFQ algorithm.",
 				"languages": [
 					"Java"
 				],
@@ -522,7 +522,7 @@
 				"big":false,
 				"img":"",
 				"name":"Synchronized Thread Queue",
-				"description":"",
+				"description":"A program written in C++ that enacts as a synchronized thread scheduler.",
 				"languages": [
 					"C++"
 				],
@@ -535,7 +535,7 @@
 				"big":false,
 				"img":"",
 				"name":"Thread Scheduler",
-				"description":"",
+				"description":"A short program written in C++ that enacts as a primitive thread scheduler.",
 				"languages": [
 					"C++"
 				],
@@ -574,7 +574,7 @@
 				"big":false,
 				"img":"",
 				"name":"Auto Del Bin/Obj",
-				"description":"",
+				"description":"A program that runs daily within my Google Drive to go through and delete the bin and obj folders from C# programs to significantly reduce the size of the files.",
 				"languages": [
 					"Google Script"
 				],
@@ -640,7 +640,7 @@
 				"big":false,
 				"img":"",
 				"name":"Language Data Types",
-				"description":"",
+				"description":"A 3-month project taking in different programming languages and mapping out their equivalent data types and functions across other programming languages in an attempt to help people who already know a language, learn another.",
 				"languages": [
 					"CSS",
 					"HTML",
@@ -658,7 +658,7 @@
 				"big":false,
 				"img":"",
 				"name":"Puzzle Solver",
-				"description":"",
+				"description":"A program written in C++ that takes in sudoku puzzles and works to solve them.",
 				"languages": [
 					"C++"
 				],
@@ -676,7 +676,7 @@
 				"big":false,
 				"img":"",
 				"name":"Reneblade",
-				"description":"",
+				"description":"A 6-month project working with 4 others to build a pixelart arena-style combat game within the Unity engine to earn 2nd place in the Hunt the Wumpus alumni challenge at Microsoft campus.",
 				"languages": [
 					"C#"
 				],
@@ -721,7 +721,7 @@
 				"big":false,
 				"img":"",
 				"name":"File Scraper",
-				"description":"",
+				"description":"A basic program that takes in a textual input of one or more directories and traverses them and outputs to the file structure to the console.",
 				"languages": [
 					"C#"
 				],
@@ -739,7 +739,7 @@
 				"big":false,
 				"img":"",
 				"name":"Hunt the Wumpus",
-				"description":"",
+				"description":"A 6-month project working with 4 others to compete in the Microsoft competition of creating the game 'Hunt the Wumpus' within the Unity engine.",
 				"languages": [
 					"C#"
 				],
@@ -752,7 +752,7 @@
 				"big":false,
 				"img":"",
 				"name":"Calculator",
-				"description":"",
+				"description":"A program that runs a graphical interface and is a mock of the default windows calculator app.",
 				"languages": [
 					"C#"
 				],
@@ -765,7 +765,7 @@
 				"big":false,
 				"img":"",
 				"name":"Mine Sweeper",
-				"description":"",
+				"description":"A graphical program that runs the classic game of Minesweeper.",
 				"languages": [
 					"C#"
 				],
