@@ -214,7 +214,7 @@
 			projects.forEach(function(project, pindex, array) {
 				// -- Create project containers
 				var bars = "";
-				var classname = "projectbox " + project['category'];
+				var classname = "projectbox clickable " + project['category'];
 				project['languages'].forEach(function(lang, lindex, array) {
 					bars += '<div class="bar '+lang+'" style="background-color: '+colors[lang]+'"><!--EMPTY--></div>'
 					classname += " " + lang;
@@ -234,7 +234,7 @@
 				rev['languages'].forEach(function(lang, lindex, array) {
 					bars += '<div class="bar '+lang+'" style="background-color: '+colors[lang]+'"><!--EMPTY--></div>'
 				});
-				$("#year"+yearone).find('.revisions').html($("#year"+yearone).find('.revisions').html() + '<div class="revisionbox"><div class="revtitle">'+rev['name']+'</div><div class="langbars">'+bars+'</div></div>');
+				$("#year"+yearone).find('.revisions').html($("#year"+yearone).find('.revisions').html() + '<div class="revisionbox clickable"><div class="revtitle">'+rev['name']+'</div><div class="langbars">'+bars+'</div></div>');
 			});
 		}); // End json foreach
 
