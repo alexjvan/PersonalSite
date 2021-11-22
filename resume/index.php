@@ -59,6 +59,9 @@
 								<div class="listitem">
 									PHP
 								</div>
+								<div class="listitem">
+									Scala
+								</div>
 							</div>
 							<div class="experience">
 								<div class="listitem">
