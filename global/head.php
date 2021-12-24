@@ -17,6 +17,17 @@
 	<!--MODERNIZR-->
 	<script src="<?php echo $prefix?>static/modernizr.js" ></script>
 
+	<!-- GOOGLE ANALYTICS -->
+	<!-- Global site tag (gtag.js) - Google Analytics -->
+	<script async src="https://www.googletagmanager.com/gtag/js?id=G-M22R5FK0ZD"></script>
+	<script>
+	  window.dataLayer = window.dataLayer || [];
+	  function gtag(){dataLayer.push(arguments);}
+	  gtag('js', new Date());
+
+	  gtag('config', 'G-M22R5FK0ZD');
+	</script>
+
 	<!-- STYLES -->
 	<link href="index.css" rel="stylesheet" type="text/css" />
 	<link href="<?php echo $prefix?>global/global.css" rel="stylesheet" type="text/css" media="screen" />
