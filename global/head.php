@@ -1,10 +1,7 @@
 <head>
 	<!--
-		alexvanmatre
+		alexvanmatre.com
 		Author: Alexander J Van Matre
-
-		Current Site Iteration: 3
-		Current Site Version: BETA
 	-->
 	<!-- IMPORTS -->
 	<!-- FONTS -->
@@ -16,17 +13,6 @@
 	<script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script>
 	<!--MODERNIZR-->
 	<script src="<?php echo $prefix?>static/modernizr.js" ></script>
-
-	<!-- GOOGLE ANALYTICS -->
-	<!-- Global site tag (gtag.js) - Google Analytics -->
-	<script async src="https://www.googletagmanager.com/gtag/js?id=G-M22R5FK0ZD"></script>
-	<script>
-	  window.dataLayer = window.dataLayer || [];
-	  function gtag(){dataLayer.push(arguments);}
-	  gtag('js', new Date());
-
-	  gtag('config', 'G-M22R5FK0ZD');
-	</script>
 
 	<!-- STYLES -->
 	<link href="index.css" rel="stylesheet" type="text/css" />
@@ -42,11 +28,9 @@
 	<meta http-equiv="Content-Language" contet="en-us" />
 	<meta charset="UTF-8" />
 	<meta name="viewport" content="width=device-width, initial-scale=1" />
-	<meta name="author" content="Alex Van Matre" />
-	<meta name="description" content="Alex Van Matre is a full stack programmer, software developer, and creator from a town near Woodinville, Washington. This is his personal site, a space where he can show off his resume, skills, projects, and host random code." />
 	<meta name="robots" content="index, follow" />
 	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-	<title>Alex Van Matre</title>
+	<title><?php echo $title ?> - Alex Van Matre</title>
 
 	<!-- EMERGENCY CSS-->
 	<style>

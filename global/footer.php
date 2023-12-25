@@ -1,55 +1,39 @@
-<div id="footer">
-	<div id="footertop">
-		<div id="footerleft">
-			Alex Van Matre
-		</div>
-		<div id="footerlinks">
-			<a class="footlink" href="<?php echo $prefix?>">Home</a> |
-			<a class="footlink" href="<?php echo $prefix?>about/">About</a> |
-			<a class="footlink" href="<?php echo $prefix?>projects/">Projects</a> |
-			<a class="footlink" href="<?php echo $prefix?>resume/">Resume</a> |
-			<a class="footlink" href="<?php echo $prefix?>contact/">Contact</a>
-		</div>
+<div id="footer" <?php if($lightfooter) echo ' class="light"' ?>>
+	<div id="contacttitle">
+		Contact
 	</div>
-	<div id="footerkit">
-		Let's Keep In Touch
+	<div id="contactlinks">
+		<a class="social email" href="mailto:contact@alexvanmatre.com" target="_blank">
+			<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" class="socimg">
+				<path d="M14.5 2h-13A1.5 1.5 0 0 0 0 3.5v9A1.5 1.5 0 0 0 1.5 14h13a1.5 1.5 0 0 0 1.5-1.5v-9A1.5 1.5 0 0 0 14.5 2zm-1.766 1L8 6.738 3.266 3h9.468zM2 13V4.646l6 4.615 6-4.616V13H2z"></path>
+			</svg>
+		</a>
+		<a class="social linkedin" href="https://www.linkedin.com/in/alexvanmatre"  target="_blank">
+			<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" class="socimg">
+				<path d="M0 5h3.578v11H0zM13.324 5.129c-.038-.012-.074-.025-.114-.036a2.32 2.32 0 0 0-.145-.028A3.207 3.207 0 0 0 12.423 5c-2.086 0-3.409 1.517-3.845 2.103V5H5v11h3.578v-6s2.704-3.766 3.845-1v7H16V8.577a3.568 3.568 0 0 0-2.676-3.448z"></path>
+				<circle cx="1.75" cy="1.75" r="1.75"></circle>
+			</svg>
+		</a>
+		<a class="social github" href="https://github.com/alexjvan"  target="_blank">
+			<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" class="socimg">
+				<path d="M7.999 0C3.582 0 0 3.596 0 8.032a8.031 8.031 0 0 0 5.472 7.621c.4.074.546-.174.546-.387 0-.191-.007-.696-.011-1.366-2.225.485-2.695-1.077-2.695-1.077-.363-.928-.888-1.175-.888-1.175-.727-.498.054-.488.054-.488.803.057 1.225.828 1.225.828.714 1.227 1.873.873 2.329.667.072-.519.279-.873.508-1.074-1.776-.203-3.644-.892-3.644-3.969 0-.877.312-1.594.824-2.156-.083-.203-.357-1.02.078-2.125 0 0 .672-.216 2.2.823a7.633 7.633 0 0 1 2.003-.27 7.65 7.65 0 0 1 2.003.271c1.527-1.039 2.198-.823 2.198-.823.436 1.106.162 1.922.08 2.125.513.562.822 1.279.822 2.156 0 3.085-1.87 3.764-3.652 3.963.287.248.543.738.543 1.487 0 1.074-.01 1.94-.01 2.203 0 .215.144.465.55.386A8.032 8.032 0 0 0 16 8.032C16 3.596 12.418 0 7.999 0z"></path>
+			</svg>
+		</a>
+		<a class="social instagram" href="https://www.instagram.com/poke.i.haunt.us/"  target="_blank">
+			<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" class="socimg">
+				<path d="M11 0H5a5 5 0 0 0-5 5v6a5 5 0 0 0 5 5h6a5 5 0 0 0 5-5V5a5 5 0 0 0-5-5zm3.5 11c0 1.93-1.57 3.5-3.5 3.5H5c-1.93 0-3.5-1.57-3.5-3.5V5c0-1.93 1.57-3.5 3.5-3.5h6c1.93 0 3.5 1.57 3.5 3.5v6z"></path>
+				<path d="M8 4a4 4 0 1 0 0 8 4 4 0 0 0 0-8zm0 6.5A2.503 2.503 0 0 1 5.5 8c0-1.379 1.122-2.5 2.5-2.5s2.5 1.121 2.5 2.5c0 1.378-1.122 2.5-2.5 2.5z"></path>
+				<circle cx="12.3" cy="3.7" r=".533"></circle>
+				<defs>
+						<radialGradient id="instagradient" r="150%" cx="30%" cy="107%">
+							<stop stop-color="#fdf497" offset="0" />
+							<stop stop-color="#fdf497" offset="0.05" />
+							<stop stop-color="#fd5949" offset="0.45" />
+							<stop stop-color="#d6249f" offset="0.6" />
+							<stop stop-color="#285AEB" offset="0.9" />
+					  </radialGradient>
+				</defs>
+			</svg>
+		</a>
 	</div>
-	<div id="footersocials">
-		<a class="fsocial" href="mailto:contact@alexvanmatre.com" target="_blank">
-			<img class="fsocimg" src="<?php echo $prefix?>static/images/other-sites/artsy/gmail.svg" alt="Email" />
-		</a>
-		<a class="fsocial" href="https://www.linkedin.com/in/alexvanmatre"  target="_blank">
-			<img class="fsocimg" src="<?php echo $prefix?>static/images/other-sites/artsy/linkedin.svg" alt="LinkedIn" />
-		</a>
-		<a class="fsocial" href="https://github.com/alexjvan"  target="_blank">
-			<img class="fsocimg" src="<?php echo $prefix?>static/images/other-sites/artsy/github.svg" alt="GitHub" />
-		</a>
-		<a class="fsocial" href="https://www.instagram.com/poke.i.haunt.us/"  target="_blank">
-			<img class="fsocimg" src="<?php echo $prefix?>static/images/other-sites/artsy/instagram.svg" alt="Instagram" />
-		</a>
-		<a class="fsocial" href="https://twitter.com/alextomator"  target="_blank">
-			<img class="fsocimg" src="<?php echo $prefix?>static/images/other-sites/artsy/twitter.svg" alt="Twitter" />
-		</a>
-	</div>
-	<script>
-		$(window).resize(function() {
-			cssSetup();
-		});
-		cssSetup();
-		$('#footersocials').hover(function() {
-			$('.fsocial').stop().animate({"background-color":"#b4b4b4"}, 250);
-		}, function() {
-			$('.fsocial').stop().animate({"background-color":"white"});
-		});
-		$('.fsocial').hover(function() {
-			$(this).stop().animate({"background-color":"white"});
-		}, function() {
-			$(this).stop().animate({"background-color":"#b4b4b4"}, 250);
-		});
-
-		function cssSetup() {
-			$('.fsocial').css({'height':$('.fsocial').width()+"px"});
-		}
-
-	</script>
 </div>

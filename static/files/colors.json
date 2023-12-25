@@ -75,13 +75,7 @@
     "Gnuplot": "#f0a9f0",
     "Go": "#375eab",
     "Golo": "#88562A",
-
-
-
     "Google Script": "#51f0ea",
-
-
-
     "Gosu": "#82937f",
     "Grammatical Framework": "#79aa7a",
     "Groovy": "#e69f56",
@@ -91,6 +85,7 @@
     "Haxe": "#df7900",
     "HiveQL": "#dce200",
     "HTML": "#e34c26",
+	"HLSL":"#aace60",
     "Hy": "#7790B2",
     "IDL": "#a3522f",
     "Idris": "#b30000",
@@ -101,13 +96,7 @@
     "Java": "#b07219",
     "JavaScript": "#f1e05a",
     "Jolie": "#843179",
-
-
-
     "JQuery": "#b1a01a",
-
-
-
     "JSONiq": "#40d47e",
     "Julia": "#a270ba",
     "Jupyter Notebook": "#DA5B0B",
@@ -144,23 +133,11 @@
     "NetLogo": "#ff6375",
     "NewLisp": "#87AED7",
     "Nextflow": "#3ac486",
-
-
-
     "Node.JS": "#22118a",
-
-
-
     "Nim": "#37775b",
     "Nit": "#009917",
     "Nix": "#7e7eff",
-
-
-
 	"NoSQL": "#229749",
-
-
-
     "Nu": "#c9df40",
     "Objective-C": "#438eff",
     "Objective-C++": "#6866fb",
@@ -217,6 +194,7 @@
     "Scheme": "#1e4aec",
     "sed": "#64b970",
     "Self": "#0579aa",
+	"ShaderLab":"#222c37",
     "Shell": "#89e051",
     "Shen": "#120F14",
     "Slash": "#007eff",

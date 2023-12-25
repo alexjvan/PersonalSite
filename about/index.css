@@ -1,74 +1,81 @@
-#landing {
-	background-image: url("../static/images/backgrounds/caliedited.jpg");
-	background-position: bottom;
-	background-size: cover;
-	height: calc(100vh - 100px);
+#bodycontainer {
+	background-color: var(--dark-primary);
+	display: flex;
+	height: calc(100vh - 59px);
+	width: 102%;
 }
-	@media only screen and (max-width: 1000px) {
-		#landing {
-			height: calc(100vh - 50px);
-		}
-	}
-	#landingimg {
-		bottom: 0;
-		height: 65vh;
-		position: absolute;
-		right: 0;
-	}
-		#landingtext {
-			background-color: rgba(255, 255, 255, 0.6);
-			font-size: 200%;
-			left: 10%;
-			padding: 10px 50px;
-			position: absolute;
-			top: 40vh;
-			z-index: 3;
-		}
-			#landingmore {
-				display: block;
-				font-size: 250%;
-				text-align: center;
-				text-transform: uppercase;
-			}
-.section {
-	background-color: var(--light-primary);
-	padding: 1% 5% 3% 5%;
-	width: 90%;
-}
-	.section.dark {
-		background-color: var(--light-secondary);
-	}
-	.sectiontitle {
-		font-size: 200%;
-	}
-	.sectioncontent {
-		align-items: flex-start;
+	#me {
+		align-items: center;
 		display: flex;
-		justify-content: space-between;
+		flex: 1;
 	}
-		@media only screen and (max-width: 1150px) {
-			.sectioncontent {
-				align-items: center;
-				flex-flow: column;
+		#face {
+			border-radius: 33vw;
+		}
+	#scroller {
+		flex: 4;
+		overflow-y: scroll;
+		padding: 2% 0% 4%;
+	}
+		#scroller p {
+			color: var(--light-primary);
+			padding: 10px 5px;
+		}
+		#timeline {
+			padding: 0% 5%;
+			width: 90%;
+		}
+			#timelinetitle {
+				color: var(--light-primary);
+				font-size: 24px;
+				padding-top: 2%;
+				text-align: middle;
+				width: 100%;
 			}
-		}
-		.sectionitem {
-			flex: 1;
-			padding: 0px 1%;
-		}
-			@media only screen and (max-width: 1150px) {
-				.sectionitem {
-					padding-bottom: 10px;
-					max-width: 80%;
+			#timelinecontainer {
+
+			}
+				.stepscontainer {
+					display: flex;
 				}
-			}
-			.sititle {
-				display: block;
-				font-size: 150%;
-				text-align: center;
-			}
-			.sidesc {
-				display: block;
-				font-size: 100%;
-				text-align: center;
-			}
+					.stepscontainer::after {
+						background-color: var(--light-primary);
+						bottom: 0;
+						content: "";
+						position: relative;
+						right: 35px;
+						width: 2px;
+					}
+						.stepscontainer:last-of-type::after {
+							height: 0px;
+						}
+					.content {
+						background-color: var(--light-secondary);
+						color: var(--dark-secondary);
+					    margin-bottom: 16px;
+						padding: 15px 25px;
+						position: relative;
+					}
+						.content p {
+							color: var(--dark-primary)!important;
+						}
+						.date {
+							align-items: center;
+							background-color: var(--light-primary);
+							border-radius: 50%;
+							color: var(--dark-secondary);
+							display: flex;
+							flex-shrink: 0;
+							height: 70px;
+							margin-bottom: 10px;
+							text-align: center;
+							width: 70px;
+							z-index: 3;
+						}
+						.stepline {
+							background-color: var(--light-primary);
+							flex-shrink: 0;
+							height: 2px;
+							margin-top: 31px;
+							width: 40px;
+						}

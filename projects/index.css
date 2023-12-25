@@ -1,164 +1,53 @@
-#warning {
-	align-items: center;
-	background-color: var(--red);
-	display: flex;
-	justify-content: center;
-	padding: 25px 0px 15px 0px;
-	width: 100%;
+.projectssection {
+	background-color: var(--dark-secondary);
+	padding: 2% 5% 4%;
+	width: 90%;
 }
-.sectiontitle {
-	background-color: var(--light-secondary);
-	font-size: 200%;
-	padding-top: 50px;
-}
-#filtercontainer {
-	background-color: var(--light-secondary);
-	display: flex;
-	flex-wrap: wrap;
-}
-	@media only screen and (max-width: 1000px) {
-		#filtercontainer {
-			display: inline-block;
-		}
+	.projectssection:nth-child(even) {
+		background-color: var(--dark-primary);
 	}
-	#languages {
-		max-width: 1000px;
+	.projectstitle {
+		color: var(--light-primary);
+		font-size: 36px;
+		padding-bottom: 1%;
 	}
-		.filteroption {
-			background-color: var(--light-primary);
-			border: 3px solid var(--light-secondary);
-			/* border: 3px solid var(--accent); */
-			border-radius: 5px;
-			margin: 5px 10px;
-			padding: 5px 15px;
-		}
-			.filteroption.nope {
-				background-color: #848484!important;
-				color: var(--light-primary)!important;
-			}
-			.filteroption:hover {
-				border-color: var(--accent);
-			}
-	#categories {
-		padding-left: 100px;
-	}
-		@media only screen and (max-width: 1000px) {
-			#categories {
-				padding-top: 15px;
-				padding-left: 0px!important;
-			}
-		}
-#projectscontainer {
-	background-color: var(--light-secondary);
-}
-	.yearcontainer {
-		padding-bottom: 25px;
+	.projectscontainer {
+		align-items: flex-start;
+		display: flex;
+		flex-wrap: wrap;
+		justify-content: center;
 		width: 100%;
 	}
-		.yeartitle {
-			color: var(--dark-primary);
-			font-size: 150%;
-			font-weight: bold;
-			padding-left: 5px;
-			width: 100%;
-		}
-		.projects {
-			align-items: flex-start;
+		.projectitem {
+			background-color: var(--light-secondary);
 			display: flex;
-			justify-content: center;
-			flex-wrap: wrap;
-			padding: 10px 1%;
-			width: 98%;
+			flex-direction: column;
+			margin: 5px 10px;
+			padding: 10px 15px;
+			width: 15vw;
 		}
-			.projectbox {
+			.projectitem:hover {
 				background-color: var(--light-primary);
-				border: 1px solid black;
-				border-radius: 5px;
-				flex: 0 1 450px;
-				margin: 5px;
-				position: relative;
 			}
-				.projectimg {
-					display: block;
-					padding: 0px 25px;
-					padding-top: 25px;
-				}
-				.projectname {
-					display: block;
-					padding: 10px 25px 0px 25px;
-				}
-				.projectdescription {
-					display: block;
-					font-size: 75%;
-					padding: 0px 25px 10px 25px;
-				}
-				.langbars {
-					bottom: 0px;
-					display: flex;
-					padding-top: 15px;
-					position: absolute;
-					width: 100%;
-				}
-					@media only screen and (max-width: 1000px) {
-						.langbars {
-							width: 350px!important;
-						}
-					}
-					@media only screen and (max-width: 600px) {
-						.langbars {
-							width: 300px!important;
-						}
-					}
-					.bar {
-						flex-grow: 1;
-						height: 5px;
-					}
-		.revisions {
-			padding: 10px 1%;
-			width: 98%;
-		}
-			.revisionstitle {
-				display: block;
+			.projecttitle {
+				color: var(--dark-primary);
+				font-size: 24px;
+				font-weight: bold;
+				word-wrap: break-word;
 			}
-				.revisionbox {
-					background-color: var(--light-primary);
-					border: 1px solid black;
-					border-radius: 5px;
-					margin: 5px;
-					position: relative;
-				}
-					.revtitle {
-						display: block;
-						padding: 5px 25px;
-					}
-#reposcontainer {
-	background-color: var(--light-primary);
-	display: flex;
-	justify-content: center;
-	flex-wrap: wrap;
-	padding: 10px 25px 35px 25px;
-}
-	.repoitem {
-		flex-grow: 1;
-		margin: 5px;
-	}
-		.ri-clickable {
-			border-left: 5px solid var(--accent);
-			padding: 5px;
-		}
-			.ri-clickable:hover {
-				background-color: var(--light-secondary);
-			}
-			.ri-c-title {
+			.projectdesc {
 				color: var(--dark-secondary);
-				display: block;
+				font-size: 16px;
+				padding-bottom: 5px;
 			}
-			.ri-c-desc {
-				color: var(--dark-primary);
-				display: block;
-				max-width: 750px;
+			.projectprimarylang {
+				color: var(--dark-secondary);
+				font-size: 12px;
+				font-style: italic;
 			}
-			.ri-c-lang {
-				color: var(--dark-primary);
-				display: block;
+			.projectlangbars {
+				display: flex;
 			}
+				.projectbar {
+					height: 5px;
+				}

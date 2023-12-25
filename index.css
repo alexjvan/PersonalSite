@@ -1,197 +1,65 @@
 #landing {
-	background-image: url("static/images/backgrounds/forest.jpg");
-	background-position: bottom;
-	background-size: cover;
-	height: calc(100vh - 100px);
-	width: 100vw;
+	background-color: var(--dark-secondary);
+	height: calc(100vh - 59px);
+	overflow: hidden;
+	width: 100%;
 }
-	@media only screen and (max-width: 1000px) {
-		#landing {
-			height: calc(100vh - 50px);
-		}
+	#map {
+		background-color: var(--dark-primary);
+		height: calc(100vh - 59px);
+		margin-left: -15px;
+		white-space: nowrap;
+		width: calc(100vw + 15px);
 	}
-	#middle {
-		align-items: center;
-		display: flex;
-		justify-content: space-between;
-		padding: 0px 5%;
+		.maprow {
+			display: block;
+		}
+			.mapCell {
+				background-color: var(--dark-primary);
+				border: 1px solid var(--light-primary);
+				height: 50px;
+				margin-top: -5px;
+				width: 50px;
+			}
+				.mapCell.current {
+					background-color: var(--accent);
+				}
+				.mapCell.pathUp {
+					border-top: 0px;
+					padding-top: 1px;
+				}
+				.mapCell.pathLeft {
+					border-left: 0px;
+					padding-left: 1px;
+				}
+				.mapCell.pathRight {
+					border-right: 0px;
+					padding-right: 1px;
+				}
+				.mapCell.pathDown {
+					border-bottom: 0px;
+					padding-bottom: 1px;
+				}
+	#overlay {
+		background-color: rgba(0, 0, 0, 0.6);
+		color: var(--light-primary);
+		left: calc(50vw - 250px);
+		height: 200px;
 		position: absolute;
-		top: calc(50vh - 250px);
-		width: 90%;
+		text-align: center;
+		top: calc(50vh - 100px);
+		width: 500px;
+		z-index: 3;
 	}
-		@media only screen and (max-width: 1100px) {
-			#middle {
-				top: calc(50vh - 125px);
-			}
+		#name {
+			font-size: 48px;
+			padding-top: 50.5px;
 		}
-		@media only screen and (max-height: 700px) {
-			#middle {
-				top: calc(50vh - 125px);
-			}
-		}
-		#text {
-
-		}
-			#top {
-				font-size: 500%;
-				position: relative;
-				z-index: 2;
-			}
-				#hi {
-					color: var(--accent);
-					-webkit-text-stroke: 1px black;
-				}
-				@media only screen and (max-width: 1100px) {
-					#top {
-						font-size: 250%;
-					}
-				}
-				@media only screen and (max-height: 700px) {
-					#top {
-						font-size: 250%;
-					}
-				}
-			#bottom {
-				background-color: rgba(255, 255, 255, .6);
-				display: block;
-				font-size: 600%;
-				left: 75px;
-				padding: 10px 25px;
-				position: relative;
-				top: -50px;
-			}
-				@media only screen and (max-width: 1100px) {
-					#bottom {
-						font-size: 300%;
-						left: 35px;
-						top: -25px;
-					}
-				}
-				@media only screen and (max-height: 700px) {
-					#bottom {
-						font-size: 300%;
-						left: 35px;
-						top: -25px;
-					}
-				}
-		#picture {
-
-		}
-			#pic {
-				border: 5px solid black;
-				border-radius: 500px;
-				height: 500px;
-			}
-				@media only screen and (max-width: 1100px) {
-					#pic {
-						height: 250px;
-					}
-				}
-				@media only screen and (max-height: 700px) {
-					#pic {
-						height: 250px;
-					}
-				}
-.section {
-	background-color: var(--light-primary);
-	padding: 1% 5% 3% 5%;
-	width: 90%;
-}
-	.section.dark {
-		background-color: var(--light-secondary);
-	}
-	.sectiontitle {
-		font-size: 200%;
-	}
-	.sectioncontent {
-		align-items: center;
-		display: flex;
-		justify-content: space-evenly;
-	}
-		@media only screen and (max-width: 1000px) {
-			.sectioncontent {
-				flex-direction: column;
-			}
-		}
-		.portion {
-			margin-bottom: 15px;
-			max-width: 20%;
-		}
-			@media only screen and (max-width: 1000px) {
-				.portion {
-					max-width: 100%;
-				}
-			}
-			.portion.empty {
-				background-color: var(--purple);
-				height: 20px;
-				width: 20%;
-			}
-				@media only screen and (max-width: 1000px) {
-					.portion.empty {
-						width: 100%;
-					}
-				}
-			.portion.text {
-
-			}
-				.portion.text a {
-					color: var(--dark-secondary);
-					display: inline-block;
-				}
-					.portion.text a:hover {
-						text-decoration: underline;
-						text-decoration-color: var(--accent);
-					}
-			.portion.img {
-
-			}
-				.portion.img img {
-					border-radius: 15px;
-					width: 100%;
-				}
-				.portion.img.empty {
-					background-color: var(--green);
-				}
-			.portion.list {
-				flex-grow: 1;
-				width: 100%;
-			}
-				.portion.list.empty {
-					background-color: var(--orange);
-				}
-					.pcoltitle {
-						display: block;
-					}
-					.projectbox {
-						background-color: var(--light-primary);
-						border: 1px solid black;
-						border-radius: 5px;
-						display: block;
-						margin: 5px;
-					}
-						.projectbox div {
-							width: 100%;
-						}
-						.projectname {
-							display: block;
-							padding: 0px 25px;
-							width: calc(100% - 50px)!important;
-						}
-						.langbars {
-							display: flex;
-							padding-top: 5px;
-						}
-							.bar {
-								flex-grow: 1;
-								height: 5px;
-							}
-		.action {
-			color: var(--dark-tetriary);
-			display: inline-block;
-			font-size: 200%;
-			transition: .3s;
-		}
-			.action:hover {
+			#first {
 				color: var(--accent);
 			}
+		#title {
+			display: block;
+			font-family: 'Dancing Script';
+			font-size: 36px;
+		}

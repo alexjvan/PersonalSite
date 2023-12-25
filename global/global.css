@@ -32,24 +32,15 @@ a {
 }
 
 body {
+	background-color: var(--dark-secondary);
 	border: 0px;
-	display: grid;
 	font-family: 'Montserrat', verdana, arial, sans-serif;
-	font-size: 150%;
+	font-size: 1rem;
 	margin: 0px;
     overflow-x: hidden;
 	padding: 0px;
 }
-	@media only screen and (max-width: 1000px) {
-		body {
-			font-size: 100%;
-		}
-	}
-	@media only screen and (max-width: 600px) {
-		body {
-			font-size: 75%;
-		}
-	}
+
 div {
 	display: inline-block;
 }
@@ -81,132 +72,74 @@ ul {
 		cursor: pointer;
 	}
 
-/* ------------------------- */
-/* HEADER                    */
-/* ------------------------- */
-#header {
-	background-color: white;
-	height: 80px;
-	padding: 10px 5%;
-	position: fixed;
-	width: 90%;
-	z-index: 5;
-}
-	@media only screen and (max-width: 1000px) {
-		#header {
-			height: 50px;
-			padding: 5px 3%;
-			width: 94%;
-		}
-	}
-	#logo {
-		align-items: center;
-		color: black;
-		display: flex;
-		float: left;
-		height: 100%;
-	}
-		#logoimg {
-			height: 100%;
-		}
-		#logotext {
 
-		}
-			@media only screen and (max-width: 600px) {
-				#logotext {
-					display: none;
-				}
-			}
-	#headerlinks {
-		align-items: center;
-		display: flex;
-		float: right;
-		height: 100%;
-	}
-		.headerlink {
-			border-color: var(--accent);
-			border-style: solid;
-			border-width: 0px;
-			color: black;
-			display: inline-block;
-			padding: 0px 15px 4px 15px;
-			transition: .25s;
-		}
-			@media only screen and (max-width: 1000px) {
-				.headerlink {
-					padding: 0px 5px 5px 4px;
-				}
-			}
-			.headerlink.active {
-				border-bottom-width: 4px;
-				padding-bottom: 0px;
-			}
-		.headerlink:hover {
-			border-bottom-width: 4px;
-			padding-bottom: 0px;
-			transition: .25s;
-		}
-#headerblock {
-	height: 100px;
+#header {
+	align-items: center;
+	background-color: var(--dark-secondary);
+	display: flex;
+	justify-content: space-evenly;
+	width: 100vw;
 }
-	@media only screen and (max-width: 1000px) {
-		#headerblock {
-			height: 60px;
-		}
-	}
-/* ------------------------- */
-/* FOOTER                    */
-/* ------------------------- */
-#footer {
-	background-color: var(--dark-primary);
-	color: var(--light-primary);
-	padding: 2% 5% 5% 5%;
-	width: 90%;
-}
-	#footertop {
-		width: 100%;
-	}
-		#footerleft {
-			color: var(--light-primary);
-			float: left;
-			font-size: 100%;
-		}
-		#footerlinks {
-			float: right;
-			font-size: 100%;
-		}
-			.footlink {
-				color: var(--light-primary);
-				display: inline-block;
-				font-size: 100%;
-				vertical-align: top;
-			}
-				.footlink:hover {
-					text-decoration: underline;
-				}
-	#footerkit {
+	.headerlink {
+		border: 0px solid var(--accent);
 		color: var(--light-primary);
-		font-size: 100%;
-		padding-top: 15px;
+		font-size: 24px;
+		padding: 15px 3%;
 		text-align: center;
-		width: 100%;
+		transition: all 250ms;
 	}
-	#footersocials {
-		display: flex;
-		justify-content: center;
-		width: 100%;
-	}
-		.fsocial {
-			background-color: var(--light-tetriary);
-			border-radius: 75px;
-			justify-content: space-around;
-			margin: 1%;
-			text-align: center;
-			transition: .25s;
-			vertical-align: middle;
-			width: 4%;
+		.headerlink.active {
+			border-bottom: 5px solid var(--accent);
+			padding-bottom: 10px;
 		}
-			.fsocimg {
-				padding: 16.66%;
-				width: 66.66%;
+		.headerlink:hover {
+			border-bottom: 5px solid var(--accent);
+			padding-bottom: 10px;
+		}
+#footer {
+	background-color: var(--dark-secondary);
+	color: var(--light-primary);
+	padding-top: 2%;
+	padding-left: 1%;
+	padding-right: 1%;
+	padding-bottom: 4%;
+	width: 98%;
+}
+	#footer.light {
+		background-color: var(--dark-primary);
+	}
+	#contacttitle {
+		display: block;
+		font-size: 36px;
+		font-weight: bold;
+	}
+	#contactlinks {
+		display: flex;
+		justify-content: space-around;
+		padding-top: 1%;
+		width: 100vw;
+	}
+		.social {
+			border-radius: 7.5vw;
+			height: 7.5vw;
+			transition: all 250ms ease;
+			width: 7.5vw;
+		}
+			.social.email:hover > .socimg {
+				fill: #aa3d2d;
 			}
+			.social.github:hover {
+				background-color: var(--light-primary);
+			}
+			.social.linkedin:hover > .socimg {
+				fill: #0a66c2;
+			}
+			.social.instagram:hover > .socimg {
+				fill: url(#instagradient)!important;
+			}
+			.socimg {
+				transition: all 250ms ease;
+			}
+				.socimg ~ defs stop {
+					transition: all 250ms ease;
+				}
