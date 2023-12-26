@@ -22,8 +22,8 @@
 	#scroller {
 		flex: 2;
 		overflow-y: scroll;
-		padding: 2% 15px 4% 1%;
-		width: 100%;
+		padding: 2% 15px 4% 2%;
+		width: calc(98% - 15px);
 	}
 		#scroller p {
 			color: var(--light-primary);
