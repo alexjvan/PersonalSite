@@ -17,9 +17,10 @@
 	}
 		#face {
 			border-radius: 33vw;
+			max-width: 100%;
 		}
 	#scroller {
-		flex: 4;
+		flex: 2;
 		overflow-y: scroll;
 		padding: 2% 0% 4%;
 	}
