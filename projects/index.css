@@ -26,6 +26,12 @@
 			padding: 10px 15px;
 			width: 15vw;
 		}
+
+			@media only screen and (max-width: 650px) {
+				.projectitem {
+					width: calc(100vw - 50px);
+				}
+			}
 			.projectitem:hover {
 				background-color: var(--light-primary);
 			}
