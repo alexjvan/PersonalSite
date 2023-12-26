@@ -125,12 +125,19 @@ ul {
 			transition: all 250ms ease;
 			width: 7.5vw;
 		}
+			.social svg {
+				fill:  var(--light-secondary);
+			}
 			.social.email:hover > .socimg {
 				fill: #aa3d2d;
 			}
 			.social.github:hover {
 				background-color: var(--light-primary);
+				fill: black;
 			}
+				.social.github:hover svg {
+					fill: black;
+				}
 			.social.linkedin:hover > .socimg {
 				fill: #0a66c2;
 			}
