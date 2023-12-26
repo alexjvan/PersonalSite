@@ -51,10 +51,24 @@
 		width: 500px;
 		z-index: 3;
 	}
+		@media only screen and (max-width: 650px) {
+			#overlay {
+				left: calc(50vw - 150px);
+				height: 100px;
+				top: calc(50vh - 50px);
+				width: 300px;
+			}
+		}
 		#name {
 			font-size: 48px;
 			padding-top: 50.5px;
 		}
+			@media only screen and (max-width: 650px) {
+				#name {
+					font-size: 36px;
+					padding-top: 13.5px;
+				}
+			}
 			#first {
 				color: var(--accent);
 			}
@@ -63,3 +77,8 @@
 			font-family: 'Dancing Script';
 			font-size: 36px;
 		}
+			@media only screen and (max-width: 650px) {
+				#title {
+					font-size: 24px;
+				}
+			}
