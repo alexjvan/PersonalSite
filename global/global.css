@@ -35,11 +35,16 @@ body {
 	background-color: var(--dark-secondary);
 	border: 0px;
 	font-family: 'Montserrat', verdana, arial, sans-serif;
-	font-size: 1rem;
+	font-size: 16px;
 	margin: 0px;
     overflow-x: hidden;
 	padding: 0px;
 }
+	@media only screen and (max-width: 650px) {
+		body {
+			font-size: 12px;
+		}
+	}
 
 div {
 	display: inline-block;
@@ -88,6 +93,11 @@ ul {
 		text-align: center;
 		transition: all 250ms;
 	}
+		@media only screen and (max-width: 650px) {
+			.headerlink {
+				font-size: 16px;
+			}
+		}
 		.headerlink.active {
 			border-bottom: 5px solid var(--accent);
 			padding-bottom: 10px;
@@ -113,6 +123,11 @@ ul {
 		font-size: 36px;
 		font-weight: bold;
 	}
+		@media only screen and (max-width: 650px) {
+			#contacttitle {
+				font-size: 24px;
+			}
+		}
 	#contactlinks {
 		display: flex;
 		justify-content: space-around;
