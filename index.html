@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<!--
+			alexvanmatre.com
+			Author: Alexander J Van Matre
+		-->
+		<!-- IMPORTS -->
+		<!-- FONTS -->
+		<link href="https://fonts.googleapis.com/css?family=Dancing+Script:700|Montserrat:400,600" rel="stylesheet">
+		<!--EXTERNAL LIBRARIES-->
+		<!--JQUERY-->
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+		<link rel="stylesheet" href="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/themes/smoothness/jquery-ui.css">
+		<script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script>
+		<!--MODERNIZR-->
+		<script src="static/modernizr.js" ></script>
+
+		<!-- STYLES -->
+		<link href="index.css" rel="stylesheet" type="text/css" />
+		<link href="global/global.css" rel="stylesheet" type="text/css" media="screen" />
+		<!-- SCRIPTS -->
+
+		<!-- LOGO SETUP -->
+		<link id="favicon" href="static/images/logos/logo2.gif" rel="icon" type="image/x-icon" />
+		<link rel="shortcut icon" href="static/images/logos/logo2.gif" >
+		<link rel="apple-touch-icon" href="static/images/logos/logo2.gif" >
+
+		<!--OPTIMIZATION-->
+		<meta http-equiv="Content-Language" contet="en-us" />
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+		<meta name="robots" content="index, follow" />
+		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+		<title>Home - Alex Van Matre</title>
+
+		<!-- EMERGENCY CSS-->
+		<style>
+			.disabled {
+				display: none!important;
+			}
+		</style>
+	</head>
+	<body>
+		<div id="header">
+			<a class="headerlink active" href="../">
+				Home
+			</a>
+			<a class="headerlink" href="about/">
+				About
+			</a>
+			<a class="headerlink" href="projects/">
+				Projects
+			</a>
+		</div>
+		<div id="landing">
+			<script src="static/scripts/mazeGeneration.js" ></script>
+			<div id="map"></div>
+			<div id="overlay">
+				<div id="name">
+					<div id="first">
+						Alex
+					</div> Van Matre
+				</div>
+				<div id="title">
+					Software Engineer
+				</div>
+			</div>
+		</div>
+
+		<div id="footer">
+			<div id="contacttitle">
+				Contact
+			</div>
+			<div id="contactlinks">
+				<a class="social email" href="mailto:contact@alexvanmatre.com" target="_blank">
+					<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" class="socimg">
+						<path d="M14.5 2h-13A1.5 1.5 0 0 0 0 3.5v9A1.5 1.5 0 0 0 1.5 14h13a1.5 1.5 0 0 0 1.5-1.5v-9A1.5 1.5 0 0 0 14.5 2zm-1.766 1L8 6.738 3.266 3h9.468zM2 13V4.646l6 4.615 6-4.616V13H2z"></path>
+					</svg>
+				</a>
+				<a class="social linkedin" href="https://www.linkedin.com/in/alexvanmatre"  target="_blank">
+					<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" class="socimg">
+						<path d="M0 5h3.578v11H0zM13.324 5.129c-.038-.012-.074-.025-.114-.036a2.32 2.32 0 0 0-.145-.028A3.207 3.207 0 0 0 12.423 5c-2.086 0-3.409 1.517-3.845 2.103V5H5v11h3.578v-6s2.704-3.766 3.845-1v7H16V8.577a3.568 3.568 0 0 0-2.676-3.448z"></path>
+						<circle cx="1.75" cy="1.75" r="1.75"></circle>
+					</svg>
+				</a>
+				<a class="social github" href="https://github.com/alexjvan"  target="_blank">
+					<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" class="socimg">
+						<path d="M7.999 0C3.582 0 0 3.596 0 8.032a8.031 8.031 0 0 0 5.472 7.621c.4.074.546-.174.546-.387 0-.191-.007-.696-.011-1.366-2.225.485-2.695-1.077-2.695-1.077-.363-.928-.888-1.175-.888-1.175-.727-.498.054-.488.054-.488.803.057 1.225.828 1.225.828.714 1.227 1.873.873 2.329.667.072-.519.279-.873.508-1.074-1.776-.203-3.644-.892-3.644-3.969 0-.877.312-1.594.824-2.156-.083-.203-.357-1.02.078-2.125 0 0 .672-.216 2.2.823a7.633 7.633 0 0 1 2.003-.27 7.65 7.65 0 0 1 2.003.271c1.527-1.039 2.198-.823 2.198-.823.436 1.106.162 1.922.08 2.125.513.562.822 1.279.822 2.156 0 3.085-1.87 3.764-3.652 3.963.287.248.543.738.543 1.487 0 1.074-.01 1.94-.01 2.203 0 .215.144.465.55.386A8.032 8.032 0 0 0 16 8.032C16 3.596 12.418 0 7.999 0z"></path>
+					</svg>
+				</a>
+				<a class="social instagram" href="https://www.instagram.com/poke.i.haunt.us/"  target="_blank">
+					<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" class="socimg">
+						<path d="M11 0H5a5 5 0 0 0-5 5v6a5 5 0 0 0 5 5h6a5 5 0 0 0 5-5V5a5 5 0 0 0-5-5zm3.5 11c0 1.93-1.57 3.5-3.5 3.5H5c-1.93 0-3.5-1.57-3.5-3.5V5c0-1.93 1.57-3.5 3.5-3.5h6c1.93 0 3.5 1.57 3.5 3.5v6z"></path>
+						<path d="M8 4a4 4 0 1 0 0 8 4 4 0 0 0 0-8zm0 6.5A2.503 2.503 0 0 1 5.5 8c0-1.379 1.122-2.5 2.5-2.5s2.5 1.121 2.5 2.5c0 1.378-1.122 2.5-2.5 2.5z"></path>
+						<circle cx="12.3" cy="3.7" r=".533"></circle>
+						<defs>
+								<radialGradient id="instagradient" r="150%" cx="30%" cy="107%">
+									<stop stop-color="#fdf497" offset="0" />
+									<stop stop-color="#fdf497" offset="0.05" />
+									<stop stop-color="#fd5949" offset="0.45" />
+									<stop stop-color="#d6249f" offset="0.6" />
+									<stop stop-color="#285AEB" offset="0.9" />
+							  </radialGradient>
+						</defs>
+					</svg>
+				</a>
+			</div>
+		</div>
+	</body>
+</html>
