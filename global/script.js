@@ -11,7 +11,46 @@ document.addEventListener('DOMContentLoaded', () => {
   if (document.getElementById('repoContainer')) {
     loadRepos();
   }
+
+  streamTerminalOutput();
 });
+
+// --- whoami terminal (about page only) ---
+// Once "whoami" finishes typing, prints the output a character at a time.
+// Each character starts as a hidden span so the full text keeps its space
+// and the page doesn't shift as it fills in. Without JS, the CSS reveal in
+// styles.css still shows the whole line after the command is typed.
+const STREAM_START_DELAY_MS = 300; // pause for the "Enter" keypress
+const STREAM_CHAR_MS = 18;
+
+function streamTerminalOutput() {
+  const output = document.querySelector('.terminal-output');
+  if (!output || window.matchMedia('(prefers-reduced-motion: reduce)').matches) return;
+
+  const chars = [...output.textContent].map(ch => {
+    const span = document.createElement('span');
+    span.textContent = ch;
+    span.style.visibility = 'hidden';
+    return span;
+  });
+  output.replaceChildren(...chars);
+  output.classList.add('streaming');
+
+  const start = () => {
+    let i = 0;
+    const timer = setInterval(() => {
+      if (i >= chars.length) return clearInterval(timer);
+      chars[i++].style.visibility = 'visible';
+    }, STREAM_CHAR_MS);
+  };
+
+  const command = document.querySelector('.typewrite');
+  if (command) {
+    command.addEventListener('animationend', () => setTimeout(start, STREAM_START_DELAY_MS), { once: true });
+  } else {
+    start();
+  }
+}
 
 // --- GitHub projects list (projects page only) ---
 // Pulls public repos for the account (with each repo's full language
